@@ -1,0 +1,40 @@
+{
+    "es": {
+        "Inicio": "Inicio",
+        "GestionUsuarios": "Gestión de usuarios",
+        "ConsultaExistencia": "Consulta de existencia",
+        "SolicitudPedidos": "Solicitud de pedidos",
+        "Sobre": "sobre",
+        "Calidad": "Calidad",
+        "Productos": "Productos",
+        "Contacto": "Contáctanos",
+        "Inglés": "Inglés",
+        "Español": "Español"
+    },
+    "en": {
+        "Derechos": "2022, SACOS EL SALVADOR | All rights reserved.",
+        "guardar": "Save",
+        "id": "ID",
+        "nombre": "Name",
+        "apellido": "Last name",
+        "numeroidentificacion": "ID Number",
+        "correo": "Email",
+        "nacionalidad": "Nationality",
+        "direccion": "Address",
+        "telefono": "Phone",
+        "accionModificar": "Modify action",
+        "accionDeshabilitar": "Disable action",
+        "modificar": "Modify",
+        "deshabilitar": "Disable",
+        "Inicio": "Home",
+        "GestionUsuarios": "User Management",
+        "ConsultaExistencia": "Inventory look-up",
+        "SolicitudPedidos": "Pre-Order Form",
+        "Sobre": "About",
+        "Calidad": "Quality",
+        "Productos": "Products",
+        "Contacto": "Contact us",
+        "Inglés": "English",
+        "Español": "Spanish"
+    }
+}
