@@ -310,12 +310,15 @@ include('../includes/cabecera.php');
 </div>
 </div>
 
-<div class="p-4">
+<div class="col-auto">
     <div class="row">
-        <div class="<?=$col10?>" id="prueba">
+        <div class="col-md-12">
+        <div class="<?=$col12?>" id="prueba">
         </div>                
     </div>
 </div>
+</div>
+<br>
 
 
 <?php
