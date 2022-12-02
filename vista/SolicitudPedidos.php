@@ -21,12 +21,16 @@ include('../includes/cabecera.php');
                     <div class="row">
                     <div class="<?=$col4?>">
                     <p class="lang" key="NomCompleto" data-section="formSolicitudPedidos" data-value="NomCompleto">Nombre completo</p>
-                    <input class="form-control" type="text" name="txtNombreP" data-seccion="formSolicitudPedidos"  data-valor="PLNomCompletoP" data-validetta="required">
+                    <input class="form-control" type="text" name="txtNombreSP" data-seccion="formSolicitudPedidos"  data-valor="PLNomCompletoSP" data-validetta="required">
+
+                    <span class="warnings" id="warningsNombreCompletoSP"  data-section="formSolicitudPedidos"  data-value="spanNombreCompletoSP"></span>
                     </div>
 
                     <div class="<?=$col4?>">
                     <p class="lang" key="correo" data-section="formSolicitudPedidos" data-value="correo">Correo electrónico</p>
-                    <input class="form-control" type="email" name="txtCorreoP" data-seccion="formSolicitudPedidos"  data-valor="PLcorreoP" data-validetta="required">
+                    <input class="form-control" type="email" name="txtCorreoSP" data-seccion="formSolicitudPedidos"  data-valor="PLcorreoSP" data-validetta="required">
+
+                    <span class="warnings" id="warningsCorreoElectronicoSP"  data-section="formSolicitudPedidos"  data-value="spanCorreoElectronicoSP"></span>
                     </div>  
                     </div>
 
@@ -39,18 +43,24 @@ include('../includes/cabecera.php');
                     </div>
                     <div class="<?=$col4?>">
                     <p class="lang" key="NumIndentificacion" data-section="formSolicitudPedidos" data-value="NumIndentificacion">Número de identificación</p>
-                    <input class="form-control" type="text" name="txtIdentificacionP" data-seccion="formSolicitudPedidos"  data-valor="PLNumIndentificacionP" data-validetta="required">
+                    <input class="form-control" type="text" name="txtIdentificacionSP" data-seccion="formSolicitudPedidos"  data-valor="PLNumIndentificacionSP" data-validetta="required">
+
+                    <span class="warnings" id="warningsNumIndentificacionSP"  data-section="formSolicitudPedidos"  data-value="spanNumIndentificacionSP"></span>
                     </div>
                     </div>
 
                     <div class="row">
                     <div class="<?=$col4?>">
                     <p class="lang" key="NumTelefono" data-section="formSolicitudPedidos" data-value="NumTelefono">Número de teléfono</p>
-                    <input class="form-control" type="text" name="txtTelefonoP" data-seccion="formSolicitudPedidos"  data-valor="PLNumTelefonoP" data-validetta="required">
+                    <input class="form-control" type="text" name="txtTelefonoSP" data-seccion="formSolicitudPedidos"  data-valor="PLNumTelefonoSP" data-validetta="required">
+
+                    <span class="warnings" id="warningsTelefonoSP"  data-section="formSolicitudPedidos"  data-value="spanTelefonoSP"></span>
                     </div>
                     <div class="<?=$col4?>">
                     <p class="lang" key="Direccion" data-section="formSolicitudPedidos" data-value="Direccion">Dirección</p>
-                    <textarea class="form-control" name="txtDireccionP" cols="15" rows="1" data-seccion="formSolicitudPedidos"  data-valor="PLDireccionP" data-validetta="required"></textarea>
+                    <textarea class="form-control" name="txtDireccionSP" cols="15" rows="1" data-seccion="formSolicitudPedidos"  data-valor="PLDireccionSP" data-validetta="required"></textarea>
+
+                    <span class="warnings" id="warningsDireccionSP"  data-section="formSolicitudPedidos"  data-value="spanDireccionSP"></span>
                     </div>
                     </div>
 
@@ -84,7 +94,7 @@ include('../includes/cabecera.php');
                                 </select>
                             </td>
                             <td>
-                                <input class="form-control" type="number" name="txtCantidad[]" data-validetta="required">
+                                <input class="form-control" type="number" name="txtCantidadSP[]" data-validetta="required">
                             </td>
                             <td>
                                 <button type="button" class="btn" id="btnEliminar"><img src="<?=$raiz?>publico/img/eliminar.png" width="20rem" height="20rem" alt=""></button>
@@ -126,7 +136,7 @@ include('../includes/cabecera.php');
                 <div class="modal-dialog" role="document">
                     <div class="modal-content bg-dark">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="ventanaModularLabel" class="lang" key="InfoTarjeta" data-section="formSolicitudPedidos" data-value="InfoTarjeta">Indique la información de su tarjeta</h5>
+                        <h5 class="modal-title lang" id="ventanaModularLabel" key="InfoTarjeta" data-section="formSolicitudPedidos" data-value="InfoTarjeta">Indique la información de su tarjeta</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" class="bg-light rounded">&times;</span>
                         </button>
@@ -143,24 +153,31 @@ include('../includes/cabecera.php');
                             </div>
                             <div class="<?=$col6?>">
                                 <p class="lang" key="NomTarjeta" data-section="formSolicitudPedidos" data-value="NomTarjeta">Nombre de la tarjeta</p>
-                                <input class="form-control" type="text" name="txtNomTarjetaP" data-seccion="formSolicitudPedidos"  data-valor="PLNomTarjetaP" data-validetta="required">
+                                <input class="form-control" type="text" name="txtNomTarjetaSP" data-seccion="formSolicitudPedidos"  data-valor="PLNomTarjetaSP" data-validetta="required">
+
+                                <span class="lang warnings" id="warningsNombreTarjeta"  data-section="formSolicitudPedidos"  data-value="spanNombreTarjeta"></span>
+
                             </div>
                             </div>
 
                             <div class="row">
                             <div class="<?=$col6?>">
                                 <p class="lang" key="NumTarjeta" data-section="formSolicitudPedidos" data-value="NumTarjeta">Número de tarjeta</p>
-                                <input class="form-control" type="text" name="txtNumTarjetaP" data-seccion="formSolicitudPedidos"  data-valor="PLNumTarjetaP" data-validetta="required">
+                                <input class="form-control" type="text" name="txtNumTarjetaSP" data-seccion="formSolicitudPedidos"  data-valor="PLNumTarjetaSP" data-validetta="required">
+
+                            <span class="warnings" id="warningsNumeroTarjeta"  data-section="formSolicitudPedidos"  data-value="spanNumeroTarjeta"></span>
+
                             </div>
                             <div class="<?=$col6?>">
                                 <p class="lang" key="FechaVence" data-section="formSolicitudPedidos" data-value="FechaVence">Fecha de vencimiento</p>
-                                <input class="form-control" type="month" name="txtFechaVence"></input>
+                                <input class="form-control" type="month" name="txtFechaVenceSP"></input>
+                                <span class="warnings" id="warningsFechaVence"  data-section="formSolicitudPedidos"  data-value="spanFechaVence"></span>
                             </div>
                             </div>
                             <div class="row">
                             <div class="<?=$col6?>">
                                 <p class="lang" key="Comprobante" data-section="formSolicitudPedidos" data-value="Comprobante">Comprobante</p>
-                                <input class="form-control" type="text" name="txtComprobanteP" data-seccion="formSolicitudPedidos"  data-valor="PLComprobanteP" readonly>
+                                <input class="form-control" type="text" name="txtComprobanteSP" data-seccion="formSolicitudPedidos"  data-valor="PLComprobanteSP" readonly>
                             </div>
                             </div>
 

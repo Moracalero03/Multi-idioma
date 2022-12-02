@@ -20,42 +20,44 @@ $.getJSON("../publico/js/lang.json", function(json) {
     for (const info of data) {
         const section = info.dataset.section;
 
-
         if (section == "formSolicitudPedidos") {
             //datos del cliente
-            document.getElementsByName('txtNombreP')[0].placeholder = translate('PLNomCompletoP');
-            document.getElementsByName('txtCorreoP')[0].placeholder = translate('PLcorreoP');
-            document.getElementsByName('txtIdentificacionP')[0].placeholder = translate('PLNumIndentificacionP');
-            document.getElementsByName('txtTelefonoP')[0].placeholder = translate('PLNumTelefonoP');
-            document.getElementsByName('txtDireccionP')[0].placeholder = translate('PLDireccionP');
+            document.getElementsByName('txtNombreSP')[0].placeholder = translate('PLNomCompletoSP');
+            document.getElementsByName('txtCorreoSP')[0].placeholder = translate('PLcorreoSP');
+            document.getElementsByName('txtIdentificacionSP')[0].placeholder = translate('PLNumIndentificacionSP');
+            document.getElementsByName('txtTelefonoSP')[0].placeholder = translate('PLNumTelefonoSP');
+            document.getElementsByName('txtDireccionSP')[0].placeholder = translate('PLDireccionSP');
 
             //formulario para facturar
-            document.getElementsByName('txtNomTarjetaP')[0].placeholder = translate('PLNomTarjetaP');
-            document.getElementsByName('txtNumTarjetaP')[0].placeholder = translate('PLNumTarjetaP');
-            document.getElementsByName('txtComprobanteP')[0].placeholder = translate('PLComprobanteP');
-        } else if (section == "formGestionUsuario") {
+            document.getElementsByName('txtNomTarjetaSP')[0].placeholder = translate('PLNomTarjetaSP');
+            document.getElementsByName('txtNumTarjetaSP')[0].placeholder = translate('PLNumTarjetaSP');
+            document.getElementsByName('txtComprobanteSP')[0].placeholder = translate('PLComprobanteSP');
+        }
+
+        if (section == "formGestionUsuario") {
             //formulario de gestion de usuario
-            document.getElementsByName('txtNombre')[0].placeholder = translate('PLNomCompleto');
-            document.getElementsByName('txtApellido')[0].placeholder = translate('PLApellido');
-            document.getElementsByName('txtNumeroIdentificacion')[0].placeholder = translate('PLNumIndentificacion');
-            document.getElementsByName('txtCorreo')[0].placeholder = translate('PLCorreo');
-            document.getElementsByName('txtNacionalidad')[0].placeholder = translate('PLNacionalidad');
-            document.getElementsByName('txtDireccion')[0].placeholder = translate('PLDireccion');
-            document.getElementsByName('txtTelefono')[0].placeholder = translate('PLTelefono');
-        } else if (section == "formConsultaExistencia") {
+            document.getElementsByName('txtNombreU')[0].placeholder = translate('PLNomCompletoU');
+            document.getElementsByName('txtApellidoU')[0].placeholder = translate('PLApellidoU');
+            document.getElementsByName('txtNumeroIdentificacionU')[0].placeholder = translate('PLNumIndentificacionU');
+            document.getElementsByName('txtCorreoU')[0].placeholder = translate('PLcorreoU');
+            document.getElementsByName('txtNacionalidadU')[0].placeholder = translate('PLNacionalidadU');
+            document.getElementsByName('txtDireccionU')[0].placeholder = translate('PLDireccionU');
+            document.getElementsByName('txtTelefonoU')[0].placeholder = translate('PLNumTelefonoU');
+        }
+
+        if (section == "formConsultaExistencia") {
             //formulario de consulta de existencia
-            document.getElementsByName('txtNombre')[0].placeholder = translate('PLNombre');
-            document.getElementsByName('txtCorreo')[0].placeholder = translate('PLCorreo');
-            document.getElementsByName('txtNacionalidad')[0].placeholder = translate('PLNacionalidad');
-            document.getElementsByName('txtNIdentidad')[0].placeholder = translate('PLNIdentidad');
-            document.getElementsByName('txtTelefono')[0].placeholder = translate('PLTelefono');
-            document.getElementsByName('txtDireccion')[0].placeholder = translate('PLDireccion');
-            document.getElementsByName('txtProducto')[0].placeholder = translate('PLProducto');
-            document.getElementsByName('txtCantidad')[0].placeholder = translate('PLCantidad');
-            document.getElementsByName('txtPrecioUnitario')[0].placeholder = translate('PLPrecioUnitario');
+            document.getElementsByName('txtNombreCE')[0].placeholder = translate('PLNombreCE');
+            document.getElementsByName('txtCorreoCE')[0].placeholder = translate('PLCorreoCE');
+            document.getElementsByName('txtNacionalidadCE')[0].placeholder = translate('PLNacionalidadCE');
+            document.getElementsByName('txtNIdentidadCE')[0].placeholder = translate('PLNIdentidadCE');
+            document.getElementsByName('txtTelefonoCE')[0].placeholder = translate('PLTelefonoCE');
+            document.getElementsByName('txtDireccionCE')[0].placeholder = translate('PLDireccionCE');
+            document.getElementsByName('txtProductoCE')[0].placeholder = translate('PLProductoCE');
+            document.getElementsByName('txtCantidadCE')[0].placeholder = translate('PLCantidadCE');
+            document.getElementsByName('txtPrecioUnitarioCE')[0].placeholder = translate('PLPrecioUnitarioCE');
         }
     }
-
 
     //CARGAR EL IDIOMA DE LA PAGINA POR BOTON
     var check = document.querySelector(".check");

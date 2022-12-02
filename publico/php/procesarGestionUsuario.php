@@ -12,13 +12,13 @@
         </tr>';
 
         $tableUsuario .= '<tr>
-            <td>'.$_POST["txtNombre"].'</td>
-            <td>'.$_POST["txtApellido"].'</td>
-            <td>'.$_POST["txtNumeroIdentificacion"].'</td>
-            <td>'.$_POST["txtCorreo"].'</td>
-            <td>'.$_POST["txtNacionalidad"].'</td>
-            <td>'.$_POST["txtDireccion"].'</td>
-            <td>'.$_POST["txtTelefono"].'</td>
+            <td>'.$_POST["txtNombreU"].'</td>
+            <td>'.$_POST["txtApellidoU"].'</td>
+            <td>'.$_POST["txtNumeroIdentificacionU"].'</td>
+            <td>'.$_POST["txtCorreoU"].'</td>
+            <td>'.$_POST["txtNacionalidadU"].'</td>
+            <td>'.$_POST["txtDireccionU"].'</td>
+            <td>'.$_POST["txtTelefonoU"].'</td>
         </tr>';
    $tableUsuario.= '</table>';
 

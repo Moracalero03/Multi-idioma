@@ -19,18 +19,18 @@
 
         $tableExistencia .= '<tr>
             
-            <td>'.$_POST["txtNombre"].'</td>
-            <td>'.$_POST["txtCorreo"].'</td>
-            <td>'.$_POST["txtNacionalidad"].'</td>
-            <td>'.$_POST["txtNIdentidad"].'</td>
-            <td>'.$_POST["txtTelefono"].'</td>
-            <td>'.$_POST["txtDireccion"].'</td>
-            <td>'.$_POST["txtProducto"].'</td>
-            <td>'.$_POST["txtCantidad"].'</td>
-            <td>'.$_POST["txtPrecioUnitario"].'</td>
-            <td>'.$_POST["txtTotalIva"].'</td>
-            <td>'.$_POST["metodoPago"].'</td>
-            <td>'.$_POST["estado"].'</td>
+            <td>'.$_POST["txtNombreCE"].'</td>
+            <td>'.$_POST["txtCorreoCE"].'</td>
+            <td>'.$_POST["txtNacionalidadCE"].'</td>
+            <td>'.$_POST["txtNIdentidadCE"].'</td>
+            <td>'.$_POST["txtTelefonoCE"].'</td>
+            <td>'.$_POST["txtDireccionCE"].'</td>
+            <td>'.$_POST["txtProductoCE"].'</td>
+            <td>'.$_POST["txtCantidadCE"].'</td>
+            <td>'.$_POST["txtPrecioUnitarioCE"].'</td>
+            <td>'.$_POST["txtTotalIvaCE"].'</td>
+            <td>'.$_POST["metodoPagoCE"].'</td>
+            <td>'.$_POST["estadoCE"].'</td>
         </tr>';
         
         $tableExistencia.= '</table>';

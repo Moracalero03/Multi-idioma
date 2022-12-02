@@ -11,12 +11,12 @@
         </tr>';
 
         $tableCliente .= '<tr>
-            <td>'.$_POST["txtNombreP"].'</td>
-            <td>'.$_POST["txtCorreoP"].'</td>
+            <td>'.$_POST["txtNombreSP"].'</td>
+            <td>'.$_POST["txtCorreoSP"].'</td>
             <td>'.$_POST["sNacionalidad"].'</td>
-            <td>'.$_POST["txtIdentificacionP"].'</td>
-            <td>'.$_POST["txtTelefonoP"].'</td>
-            <td>'.$_POST["txtDireccionP"].'</td>
+            <td>'.$_POST["txtIdentificacionSP"].'</td>
+            <td>'.$_POST["txtTelefonoSP"].'</td>
+            <td>'.$_POST["txtDireccionSP"].'</td>
         </tr>';
         
         $tableCliente.= '</table>';
@@ -35,9 +35,9 @@
         for ($i=0; $i <count($_POST["sNombreProducto"]); $i++) { 
         $tableProducto .= '<tr>
             <td>'.$_POST["sNombreProducto"][$i].'</td>
-            <td>'.$_POST["txtCantidad"][$i].'</td>
+            <td>'.$_POST["txtCantidadSP"][$i].'</td>
             <td>'.$preciouni.'</td>
-            <td>'.$totaliva=$_POST['txtCantidad'][$i]*$preciouni.'</td>
+            <td>'.$totaliva=$_POST['txtCantidadSP'][$i]*$preciouni.'</td>
         </tr>';
         }
         
