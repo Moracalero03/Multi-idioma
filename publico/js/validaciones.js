@@ -85,6 +85,8 @@ $.getJSON("../publico/js/lang.json", function(json) {
     spanCorreo = document.getElementById('warningstCorreo');
     spanNacionalidad = document.getElementById('warningsNacionalidad');
     spanDireccion = document.getElementById('warningsDireccion');
+    //telefono
+    spanTelefono = document.getElementById('warningsTelefono');
 
 
     //span de consulta de existencia 

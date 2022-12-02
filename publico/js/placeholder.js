@@ -20,17 +20,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
     //     "translate": translate
     // }
 
-    // //TRADUCCION DE PLACEHOLDER USUARIO
-    // if ("<?php $datasection?>" == "formGestionUsuario") {
-        document.getElementsByName('txtNombreU')[0].placeholder = translate('PLNomCompletoU');
-        document.getElementsByName('txtApellidoU')[0].placeholder = translate('PLApellidoU');
-        document.getElementsByName('txtNumeroIdentificacionU')[0].placeholder = translate('PLNumIndentificacionU');
-        document.getElementsByName('txtCorreoU')[0].placeholder = translate('PLcorreoU');
-        document.getElementsByName('txtNacionalidadU')[0].placeholder = translate('PLNacionalidadU');
-        document.getElementsByName('txtDireccionU')[0].placeholder = translate('PLDireccionU');
-        document.getElementsByName('txtTelefonoU')[0].placeholder = translate('PLNumTelefonoU');
-        
-        // }
+    
 
 // //TRADUCCION DE PLACEHOLDER CONSULTA DE EXISTENCIA
     // if ("<?php $datasection?>" == "formConsultaExistencia") {
@@ -48,7 +38,19 @@ $.getJSON("../publico/js/lang.json", function(json) {
 
         // }
 
-
+// //TRADUCCION DE PLACEHOLDER USUARIO
+    // if ("<?php $datasection?>" == "formGestionUsuario") {
+        //id
+        document.getElementsByName('txtid')[0].placeholder = translate('placeholderId');
+        document.getElementsByName('txtNombreU')[0].placeholder = translate('PLNomCompletoU');
+        document.getElementsByName('txtApellidoU')[0].placeholder = translate('PLApellidoU');
+        document.getElementsByName('txtNumeroIdentificacionU')[0].placeholder = translate('PLNumIndentificacionU');
+        document.getElementsByName('txtCorreoU')[0].placeholder = translate('PLcorreoU');
+        document.getElementsByName('txtNacionalidadU')[0].placeholder = translate('PLNacionalidadU');
+        document.getElementsByName('txtDireccionU')[0].placeholder = translate('PLDireccionU');
+        document.getElementsByName('txtTelefonoU')[0].placeholder = translate('PLNumTelefonoU');
+        
+        // }
 
 
     // //TRADUCCION DE PLACEHOLDER
