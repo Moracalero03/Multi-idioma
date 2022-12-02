@@ -11,12 +11,12 @@
         </tr>';
 
         $tableCliente .= '<tr>
-            <td>'.$_POST["txtNombre"].'</td>
-            <td>'.$_POST["txtCorreo"].'</td>
+            <td>'.$_POST["txtNombreP"].'</td>
+            <td>'.$_POST["txtCorreoP"].'</td>
             <td>'.$_POST["sNacionalidad"].'</td>
-            <td>'.$_POST["txtIdentificacion"].'</td>
-            <td>'.$_POST["txtTelefono"].'</td>
-            <td>'.$_POST["txtDireccion"].'</td>
+            <td>'.$_POST["txtIdentificacionP"].'</td>
+            <td>'.$_POST["txtTelefonoP"].'</td>
+            <td>'.$_POST["txtDireccionP"].'</td>
         </tr>';
         
         $tableCliente.= '</table>';

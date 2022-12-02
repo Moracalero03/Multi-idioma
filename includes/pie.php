@@ -13,33 +13,28 @@
 				</div>
 			</div>
 		</div>
-</footer>
+</footer> 
 
-    <!-- jQuery -->
-	
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
 
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
 
-    </script> 
-	    <script>
-       
-    </script> 
-
-<script type="text/javascript">
+    <script type="text/javascript">
         $.getJSON('http://ip-api.com/json', function(data) {
             $('#pais').val(data.country);
             $('#ip').val(data.query);
             $('#codigoPais').val(data.countryCode);
         })
 
-        $().ready(function (e) {
+        $(document).ready(function (e) {
         var jsvar='<?=$lang?>';
 
         if ( jsvar=='es') {
@@ -51,6 +46,7 @@
                 stateSave: true,
                 "bDestroy": true})
             });
+
             addScript("../publico/js/validettaLang-es-ES.js");
 
         }else if (jsvar=='en') {
@@ -60,50 +56,51 @@
                 stateSave: true,
                 "bDestroy": true
             })
-            });
+            });  
+
+            // const validetta = document.getElementById('validetta');
+            // if(validetta!=null){
+            //     // validetta.remove();
+            //     validetta.setAttribute('disable', '');
+            // } 
+
         }
 
         function uncheck() {
             document.querySelector(".check").checked = false;
         }
 
-            function check() {
+        function check() {
             document.querySelector(".check").checked = true;
         } 
 
         });
-
         
         function addScript(url) {
+            var script = $("<script>", {
+                    src: url,
+                    type: "text/javascript", 
+                    id: "validetta"
+                });
 
-        var script = $("<script>", {
+            $("footer").append(script);
+        }  
 
-            src: url,
-
-            type: "text/javascript"
-
-        });
-
-        $("footer").append(script);
-
-        }
     </script>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script> 
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.min.js"></script>
-    <!-- <script src="../publico/js/alertas.js"></script>
-    <script src="../publico/js/validaciones.js"></script> -->
+    <script src="../publico/js/validaciones.js"></script> 
     <script src="../publico/js/validetta.min.js"></script>
-    <!-- <script src="../publico/js/validettaLang-es-ES.js"></script> -->
     <script src="../publico/js/placeholder.js"></script>
     <script src="../publico/js/traduccion.js"></script>    
-    <script src="../publico/js/dinamico.js"></script>
-    <script src="../publico/js/formConsultaExistencia.js"></script>
-    <script src="../publico/js/formGestionUsuario.js"></script>
+    <script src="../publico/js/alertas.js"></script> 
+    
+<!-- 
+    <script id="v"></script> -->
 
 </body>
 </html>

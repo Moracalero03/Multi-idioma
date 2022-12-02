@@ -13,7 +13,7 @@ include('../includes/cabecera.php');
             <table id="example" class="table table-light table-striped table-bordered dt-responsive wrap" style="width:100%">
         <thead>
             <tr>
-                <th class="lang" key="numeroFactura" data-section="formConsultaExistencia" data-value="numeroFactura">Numero de factura</th>
+                <th class="lang" key="numeroFactura" data-section="formConsultaExistencia" data-value="numeroFactura">Número de factura</th>
                 <th class="lang" key="cliente" data-section="formConsultaExistencia" data-value="cliente">Cliente</th>
                 <th class="lang" key="comprobante" data-section="formConsultaExistencia" data-value="comprobante">Comprobante</th>
                 <th class="lang" key="impuesto" data-section="formConsultaExistencia" data-value="impuesto">Impuesto</th>
@@ -127,7 +127,7 @@ include('../includes/cabecera.php');
                 <button type="button" class="btnDetalleExistencia bi bi-pen lang" key="detalles"  data-section="formConsultaExistencia" data-value="detalles" data-toggle="modal" data-target="#modal1" >Detalles</button>
                 <button type="button" class="btnReporteExistencia bi bi-pencil-square lang" key="reporte"  data-section="formConsultaExistencia" data-value="reporte">Reporte</button>
                 <button type="button" class="btnAnularExistencia  bi bi-x-circle lang"  key="anular"  data-section="formConsultaExistencia" data-value="anular">Anular</button>
-   
+
             </td>
             </tr>
             <tr>
@@ -142,7 +142,7 @@ include('../includes/cabecera.php');
                 <button type="button" class="btnDetalleExistencia bi bi-pen lang" key="detalles"  data-section="formConsultaExistencia" data-value="detalles" data-toggle="modal" data-target="#modal1" >Detalles</button>
                 <button type="button" class="btnReporteExistencia bi bi-pencil-square lang" key="reporte"  data-section="formConsultaExistencia" data-value="reporte">Reporte</button>
                 <button type="button" class="btnAnularExistencia  bi bi-x-circle lang"  key="anular"  data-section="formConsultaExistencia" data-value="anular">Anular</button>
-                   
+                
             </td>
             </tr>
             <tr>
@@ -172,7 +172,7 @@ include('../includes/cabecera.php');
                 <button type="button" class="btnDetalleExistencia bi bi-pen lang" key="detalles"  data-section="formConsultaExistencia" data-value="detalles" data-toggle="modal" data-target="#modal1" >Detalles</button>
                 <button type="button" class="btnReporteExistencia bi bi-pencil-square lang" key="reporte"  data-section="formConsultaExistencia" data-value="reporte">Reporte</button>
                 <button type="button" class="btnAnularExistencia  bi bi-x-circle lang"  key="anular"  data-section="formConsultaExistencia" data-value="anular">Anular</button>
-   
+
             </td>
             </tr>
         </tbody>
@@ -225,7 +225,7 @@ include('../includes/cabecera.php');
     </div>
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
-        <label class="lang" key="nacionalidad" data-section=""  data-value="nacionalidad">Nacionalidad</label>
+        <label class="lang" key="nacionalidad" data-section="formConsultaExistencia"  data-value="nacionalidad">Nacionalidad</label>
         <input type="text" name="txtNacionalidad" data-seccion="formConsultaExistencia"  data-valor="placeholderNacionalidad">
         <span class="warnings" id="warningsnacionalidad"  data-section="formConsultaExistencia"  data-value="spannacionalidad"></span>
     </div>
@@ -278,7 +278,7 @@ include('../includes/cabecera.php');
     </div>
 
     <div class="col-lg-6 col-md-12 mt-1 mb-1">
-        <label class="lang" key="metodoPago" data-section="formConsultaExistencia"  data-value="metodoPago">Metodo de pago</label><br>
+        <label class="lang" key="metodoPago" data-section="formConsultaExistencia"  data-value="metodoPago">Método de pago</label><br>
         <select name="metodoPago" data-seccion="formConsultaExistencia"  data-valor="">
         <option class="lang" key="efectivo" data-section="formConsultaExistencia" data-value="efectivo" value="Efectivo">Efectivo</option>
         <option class="lang" key="tarjeta" data-section="formConsultaExistencia"  data-value="tarjeta" value="Tarjeta">Tarjeta</option>
@@ -288,7 +288,7 @@ include('../includes/cabecera.php');
     <div id="" class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="estado" data-section="formConsultaExistencia"  data-value="estado">Estado</label><br>
         <select  name="estado" data-seccion="formConsultaExistencia"  data-valor="">
-        <option class="lang" key="activo" data-section="formConsultaExistencia"  data-value="activo" value="Activo ">Activo</option>
+        <option class="lang" key="activo" data-section="formConsultaExistencia"  data-value="activo" value="Activo">Activo</option>
         <option class="lang" key="noActivo" data-section="formConsultaExistencia"  data-value="noActivo" value="No activo">No activo</option>
     
     </select>
@@ -299,7 +299,7 @@ include('../includes/cabecera.php');
 </div>
     <div class="modal-footer">
     <button type="submit" class="btn btn-primary lang"  key="enviar" data-section="formConsultaExistencia"  data-value="enviar">Enviar</button>
-       <button type="button" class="btn btn-secondary lang" data-dismiss="modal"  key="cerrar" data-section="formConsultaExistencia"  data-value="cerrar">Cerrar</button>
+    <button type="button" class="btn btn-secondary lang" data-dismiss="modal"  key="cerrar" data-section="formConsultaExistencia"  data-value="cerrar">Cerrar</button>
         
     </div>
     </form> 

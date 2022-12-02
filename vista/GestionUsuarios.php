@@ -15,7 +15,7 @@ include('../includes/cabecera.php');
             <tr>
                 
                 <th class="lang" key="id" data-section="formGestionUsuario" data-value="id">ID</th>
-                <th class="lang" key="nombre" data-section="formGestionUsuario" data-value="">Nombre</th>
+                <th class="lang" key="nombre" data-section="formGestionUsuario" data-value="nombre">Nombre</th>
                 <th class="lang" key="apellido" data-section="formGestionUsuario" data-value="apellido">Apellido</th>
                 <th class="lang" key="numeroidentificacion" data-section="formGestionUsuario" data-value="numeroidentificacion">Numero de identificacion</th>
                 <th class="lang" key="correo" data-section="formGestionUsuario" data-value="correo">Correo</th>
@@ -102,7 +102,7 @@ include('../includes/cabecera.php');
         <div class="modal-content">
 
         <div class="modal-header">
-            <h4 class="modal-title lang" key="gestionUsuario"  data-section="formGestionUsuario" data-value="gestionUsuario">Gestion de Usuario</h4>
+            <h4 class="modal-title lang" key="gestionUsuario"  data-section="formGestionUsuario" data-value="gestionUsuario">Gestión de Usuario</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -128,12 +128,12 @@ include('../includes/cabecera.php');
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="apellido" data-section="formGestionUsuario"  data-value="apellido">Apellido</label>
-        <input type="text" name="txtApellido" data-seccion="formGestionUsuario"  data-valor="placeholderApellido">
+        <input type="text" name="txtApellido" data-seccion="formGestionUsuario"  data-valor="placeholderApellido"  data-validetta="required">
         <span class="warnings" id="warningsApellido"  data-section="formGestionUsuario"  data-value="spanApellido"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
-        <label class="lang" key="numeroIdentificacion" data-section="formGestionUsuario"  data-value="numeroIdentificacion">Numero de Identidad</label>
+        <label class="lang" key="numeroIdentificacion" data-section="formGestionUsuario"  data-value="numeroIdentificacion">Número de Identidad</label>
         <input type="text" name="txtNumeroIdentificacion" data-seccion="formGestionUsuario"  data-valor="placeholderNumeroIdentificacion" data-validetta="required">
         <span class="warnings" id="warningsNumeroIdentificacion"  data-section="formGestionUsuario"  data-value="spanNumeroIdentificacion"></span>
     </div>                        
@@ -171,7 +171,7 @@ include('../includes/cabecera.php');
 </div>
     <div class="modal-footer">
     <button type="submit" class="btn btn-primary lang"  key="enviar" data-section="formGestionUsuario"  data-value="enviar">Enviar</button>
-       <button type="button" class="btn btn-secondary lang" data-dismiss="modal"  key="cerrar" data-section="formGestionUsuario"  data-value="cerrar">Cerrar</button>
+    <button type="button" class="btn btn-secondary lang" data-dismiss="modal"  key="cerrar" data-section="formGestionUsuario"  data-value="cerrar">Cerrar</button>
         
     </div>
     </form> 

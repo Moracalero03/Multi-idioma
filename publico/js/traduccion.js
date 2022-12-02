@@ -21,36 +21,21 @@ var check = document.querySelector(".check");
 check.addEventListener('click', idioma);
 
 function idioma() {
-    // var jsvar = '<?=$lang?>';
-    // console.log(jsvar)
     let id = check.checked;
     if (id == true) {
 
         $(document).ready(function() {
             $('#example').DataTable({
-                "language": {
-                    "url": "//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"
-                },
-                stateSave: true,
-                "bDestroy": true
-            })
-
-            addScript("../publico/js/validettaLang-es-ES.js");
+                    "language": {
+                        "url": "//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"
+                    },
+                    stateSave: true,
+                    "bDestroy": true
+                })
+                // addScript("../publico/js/validettaLang-es-ES.js");
         });
 
-        function addScript(url) {
 
-            var script = $("<script>", {
-
-                src: url,
-
-                type: "text/javascript"
-
-            });
-
-            $("footer").append(script);
-
-        }
         //TRADUCCIONES DE LOS DATA-SECTION
         const btnElement = document.getElementById("idioma");
 
@@ -79,6 +64,16 @@ function idioma() {
                 stateSave: true,
                 "bDestroy": true
             })
+
+            // const validetta = document.getElementById('validetta');
+            // validetta.remove(); 
+
+            // const validetta = document.getElementById('validetta');
+            // if (validetta != null) {
+            //     // validetta.remove();
+            //     validetta.setAttribute('disable', '');
+            // }
+
         });
         //TRADUCCIONES DE LOS DATA-SECTION
         const btnElement = document.getElementById("idioma");
@@ -102,3 +97,13 @@ function idioma() {
         });
     }
 };
+
+// function addScript(url) {
+//     var script = $("<script>", {
+//         src: url,
+//         type: "text/javascript",
+//         id: "validetta"
+//     });
+
+//     $("#v").append(script);
+// }

@@ -11,10 +11,10 @@
 
         $tableFactura .= '<tr>
             <td>'.$_POST["sMetodoPago"].'</td>
-            <td>'.$_POST["txtNomTarjeta"].'</td>
-            <td>'.$_POST["txtNumTarjeta"].'</td>
+            <td>'.$_POST["txtNomTarjetaP"].'</td>
+            <td>'.$_POST["txtNumTarjetaP"].'</td>
             <td>'.$_POST["txtFechaVence"].'</td>
-            <td>'.$_POST["txtComprobante"].'</td>
+            <td>'.$_POST["txtComprobanteP"].'</td>
         </tr>';
         
         $tableFactura.= '</table>';

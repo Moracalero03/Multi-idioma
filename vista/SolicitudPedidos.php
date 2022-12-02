@@ -9,7 +9,8 @@ $col4="col-4 col-sm-6 col-md-6 col-lg-6";
 $col6="col-sm-6 col-md-6 col-lg-6";
 
 include('../includes/cabecera.php');
-?>
+?> 
+
     <div class="col-lg-12">
     <form action="../publico/php/procesarProductos.php" method="POST" id="frmDinamico">                    
                 <div class="p-4">
@@ -20,12 +21,12 @@ include('../includes/cabecera.php');
                     <div class="row">
                     <div class="<?=$col4?>">
                     <p class="lang" key="NomCompleto" data-section="formSolicitudPedidos" data-value="NomCompleto">Nombre completo</p>
-                    <input class="form-control" type="text" name="txtNombre" data-seccion="formSolicitudPedidos"  data-valor="PLNomCompleto" data-validetta="required">
+                    <input class="form-control" type="text" name="txtNombreP" data-seccion="formSolicitudPedidos"  data-valor="PLNomCompletoP" data-validetta="required">
                     </div>
 
                     <div class="<?=$col4?>">
                     <p class="lang" key="correo" data-section="formSolicitudPedidos" data-value="correo">Correo electrónico</p>
-                    <input class="form-control" type="email" name="txtCorreo" data-seccion="formSolicitudPedidos"  data-valor="PLcorreo" data-validetta="required">
+                    <input class="form-control" type="email" name="txtCorreoP" data-seccion="formSolicitudPedidos"  data-valor="PLcorreoP" data-validetta="required">
                     </div>  
                     </div>
 
@@ -38,21 +39,21 @@ include('../includes/cabecera.php');
                     </div>
                     <div class="<?=$col4?>">
                     <p class="lang" key="NumIndentificacion" data-section="formSolicitudPedidos" data-value="NumIndentificacion">Número de identificación</p>
-                    <input class="form-control" type="text" name="txtIdentificacion" data-seccion="formSolicitudPedidos"  data-valor="PLNumIndentificacion" data-validetta="required">
+                    <input class="form-control" type="text" name="txtIdentificacionP" data-seccion="formSolicitudPedidos"  data-valor="PLNumIndentificacionP" data-validetta="required">
                     </div>
                     </div>
 
                     <div class="row">
                     <div class="<?=$col4?>">
                     <p class="lang" key="NumTelefono" data-section="formSolicitudPedidos" data-value="NumTelefono">Número de teléfono</p>
-                    <input class="form-control" type="text" name="txtTelefono" data-seccion="formSolicitudPedidos"  data-valor="PLNumTelefono" data-validetta="required">
+                    <input class="form-control" type="text" name="txtTelefonoP" data-seccion="formSolicitudPedidos"  data-valor="PLNumTelefonoP" data-validetta="required">
                     </div>
                     <div class="<?=$col4?>">
                     <p class="lang" key="Direccion" data-section="formSolicitudPedidos" data-value="Direccion">Dirección</p>
-                    <textarea class="form-control" name="txtDireccion" cols="15" rows="1" data-seccion="formSolicitudPedidos"  data-valor="PLDireccion" data-validetta="required"></textarea>
+                    <textarea class="form-control" name="txtDireccionP" cols="15" rows="1" data-seccion="formSolicitudPedidos"  data-valor="PLDireccionP" data-validetta="required"></textarea>
                     </div>
                     </div>
-            <!-- </form> -->
+
                 </div> 
 
                 <div class="p-4">
@@ -68,7 +69,7 @@ include('../includes/cabecera.php');
 
                     <div class="row">
                     <div class="<?=$col8?>">
-                <!-- <form action="../publico/php/procesarProductos.php" method="POST" id="frmDinamico">                     -->
+                
                     <table class="table table-info table-responsive-sm ">
                         <tr>
                             <th class="lang" key="NombreT" data-section="formSolicitudPedidos" data-value="NombreT">Nombre</th>
@@ -142,14 +143,14 @@ include('../includes/cabecera.php');
                             </div>
                             <div class="<?=$col6?>">
                                 <p class="lang" key="NomTarjeta" data-section="formSolicitudPedidos" data-value="NomTarjeta">Nombre de la tarjeta</p>
-                                <input class="form-control" type="text" name="txtNomTarjeta" data-seccion="formSolicitudPedidos"  data-valor="PLNomTarjeta" data-validetta="required">
+                                <input class="form-control" type="text" name="txtNomTarjetaP" data-seccion="formSolicitudPedidos"  data-valor="PLNomTarjetaP" data-validetta="required">
                             </div>
                             </div>
 
                             <div class="row">
                             <div class="<?=$col6?>">
                                 <p class="lang" key="NumTarjeta" data-section="formSolicitudPedidos" data-value="NumTarjeta">Número de tarjeta</p>
-                                <input class="form-control" type="text" name="txtNumTarjeta" data-seccion="formSolicitudPedidos"  data-valor="PLNumTarjeta" data-validetta="required">
+                                <input class="form-control" type="text" name="txtNumTarjetaP" data-seccion="formSolicitudPedidos"  data-valor="PLNumTarjetaP" data-validetta="required">
                             </div>
                             <div class="<?=$col6?>">
                                 <p class="lang" key="FechaVence" data-section="formSolicitudPedidos" data-value="FechaVence">Fecha de vencimiento</p>
@@ -159,7 +160,7 @@ include('../includes/cabecera.php');
                             <div class="row">
                             <div class="<?=$col6?>">
                                 <p class="lang" key="Comprobante" data-section="formSolicitudPedidos" data-value="Comprobante">Comprobante</p>
-                                <input class="form-control" type="text" name="txtComprobante" data-seccion="formSolicitudPedidos"  data-valor="PLComprobante" readonly>
+                                <input class="form-control" type="text" name="txtComprobanteP" data-seccion="formSolicitudPedidos"  data-valor="PLComprobanteP" readonly>
                             </div>
                             </div>
 
@@ -174,12 +175,13 @@ include('../includes/cabecera.php');
                     </form>
                     </div>
                     <div class="modal-footer">
-                        
+                    
                     </div>
-                    </div>
+                    </div> 
+
+                    
                 </div>
                 </div>
-                
 <?php
     include('../includes/pie.php');
 ?>
