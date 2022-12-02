@@ -12,7 +12,9 @@ cantidad = document.getElementsByName("txtCantidad").value;
 precioUnitario= document.getElementsByName("txtPrecioUnitario").value;
 totalIva= document.getElementsByName("txtTotalIva").value;
 
+//
 
+//
 
 
 //span

@@ -89,21 +89,24 @@
         }
     </script>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script> 
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.min.js"></script>
-    <!-- <script src="../publico/js/alertas.js"></script>
-    <script src="../publico/js/validaciones.js"></script> -->
+    <!-- <script src="../publico/js/alertas.js"></script>-->
+    <script src="../publico/js/validaciones.js"></script> 
     <script src="../publico/js/validetta.min.js"></script>
-    <!-- <script src="../publico/js/validettaLang-es-ES.js"></script> -->
-    <script src="../publico/js/placeholder.js"></script>
+    <!--<script src="../publico/js/placeholder.js"></script>-->
     <script src="../publico/js/traduccion.js"></script>    
     <script src="../publico/js/dinamico.js"></script>
     <script src="../publico/js/formConsultaExistencia.js"></script>
     <script src="../publico/js/formGestionUsuario.js"></script>
+    <script src="../publico/js/fcAlerta.js"></script>
+
+
+
 
 </body>
 </html>

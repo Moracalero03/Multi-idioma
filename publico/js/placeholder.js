@@ -20,9 +20,40 @@ $.getJSON("../publico/js/lang.json", function(json) {
     //     "translate": translate
     // }
 
+    // //TRADUCCION DE PLACEHOLDER USUARIO
+    // if ("<?php $datasection?>" == "formGestionUsuario") {
+        document.getElementsByName('txtNombreU')[0].placeholder = translate('PLNomCompletoU');
+        document.getElementsByName('txtApellidoU')[0].placeholder = translate('PLApellidoU');
+        document.getElementsByName('txtNumeroIdentificacionU')[0].placeholder = translate('PLNumIndentificacionU');
+        document.getElementsByName('txtCorreoU')[0].placeholder = translate('PLcorreoU');
+        document.getElementsByName('txtNacionalidadU')[0].placeholder = translate('PLNacionalidadU');
+        document.getElementsByName('txtDireccionU')[0].placeholder = translate('PLDireccionU');
+        document.getElementsByName('txtTelefonoU')[0].placeholder = translate('PLNumTelefonoU');
+        
+        // }
+
+// //TRADUCCION DE PLACEHOLDER CONSULTA DE EXISTENCIA
+    // if ("<?php $datasection?>" == "formConsultaExistencia") {
+       
+        document.getElementsByName('txtNombreCE')[0].placeholder = translate('PLNomCompletoCE');
+        document.getElementsByName('txtCorreoCE')[0].placeholder = translate('PLCorreoCE');
+        document.getElementsByName('txtNacionalidadCE')[0].placeholder = translate('PLNacionalidadCE');
+        document.getElementsByName('txtNIdentidadCE')[0].placeholder = translate('PLNIdentidadCE');
+        document.getElementsByName('txtTelefonoCE')[0].placeholder = translate('PLTelefonoCE');
+        document.getElementsByName('txtDireccionCE')[0].placeholder = translate('PLDireccionCE');
+        document.getElementsByName('txtProductoCE')[0].placeholder = translate('PLProductoCE');
+        document.getElementsByName('txtCantidadCE')[0].placeholder = translate('PLCantidadCE');
+        document.getElementsByName('txtPrecioUnitarioCE')[0].placeholder = translate('PLPrecioUnitarioCE');
+       
+
+        // }
+
+
+
 
     // //TRADUCCION DE PLACEHOLDER
     // if ("<?php $datasection?>" == "formSolicitudPedidos") {
+       
     document.getElementsByName('txtNombre')[0].placeholder = translate('PLNomCompleto');
     document.getElementsByName('txtCorreo')[0].placeholder = translate('PLcorreo');
     document.getElementsByName('txtIdentificacion')[0].placeholder = translate('PLNumIndentificacion');
@@ -31,34 +62,12 @@ $.getJSON("../publico/js/lang.json", function(json) {
     document.getElementsByName('txtNumTarjeta')[0].placeholder = translate('PLNumTarjeta');
     document.getElementsByName('txtDireccion')[0].placeholder = translate('PLDireccion');
     document.getElementsByName('txtComprobante')[0].placeholder = translate('PLComprobante');
+
+
     // }
 
-// //TRADUCCION DE PLACEHOLDER USUARIO
-    // if ("<?php $datasection?>" == "formGestionUsuario") {
-        
-        document.getElementsByName('txtNombre')[0].placeholder = translate('PLNombre');
-        document.getElementsByName('txtApellido')[0].placeholder = translate('PLApellido');
-        document.getElementsByName('txtNumeroIdentificacion')[0].placeholder = translate('PLNumIndentificacion');
-        document.getElementsByName('txtCorreo')[0].placeholder = translate('PLCorreo');
-        document.getElementsByName('txtNacionalidad')[0].placeholder = translate('PLNacionalidad');
-        document.getElementsByName('txtDireccion')[0].placeholder = translate('PLDireccion');
-        document.getElementsByName('txtTelefono')[0].placeholder = translate('PLTelefono');
-        // }
 
-// //TRADUCCION DE PLACEHOLDER CONSULTA DE EXISTENCIA
-    // if ("<?php $datasection?>" == "formConsultaExistencia") {
-       
-        document.getElementsByName('txtNombre')[0].placeholder = translate('PLNombre');
-        document.getElementsByName('txtCorreo')[0].placeholder = translate('PLCorreo');
-        document.getElementsByName('txtNacionalidad')[0].placeholder = translate('PLNacionalidad');
-        document.getElementsByName('txtNIdentidad')[0].placeholder = translate('PLNIdentidad');
-        document.getElementsByName('txtTelefono')[0].placeholder = translate('PLTelefono');
-        document.getElementsByName('txtDireccion')[0].placeholder = translate('PLDireccion');
-        document.getElementsByName('txtProducto')[0].placeholder = translate('PLProducto');
-        document.getElementsByName('txtCantidad')[0].placeholder = translate('PLCantidad');
-        document.getElementsByName('txtPrecioUnitario')[0].placeholder = translate('PLPrecioUnitario');
-       
-        // }
+
 
 
     //CARGAR EL IDIOMA DE LA PAGINA POR BOTON

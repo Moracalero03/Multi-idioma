@@ -66,6 +66,7 @@ jQuery(function() {
                 Swal.fire({
                     text: 'Cancelado'
                 })
+                
             }
         })
     }

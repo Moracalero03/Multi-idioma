@@ -39,6 +39,7 @@ jQuery(function() {
                 Swal.fire({
                     text: 'Cancelado'
                 })
+                $('#exampleModal').modal('hide')
             }
         })
     }
