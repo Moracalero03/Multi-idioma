@@ -70,6 +70,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
             spanCorreo = document.getElementById('warningstCorreo');
             spanNacionalidad = document.getElementById('warningsNacionalidad');
             spanDireccion = document.getElementById('warningsDireccion');
+            spanTelefono = document.getElementById('warningsTelefono');
 
             if (txtid == null) {
                 spanId.innerHTML = translate('spanId');
@@ -92,6 +93,10 @@ $.getJSON("../publico/js/lang.json", function(json) {
             }
             if (txtDireccionU == null) {
                 spanDireccion.innerHTML = translate('spanDireccion');
+            }
+
+            if (txtTelefonoU == null) {
+                spanTelefono.innerHTML = translate('spanTelefono');
             }
         }
 
@@ -129,6 +134,9 @@ $.getJSON("../publico/js/lang.json", function(json) {
             }
             if (txtNacionalidadCE == null) {
                 spannacionalidadCE.innerHTML = translate('spannacionalidadCE');
+            }
+            if (txtNIdentidadCE == null) {
+                spannumeroidentidadCE.innerHTML = translate('spannumeroidentidadCE');
             }
             if (txtTelefonoCE == null) {
                 spantelefonoCE.innerHTML = translate('spantelefonoCE');

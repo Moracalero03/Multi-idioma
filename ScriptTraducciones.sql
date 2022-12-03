@@ -412,4 +412,15 @@ insert into traduccion(id, idioma, llave, valor) values
 ('formSolicitudPedidos','en','spanCorreoElectronicoSP','E-mail address not entered correctly'),
 ('formSolicitudPedidos','en','spanNumIndentificacionSP','ID number not entered correctly'),
 ('formSolicitudPedidos','en','spanTelefonoSP','Telephone number not entered correctly'),
-('formSolicitudPedidos','en','spanDireccionSP','Address not entered correctly');
+('formSolicitudPedidos','en','spanDireccionSP','Address not entered correctly'),
+
+
+/*  el de iva*/
+
+('formConsultaExistencia','es','placeholderTotalIva','Ingrese el total con IVA'),
+
+('formConsultaExistencia','en','placeholderTotalIva','Enter total including VAT'),
+
+('formGestionUsuario','es','placeholderId','Ingrese su ID'), 
+
+('formGestionUsuario','en','placeholderId','Enter your ID');

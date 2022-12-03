@@ -36,6 +36,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
 
         if (section == "formGestionUsuario") {
             //formulario de gestion de usuario
+            document.getElementsByName('txtid')[0].placeholder = translate('placeholderId');
             document.getElementsByName('txtNombreU')[0].placeholder = translate('PLNomCompletoU');
             document.getElementsByName('txtApellidoU')[0].placeholder = translate('PLApellidoU');
             document.getElementsByName('txtNumeroIdentificacionU')[0].placeholder = translate('PLNumIndentificacionU');
@@ -56,6 +57,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
             document.getElementsByName('txtProductoCE')[0].placeholder = translate('PLProductoCE');
             document.getElementsByName('txtCantidadCE')[0].placeholder = translate('PLCantidadCE');
             document.getElementsByName('txtPrecioUnitarioCE')[0].placeholder = translate('PLPrecioUnitarioCE');
+            document.getElementsByName('txtTotalIvaCE')[0].placeholder = translate('placeholderTotalIva');
         }
     }
 
