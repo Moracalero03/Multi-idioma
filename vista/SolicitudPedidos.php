@@ -181,7 +181,8 @@ $(document).ready(function() {
                             <div class="<?=$col6?>">
                                 <p class="lang" key="FechaVence" data-section="formSolicitudPedidos" data-value="FechaVence">Fecha de vencimiento</p>
                                 <!-- <input class="form-control" type="month" name="txtFechaVenceSP"></input> --> 
-                                <input type="text" class="form-control" id="yearpicker">
+                               
+                                <input type="text" id="yearpicker" name="monthpick[]">
                                 <span class="warnings" id="warningsFechaVence"  data-section="formSolicitudPedidos"  data-value="spanFechaVence"></span>
                             </div>
                             </div>
@@ -210,6 +211,27 @@ $(document).ready(function() {
                     
                 </div>
                 </div>
+<style type="text/css">
+select.monthpick {
+margin-right: 3px;
+border: 2px solid blue;
+border-radius: 5px;
+ 
+height:38px;
+width:100px; 
+
+}
+
+select.yearpick {
+margin-left: 3px;
+border: 2px solid blue;
+border-radius: 5px; 
+height:38px;
+  width:100px;
+
+}
+</style>
+               
 <?php
     include('../includes/pie.php');
 ?>
