@@ -117,37 +117,37 @@ include('../includes/cabecera.php');
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="id" data-section="formGestionUsuario"  data-value="id">ID</label><br>
         <input type="text" name="txtid" data-seccion="formGestionUsuario"  data-valor="placeholderId" data-validetta="required">
-        <span class="warnings" id="warningsId"  data-section="formGestionUsuario"  data-value="spanId"></span>
+        <span class="warnings lang" key="spanId" id="warningsId"  data-section="formGestionUsuario"  data-value="spanId"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="nombre" data-section="formGestionUsuario"  data-value="nombre">Nombre</label>
         <input type="text" name="txtNombreU" data-seccion="formGestionUsuario"  data-valor="PLNomCompletoU" data-validetta="required">
-        <span class="warnings" id="warningsNombre"  data-section="formGestionUsuario"  data-value="spanNombre"></span>
+        <span class="warnings lang" key="spanNombre" id="warningsNombre"  data-section="formGestionUsuario"  data-value="spanNombre"></span>
     </div>
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="apellido" data-section="formGestionUsuario"  data-value="apellido">Apellido</label>
         <input type="text" name="txtApellidoU" data-seccion="formGestionUsuario"  data-valor="PLApellidoU" data-validetta="required">
-        <span class="warnings" id="warningsApellido"  data-section="formGestionUsuario"  data-value="spanApellido"></span>
+        <span class="warnings lang" key="spanApellido" id="warningsApellido"  data-section="formGestionUsuario"  data-value="spanApellido"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="numeroIdentificacion" data-section="formGestionUsuario"  data-value="numeroIdentificacion">Numero de Identidad</label>
         <input type="text" name="txtNumeroIdentificacionU" data-seccion="formGestionUsuario"  data-valor="PLNumIndentificacionU" data-validetta="required">
-        <span class="warnings" id="warningsNumeroIdentificacion"  data-section="formGestionUsuario"  data-value="spanNumeroIdentificacion"></span>
+        <span class="warnings lang" key="spanNumeroIdentificacion" id="warningsNumeroIdentificacion"  data-section="formGestionUsuario"  data-value="spanNumeroIdentificacion"></span>
     </div>                        
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="correo" data-section="formGestionUsuario"  data-value="correo">Correo</label>
         <input type="email" name="txtCorreoU" data-seccion="formGestionUsuario"  data-valor="PLcorreoU" data-validetta="required">
-        <span class="warnings" id="warningstCorreo"  data-section="formGestionUsuario"  data-value="spanCorreo"></span>
+        <span class="warnings lang" key="spanCorreo" id="warningstCorreo"  data-section="formGestionUsuario"  data-value="spanCorreo"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="nacionalidad" data-section="formGestionUsuario"  data-value="nacionalidad">Nacionalidad</label>
         <input type="text" name="txtNacionalidadU" data-seccion="formGestionUsuario"  data-valor="PLNacionalidadU" data-validetta="required">
-        <span class="warnings" id="warningsNacionalidad"  data-section="formGestionUsuario"  data-value="spanNacionalidad"></span>
+        <span class="warnings lang" key="spanNacionalidad" id="warningsNacionalidad"  data-section="formGestionUsuario"  data-value="spanNacionalidad"></span>
     </div>
 
     
@@ -155,13 +155,13 @@ include('../includes/cabecera.php');
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="direccion" data-section="formGestionUsuario"  data-value="direccion">Direccion</label>
         <input type="text" name="txtDireccionU" data-seccion="formGestionUsuario"  data-valor="PLDireccionU" data-validetta="required">
-        <span class="warnings" id="warningsDireccion"  data-section="formGestionUsuario"  data-value="spanDireccion"></span>
+        <span class="warnings lang" key="spanDireccion" id="warningsDireccion"  data-section="formGestionUsuario"  data-value="spanDireccion"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="telefono" data-section="formGestionUsuario"  data-value="telefono">Telefono</label>
         <input type="text" name="txtTelefonoU" data-seccion="formGestionUsuario"  data-valor="PLNumTelefonoU" data-validetta="required">
-        <span class="warnings" id="warningsTelefono"  data-section="formGestionUsuario"  data-value="spanTelefono"></span>
+        <span class="warnings lang" key="spanTelefono" id="warningsTelefono"  data-section="formGestionUsuario"  data-value="spanTelefono"></span>
     </div>
 
     

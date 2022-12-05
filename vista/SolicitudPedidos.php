@@ -11,16 +11,6 @@ $col6="col-sm-6 col-md-6 col-lg-6";
 include('../includes/cabecera.php');
 ?> 
 
-<script>
-$(document).ready(function() {
-	$('#yearpicker').monthpicker({
-        'lang': 'es',
-        'minYear': 2022,
-        'maxYear': 2050
-    });
-});
-</script> 
-
     <div class="col-lg-12">
     <form action="../publico/php/<?php echo key($langs) ?>-procesarProductos.php" method="POST" id="frmDinamico">                    
                 <div class="p-4">
@@ -33,14 +23,14 @@ $(document).ready(function() {
                     <p class="lang" key="NomCompleto" data-section="formSolicitudPedidos" data-value="NomCompleto">Nombre completo</p>
                     <input class="form-control" type="text" name="txtNombreSP" data-seccion="formSolicitudPedidos"  data-valor="PLNomCompletoSP" data-validetta="required">
 
-                    <span class="warnings" id="warningsNombreCompletoSP"  data-section="formSolicitudPedidos"  data-value="spanNombreCompletoSP"></span>
+                    <span class="warnings lang" key="spanNombreCompletoSP" id="warningsNombreCompletoSP"  data-section="formSolicitudPedidos"  data-value="spanNombreCompletoSP"></span>
                     </div>
 
                     <div class="<?=$col4?>">
                     <p class="lang" key="correo" data-section="formSolicitudPedidos" data-value="correo">Correo electrónico</p>
                     <input class="form-control" type="email" name="txtCorreoSP" data-seccion="formSolicitudPedidos"  data-valor="PLcorreoSP" data-validetta="required">
 
-                    <span class="warnings" id="warningsCorreoElectronicoSP"  data-section="formSolicitudPedidos"  data-value="spanCorreoElectronicoSP"></span>
+                    <span class="warnings lang" key="spanCorreoElectronicoSP" id="warningsCorreoElectronicoSP"  data-section="formSolicitudPedidos"  data-value="spanCorreoElectronicoSP"></span>
                     </div>  
                     </div>
 
@@ -55,7 +45,7 @@ $(document).ready(function() {
                     <p class="lang" key="NumIndentificacion" data-section="formSolicitudPedidos" data-value="NumIndentificacion">Número de identificación</p>
                     <input class="form-control" type="text" name="txtIdentificacionSP" data-seccion="formSolicitudPedidos"  data-valor="PLNumIndentificacionSP" data-validetta="required">
 
-                    <span class="warnings" id="warningsNumIndentificacionSP"  data-section="formSolicitudPedidos"  data-value="spanNumIndentificacionSP"></span>
+                    <span class="warnings lang" key="spanNumIndentificacionSP" id="warningsNumIndentificacionSP"  data-section="formSolicitudPedidos"  data-value="spanNumIndentificacionSP"></span>
                     </div>
                     </div>
 
@@ -64,13 +54,13 @@ $(document).ready(function() {
                     <p class="lang" key="NumTelefono" data-section="formSolicitudPedidos" data-value="NumTelefono">Número de teléfono</p>
                     <input class="form-control" type="text" name="txtTelefonoSP" data-seccion="formSolicitudPedidos"  data-valor="PLNumTelefonoSP" data-validetta="required">
 
-                    <span class="warnings" id="warningsTelefonoSP"  data-section="formSolicitudPedidos"  data-value="spanTelefonoSP"></span>
+                    <span class="warnings lang" key="spanTelefonoSP" id="warningsTelefonoSP"  data-section="formSolicitudPedidos"  data-value="spanTelefonoSP"></span>
                     </div>
                     <div class="<?=$col4?>">
                     <p class="lang" key="Direccion" data-section="formSolicitudPedidos" data-value="Direccion">Dirección</p>
                     <textarea class="form-control" name="txtDireccionSP" cols="15" rows="1" data-seccion="formSolicitudPedidos"  data-valor="PLDireccionSP" data-validetta="required"></textarea>
 
-                    <span class="warnings" id="warningsDireccionSP"  data-section="formSolicitudPedidos"  data-value="spanDireccionSP"></span>
+                    <span class="warnings lang" key="spanDireccionSP" id="warningsDireccionSP"  data-section="formSolicitudPedidos"  data-value="spanDireccionSP"></span>
                     </div>
                     </div>
 
@@ -165,7 +155,7 @@ $(document).ready(function() {
                                 <p class="lang" key="NomTarjeta" data-section="formSolicitudPedidos" data-value="NomTarjeta">Nombre de la tarjeta</p>
                                 <input class="form-control" type="text" name="txtNomTarjetaSP" data-seccion="formSolicitudPedidos"  data-valor="PLNomTarjetaSP" data-validetta="required">
 
-                                <span class="lang warnings" id="warningsNombreTarjeta"  data-section="formSolicitudPedidos"  data-value="spanNombreTarjeta"></span>
+                                <span class="warnings lang" key="spanNombreTarjeta" id="warningsNombreTarjeta"  data-section="formSolicitudPedidos"  data-value="spanNombreTarjeta"></span>
 
                             </div>
                             </div>
@@ -175,20 +165,19 @@ $(document).ready(function() {
                                 <p class="lang" key="NumTarjeta" data-section="formSolicitudPedidos" data-value="NumTarjeta">Número de tarjeta</p>
                                 <input class="form-control" type="text" name="txtNumTarjetaSP" data-seccion="formSolicitudPedidos"  data-valor="PLNumTarjetaSP" data-validetta="required">
 
-                            <span class="warnings" id="warningsNumeroTarjeta"  data-section="formSolicitudPedidos"  data-value="spanNumeroTarjeta"></span>
+                            <span class="warnings lang" key="spanNumeroTarjeta" id="warningsNumeroTarjeta"  data-section="formSolicitudPedidos"  data-value="spanNumeroTarjeta"></span>
 
                             </div>
                             <div class="<?=$col6?>">
                                 <p class="lang" key="FechaVence" data-section="formSolicitudPedidos" data-value="FechaVence">Fecha de vencimiento</p>
-                                <!-- <input class="form-control" type="month" name="txtFechaVenceSP"></input> --> 
-                                <input type="text" class="form-control" id="yearpicker">
-                                <span class="warnings" id="warningsFechaVence"  data-section="formSolicitudPedidos"  data-value="spanFechaVence"></span>
+                                <input type="text" name="txtFechaVenceSP" id="yearpicker">
+                                <span class="warnings lang" key="spanFechaVence" id="warningsFechaVence"  data-section="formSolicitudPedidos"  data-value="spanFechaVence"></span>
                             </div>
                             </div>
                             <div class="row">
                             <div class="<?=$col6?>">
                                 <p class="lang" key="Comprobante" data-section="formSolicitudPedidos" data-value="Comprobante">Comprobante</p>
-                                <input class="form-control" type="text" name="txtComprobanteSP" data-seccion="formSolicitudPedidos"  data-valor="PLComprobanteSP" readonly>
+                                <input class="form-control" type="text" name="txtComprobanteSP" data-seccion="formSolicitudPedidos" value="Factura" data-valor="PLComprobanteSP" readonly>
                             </div>
                             </div>
 

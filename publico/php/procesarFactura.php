@@ -1,6 +1,6 @@
 <?php
     if (!empty($_POST)) {
-        $tableFactura = '<table class="table table-info table-responsive-sm">
+        $tableFactura = '<table class="table table-info table-responsive">
         <tr>
         <th class="lang" key="MetodoPago" data-section="formSolicitudPedidos" data-value="MetodoPago">Método de pago</th>
         <th class="lang" key="NomTarjeta" data-section="formSolicitudPedidos" data-value="NomTarjeta">Nombre de la tarjeta</th>
@@ -11,10 +11,10 @@
 
         $tableFactura .= '<tr>
             <td>'.$_POST["sMetodoPago"].'</td>
-            <td>'.$_POST["txtNomTarjetaP"].'</td>
-            <td>'.$_POST["txtNumTarjetaP"].'</td>
-            <td>'.$_POST["txtFechaVence"].'</td>
-            <td>'.$_POST["txtComprobanteP"].'</td>
+            <td>'.$_POST["txtNomTarjetaSP"].'</td>
+            <td>'.$_POST["txtNumTarjetaSP"].'</td> 
+            <td>'.$_POST["txtAnio"]."/".$_POST["txtMes"].'</td>
+            <td>'.$_POST["txtComprobanteSP"].'</td>
         </tr>';
         
         $tableFactura.= '</table>';
