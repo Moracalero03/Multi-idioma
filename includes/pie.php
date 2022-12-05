@@ -15,24 +15,17 @@
 		</div>
 </footer> 
 
-
-
-
-    <!-- s<script src="https://code.jquery.com/jquery-3.6.0.min.js" -->
-
-    <!-- integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
 
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
 
     <script type="text/javascript">
-        $.getJSON('http://ip-api.com/json', function(data) {
-            $('#pais').val(data.country);
-            $('#ip').val(data.query);
-            $('#codigoPais').val(data.countryCode);
-        })
+        // $.getJSON('http://ip-api.com/json', function(data) {
+        //     $('#pais').val(data.country);
+        //     $('#ip').val(data.query);
+        //     $('#codigoPais').val(data.countryCode);
+        // })
 
         $(document).ready(function (e) {
         var jsvar='<?=$lang?>';
@@ -40,6 +33,7 @@
         if ( jsvar=='es') {
             window.onload= check();
             $(document).ready(function () {
+            //Idioma del datatable
 			$('#example').DataTable({
                 "language": {
         		"url":"//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"},
@@ -47,15 +41,30 @@
                 "bDestroy": true})
             }); 
 
+           //Idioma del select monthPicker
+            $('#yearpicker').monthpicker({
+                'lang': 'es',
+                'minYear': 2022,
+                'maxYear': 2050
+            }); 
+
             addScript("../publico/js/validettaLang-es-ES.js");
 
         }else if (jsvar=='en') {
             window.onload= uncheck();
             $(document).ready(function () {
+            //Idioma del datatable
 			$('#example').DataTable({
                 stateSave: true,
                 "bDestroy": true
-            })
+            }) 
+
+            //Idioma del select monthPicker
+            $('#yearpicker').monthpicker({
+                'minYear': 2022,
+                'maxYear': 2050
+            });
+
             });  
 
             
@@ -99,7 +108,5 @@
     <script src="../publico/js/placeholder.js"></script>
     <script src="../publico/js/traduccion.js"></script>    
     <script src="../publico/js/alertas.js"></script> 
-
-
 </body>
 </html>

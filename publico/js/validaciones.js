@@ -184,6 +184,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
             if (txtNombreSP == null) {
                 spanNombreCompletoSP.innerHTML = translate('spanNombreCompletoSP');
             }
+
             if (txtCorreoSP == null) {
                 spanCorreoElectronicoSP.innerHTML = translate('spanCorreoElectronicoSP');
             }

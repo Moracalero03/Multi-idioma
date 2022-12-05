@@ -22,9 +22,15 @@ check.addEventListener('click', idioma);
 
 function idioma() {
     let id = check.checked;
+    let monthPicker = document.querySelector('.monthpick');
+    let yearPicker = document.querySelector('.yearpick');
+    const btnElement = document.getElementById("idioma");
+    const textsToChange = document.querySelectorAll("[data-section]");
+
     if (id == true) {
 
         $(document).ready(function() {
+            //Idioma del datatable
             $('#example').DataTable({
                 "language": {
                     "url": "//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"
@@ -33,18 +39,23 @@ function idioma() {
                 "bDestroy": true
             })
 
+            //Idioma del select monthPicker
+            if (monthPicker != null && yearPicker != null) {
+                monthPicker.remove();
+                yearPicker.remove();
+                $('#yearpicker').monthpicker({
+                    'lang': 'es',
+                    'minYear': 2022,
+                    'maxYear': 2050
+                });
+            }
+
             const lenguaje = document.querySelector('#frmDinamico');
             lenguaje.setAttribute('action', '../publico/php/es-procesarProductos.php')
 
-            // addScript("../publico/js/validettaLang-es-ES.js");
         });
 
-
         //TRADUCCIONES DE LOS DATA-SECTION
-        const btnElement = document.getElementById("idioma");
-
-        const textsToChange = document.querySelectorAll("[data-section]");
-
         const changeLanguage = async language => {
             const requestJson = await fetch(`../publico/js/es.json`)
             const texts = await requestJson.json();
@@ -57,6 +68,7 @@ function idioma() {
             }
 
         };
+
         btnElement.addEventListener("click", (e) => {
             changeLanguage(e.target.parentElement.dataset.language);
         });
@@ -64,28 +76,29 @@ function idioma() {
     } else if (id == false) {
 
         $(document).ready(function() {
+
+            //Idioma del datatable
             $('#example').DataTable({
                 stateSave: true,
                 "bDestroy": true
             })
+
+            //Idioma del select monthPicker
+            if (monthPicker != null && yearPicker != null) {
+                monthPicker.remove();
+                yearPicker.remove();
+                $('#yearpicker').monthpicker({
+                    'minYear': 2022,
+                    'maxYear': 2050
+                });
+            }
+
             const lenguaje = document.querySelector('#frmDinamico');
             lenguaje.setAttribute('action', '../publico/php/en-procesarProductos.php')
 
-            // const validetta = document.getElementById('validetta');
-            // validetta.remove(); 
-
-            // const validetta = document.getElementById('validetta');
-            // if (validetta != null) {
-            //     // validetta.remove();
-            //     validetta.setAttribute('disable', '');
-            // }
 
         });
         //TRADUCCIONES DE LOS DATA-SECTION
-        const btnElement = document.getElementById("idioma");
-
-        const textsToChange = document.querySelectorAll("[data-section]");
-
         const changeLanguage = async language => {
             const requestJson = await fetch(`../publico/js/en.json`)
             const texts = await requestJson.json();
@@ -103,13 +116,3 @@ function idioma() {
         });
     }
 };
-
-// function addScript(url) {
-//     var script = $("<script>", {
-//         src: url,
-//         type: "text/javascript",
-//         id: "validetta"
-//     });
-
-//     $("#v").append(script);
-// }
