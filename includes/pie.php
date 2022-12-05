@@ -18,9 +18,9 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <!-- s<script src="https://code.jquery.com/jquery-3.6.0.min.js" -->
 
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
 
@@ -45,7 +45,7 @@
         		"url":"//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"},
                 stateSave: true,
                 "bDestroy": true})
-            });
+            }); 
 
             addScript("../publico/js/validettaLang-es-ES.js");
 
@@ -58,6 +58,7 @@
             })
             });  
 
+            
             // const validetta = document.getElementById('validetta');
             // if(validetta!=null){
             //     // validetta.remove();
@@ -98,9 +99,7 @@
     <script src="../publico/js/placeholder.js"></script>
     <script src="../publico/js/traduccion.js"></script>    
     <script src="../publico/js/alertas.js"></script> 
-    
-<!-- 
-    <script id="v"></script> -->
+
 
 </body>
 </html>

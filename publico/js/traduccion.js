@@ -26,13 +26,17 @@ function idioma() {
 
         $(document).ready(function() {
             $('#example').DataTable({
-                    "language": {
-                        "url": "//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"
-                    },
-                    stateSave: true,
-                    "bDestroy": true
-                })
-                // addScript("../publico/js/validettaLang-es-ES.js");
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"
+                },
+                stateSave: true,
+                "bDestroy": true
+            })
+
+            const lenguaje = document.querySelector('#frmDinamico');
+            lenguaje.setAttribute('action', '../publico/php/es-procesarProductos.php')
+
+            // addScript("../publico/js/validettaLang-es-ES.js");
         });
 
 
@@ -64,6 +68,8 @@ function idioma() {
                 stateSave: true,
                 "bDestroy": true
             })
+            const lenguaje = document.querySelector('#frmDinamico');
+            lenguaje.setAttribute('action', '../publico/php/en-procesarProductos.php')
 
             // const validetta = document.getElementById('validetta');
             // validetta.remove(); 

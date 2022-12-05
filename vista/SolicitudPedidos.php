@@ -11,8 +11,18 @@ $col6="col-sm-6 col-md-6 col-lg-6";
 include('../includes/cabecera.php');
 ?> 
 
+<script>
+$(document).ready(function() {
+	$('#yearpicker').monthpicker({
+        'lang': 'es',
+        'minYear': 2022,
+        'maxYear': 2050
+    });
+});
+</script> 
+
     <div class="col-lg-12">
-    <form action="../publico/php/procesarProductos.php" method="POST" id="frmDinamico">                    
+    <form action="../publico/php/<?php echo key($langs) ?>-procesarProductos.php" method="POST" id="frmDinamico">                    
                 <div class="p-4">
                     <div class="<?=$col8?>" id="formEncabezado">
                     <h3 class="lang" key="DatosCliente" data-section="formSolicitudPedidos" data-value="DatosCliente">Datos del cliente</h3>
@@ -170,7 +180,8 @@ include('../includes/cabecera.php');
                             </div>
                             <div class="<?=$col6?>">
                                 <p class="lang" key="FechaVence" data-section="formSolicitudPedidos" data-value="FechaVence">Fecha de vencimiento</p>
-                                <input class="form-control" type="month" name="txtFechaVenceSP"></input>
+                                <!-- <input class="form-control" type="month" name="txtFechaVenceSP"></input> --> 
+                                <input type="text" class="form-control" id="yearpicker">
                                 <span class="warnings" id="warningsFechaVence"  data-section="formSolicitudPedidos"  data-value="spanFechaVence"></span>
                             </div>
                             </div>
