@@ -199,6 +199,27 @@ include('../includes/cabecera.php');
                     
                 </div>
                 </div>
+<style type="text/css">
+select.monthpick {
+margin-right: 3px;
+border: 2px solid blue;
+border-radius: 5px;
+ 
+height:38px;
+width:100px; 
+
+}
+
+select.yearpick {
+margin-left: 3px;
+border: 2px solid blue;
+border-radius: 5px; 
+height:38px;
+  width:100px;
+
+}
+</style>
+               
 <?php
     include('../includes/pie.php');
 ?>

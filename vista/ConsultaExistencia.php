@@ -198,7 +198,7 @@ include('../includes/cabecera.php');
         <div class="modal-content">
 
         <div class="modal-header">
-            <h4 class="modal-title lang" key="consultaExistencia"  data-section="formConsultaExistencia" data-value="consultaExistencia">Consulta de existencia</h4>
+            <h4 class="modal-title lang " key="consultaExistencia"  data-section="formConsultaExistencia" data-value="consultaExistencia">Consulta de existencia</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -209,42 +209,42 @@ include('../includes/cabecera.php');
     <div class="row">
 
     <div class="col-md-12  form-group mt-1 mb-1">
-    <h5 class="modal-title text-center text-dark lang" key="detallesCliente"  data-section="formConsultaExistencia" data-value="detallesCliente">Detalles del cliente</h5>
+    <h5 class="modal-title text-center text-dark  lang " key="detallesCliente"  data-section="formConsultaExistencia" data-value="detallesCliente">Detalles del cliente</h5>
     </div>
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
-        <label class="lang" key="nombre" data-section="formConsultaExistencia"  data-value="nombre">Nombre</label>
-        <input type="text" name="txtNombreCE" data-seccion="formConsultaExistencia"  data-valor="PLNombreCE" data-validetta="required">
+        <label class="lang " key="nombre" data-section="formConsultaExistencia"  data-value="nombre">Nombre</label>
+        <input type="text" class="form-control" name="txtNombreCE" data-seccion="formConsultaExistencia"  data-valor="PLNombreCE" data-validetta="required">
         <span class="warnings lang" key="spannombreCE" id="warningsnombreCE"  data-section="formConsultaExistencia"  data-value="spannombreCE"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="correo" data-section="formConsultaExistencia"  data-value="correo">Correo</label>
-        <input type="email" name="txtCorreoCE" data-seccion="formConsultaExistencia"  data-valor="PLCorreoCE" data-validetta="required">
+        <input type="email" class="form-control" name="txtCorreoCE" data-seccion="formConsultaExistencia"  data-valor="PLCorreoCE" data-validetta="required">
         <span class="warnings lang" key="spancorreoCE" id="warningscorreoCE"  data-section="formConsultaExistencia"  data-value="spancorreoCE"></span>
     </div>
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="nacionalidad" data-section="formConsultaExistencia"  data-value="nacionalidad">Nacionalidad</label>
-        <input type="text" name="txtNacionalidadCE" data-seccion="formConsultaExistencia"  data-valor="PLNacionalidadCE" data-validetta="required">
+        <input type="text" class="form-control" name="txtNacionalidadCE" data-seccion="formConsultaExistencia"  data-valor="PLNacionalidadCE" data-validetta="required">
         <span class="warnings lang" key="spannacionalidadCE" id="warningsnacionalidadCE"  data-section="formConsultaExistencia"  data-value="spannacionalidadCE"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="nIdentdad" data-section="formConsultaExistencia"  data-value="nIdentdad">Numero de Identidad</label>
-        <input type="text" name="txtNIdentidadCE" data-seccion="formConsultaExistencia"  data-valor="PLNIdentidadCE" data-validetta="required">
+        <input type="text" class="form-control" name="txtNIdentidadCE" data-seccion="formConsultaExistencia"  data-valor="PLNIdentidadCE" data-validetta="required">
         <span class="warnings lang" key="spannumeroidentidadCE" id="warningsnumeroidentidadCE"  data-section="formConsultaExistencia"  data-value="spannumeroidentidadCE"></span>
     </div>                        
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="telefono" data-section="formConsultaExistencia"  data-value="telefono">Telefono</label>
-        <input type="text" name="txtTelefonoCE" data-seccion="formConsultaExistencia"  data-valor="PLTelefonoCE" data-validetta="required">
+        <input type="text" class="form-control" name="txtTelefonoCE" data-seccion="formConsultaExistencia"  data-valor="PLTelefonoCE" data-validetta="required">
         <span class="warnings lang" key="spantelefonoCE" id="warningstelefonoCE"  data-section="formConsultaExistencia"  data-value="spantelefonoCE"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="direccion" data-section="formConsultaExistencia"  data-value="direccion">Direccion</label>
-        <input type="text" name="txtDireccionCE" data-seccion="formConsultaExistencia"  data-valor="PLDireccionCE" data-validetta="required">
+        <input type="text" class="form-control" name="txtDireccionCE" data-seccion="formConsultaExistencia"  data-valor="PLDireccionCE" data-validetta="required">
         <span class="warnings lang" key="spandireccionCE" id="warningsdireccionCE"  data-section="formConsultaExistencia"  data-value="spandireccionCE"></span>
     </div>
 
@@ -255,39 +255,39 @@ include('../includes/cabecera.php');
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="producto" data-section="formConsultaExistencia"  data-value="producto">Producto</label>
-        <input type="text" name="txtProductoCE" data-seccion="formConsultaExistencia"  data-valor="PLProductoCE" data-validetta="required">
+        <input type="text" class="form-control" name="txtProductoCE" data-seccion="formConsultaExistencia"  data-valor="PLProductoCE" data-validetta="required">
         <span class="warnings lang" key="spanproductoCE" id="warningsproductoCE"  data-section="formConsultaExistencia"  data-value="spanproductoCE"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="cantidad" data-section="formConsultaExistencia"  data-value="cantidad">Cantidad</label>
-        <input type="text" name="txtCantidadCE" data-seccion="formConsultaExistencia"  data-valor="PLCantidadCE" data-validetta="required">
+        <input type="text" class="form-control" name="txtCantidadCE" data-seccion="formConsultaExistencia"  data-valor="PLCantidadCE" data-validetta="required">
         <span class="warnings lang" key="spancantidadCE" id="warningscantidadCE"  data-section="formConsultaExistencia"  data-value="spancantidadCE"></span>
     </div>
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="precioUnitario" data-section="formConsultaExistencia"  data-value="precioUnitario">Precio Unitario</label>
-        <input type="text" name="txtPrecioUnitarioCE" data-seccion="formConsultaExistencia"  data-valor="PLPrecioUnitarioCE" data-validetta="required,precioUnitario">
+        <input type="text" class="form-control" name="txtPrecioUnitarioCE" data-seccion="formConsultaExistencia"  data-valor="PLPrecioUnitarioCE" data-validetta="required,precioUnitario">
         <span class="warnings lang" key="spanprecioUnitarioCE" id="warningsprecioUnitarioCE"  data-section="formConsultaExistencia"  data-value="spanprecioUnitarioCE"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="totalIva" data-section="formConsultaExistencia"  data-value="totalIva">Total con IVA</label>
-        <input type="text" name="txtTotalIvaCE" data-seccion="formConsultaExistencia"  data-valor="placeholderTotalIva" data-validetta="required">
+        <input type="text" class="form-control" name="txtTotalIvaCE" data-seccion="formConsultaExistencia"  data-valor="placeholderTotalIva" data-validetta="required">
         <span class="warnings lang"  key="spantotalIvaCE" id="warningstotalIvaCE"  data-section="formConsultaExistencia"  data-value="spantotalIvaCE"></span>
     </div>
 
     <div class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="metodoPago" data-section="formConsultaExistencia"  data-value="metodoPago">Método de pago</label><br>
-        <select name="metodoPagoCE">
-        <option class="lang" key="efectivo" data-section="formConsultaExistencia" data-value="efectivo" value="Efectivo">Efectivo</option>
+        <select name="metodoPagoCE" class="form-control" data-seccion="formConsultaExistencia"  data-valor="">
+        <option class="lang " key="efectivo" data-section="formConsultaExistencia" data-value="efectivo" value="Efectivo">Efectivo</option>
         <option class="lang" key="tarjeta" data-section="formConsultaExistencia"  data-value="tarjeta" value="Tarjeta">Tarjeta</option>
     </select>
     </div>
 
     <div class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="estado" data-section="formConsultaExistencia"  data-value="estado">Estado</label><br>
-        <select  name="estado">
+        <select  name="estado" class="form-control" data-seccion="formConsultaExistencia"  data-valor="">
         <option class="lang" key="activo" data-section="formConsultaExistencia"  data-value="activo" value="Activo">Activo</option>
         <option class="lang" key="noActivo" data-section="formConsultaExistencia"  data-value="noActivo" value="No activo">No activo</option>
         </select>

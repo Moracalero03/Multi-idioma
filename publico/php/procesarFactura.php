@@ -15,10 +15,16 @@
             <td>'.$_POST["txtNumTarjetaSP"].'</td> 
             <td>'.$_POST["txtAnio"]."/".$_POST["txtMes"].'</td>
             <td>'.$_POST["txtComprobanteSP"].'</td>
+            
+
         </tr>';
+          
         
         $tableFactura.= '</table>';
 
     }
     echo $tableFactura;
 ?>
+
+
+
