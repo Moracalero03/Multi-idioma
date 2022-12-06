@@ -5,7 +5,7 @@ create table traduccion(
 id varchar(100) not null,
 idioma char(2) not null,
 llave char(50) not null,
-valor varchar(300) not null
+valor varchar(900) not null
 ) ;
 
 select * from traduccion;
@@ -298,7 +298,6 @@ insert into traduccion(id, idioma, llave, valor) values
 ('formGestionUsuario','en','PLNacionalidadU','Enter your nationality'),
 ('formGestionUsuario','en','PLDireccionU','Enter your address'),
 ('formGestionUsuario','en','PLNumTelefonoU','Enter your phone number'),
-
 ('formConsultaExistencia','en','numeroFactura','Invoice number'),
 ('formConsultaExistencia','en','cliente','Customer'),
 ('formConsultaExistencia','en','comprobante','Receipt'),
@@ -380,8 +379,6 @@ insert into traduccion(id, idioma, llave, valor) values
 ('formConsultaExistencia','es','spancantidadCE','Cantidad no introducido correctamente'),
 ('formConsultaExistencia','es','spanprecioUnitarioCE','Precio Unitario no introducido correctamente'),
 ('formConsultaExistencia','es','spantotalIvaCE','Total con IVA no introducido correctamente'),
-
-
 ('formConsultaExistencia','en','spannombreCE','Name not entered correctly'),
 ('formConsultaExistencia','en','spancorreoCE','Mail not correctly entered'),
 ('formConsultaExistencia','en','spannacionalidadCE','Nationality not correctly entered'),
@@ -392,12 +389,9 @@ insert into traduccion(id, idioma, llave, valor) values
 ('formConsultaExistencia','en','spancantidadCE','Quantity not entered correctly'),
 ('formConsultaExistencia','en','spanprecioUnitarioCE','Unit Price not entered correctly'),
 ('formConsultaExistencia','en','spantotalIvaCE',' Total incl. VAT not correctly entered'),
-
 ('formSolicitudPedidos','es','spanNombreTarjeta','Nombre de la tarjeta no introducido correctamente'),
 ('formSolicitudPedidos','es','spanNumeroTarjeta','Número de tarjeta no introducido correctamente'),
 ('formSolicitudPedidos','es','spanFechaVence','Fecha de vencimiento no introducido correctamente'),
-
-
 ('formSolicitudPedidos','en','spanNombreTarjeta','Card name not entered correctly'),
 ('formSolicitudPedidos','en','spanNumeroTarjeta','Card number not entered correctly'),
 ('formSolicitudPedidos','en','spanFechaVence','Expiration date not correctly entered'),
@@ -407,7 +401,6 @@ insert into traduccion(id, idioma, llave, valor) values
 ('formSolicitudPedidos','es','spanNumIndentificacionSP','Número de identificación no introducido correctamente'),
 ('formSolicitudPedidos','es','spanTelefonoSP','Número de teléfono no introducido correctamente'),
 ('formSolicitudPedidos','es','spanDireccionSP','Dirección no introducido correctamente'),
-
 ('formSolicitudPedidos','en','spanNombreCompletoSP','Full name not entered correctly'),
 ('formSolicitudPedidos','en','spanCorreoElectronicoSP','E-mail address not entered correctly'),
 ('formSolicitudPedidos','en','spanNumIndentificacionSP','ID number not entered correctly'),
@@ -416,10 +409,55 @@ insert into traduccion(id, idioma, llave, valor) values
 
 
 /*  el de iva*/
-
 ('formConsultaExistencia','es','placeholderTotalIva','Ingrese el total con IVA'),
-
 ('formConsultaExistencia','en','placeholderTotalIva','Enter total including VAT'),
+
+/*vista de calidad*/ 
+('vistaCalidad','es','textoC','Somos una empresa comprometida con la calidad,elaborando productos con la mejor tecnología y personal más competente.En el año 2008, Sacos Sintéticos Centroamericanos incursionó en el proceso de certificación de su Sistema de Gestión de la Calidad bajo la norma ISO 9001:2008, logrando convertirse en “Empresa Certificada” en el año 2009. El compromiso con la CALIDAD es una de nuestras principales fortalezas, lo cual nos ha permitido crear la base para ser líderes en la región, controlando cada uno de los factores importantes en el proceso productivo. Logramos un alto nivel de calidad que supera las expectativas de nuestros clientes, cumpliendo el objetivo de satisfacerles con soluciones completas y confiables, que garantizan la preservación de los productos que ellos envasan y contribuyendo con el posicionamiento de su marca'),
+('vistaCalidad','es','Calidad','Área de calidad'),
+
+('vistaCalidad','en','textoC','We are a company committed to quality, manufacturing products with the best technology and the most competent personnel.In 2008, Sacos Sintéticos Centroamericanos started the certification process of its Quality Management System under the ISO 9001:2008 standard, becoming a "Certified Company" in 2009. The commitment to QUALITY is one of our main strengths, which has allowed us to create the basis to be leaders in the region, controlling each of the important factors in the production process. We achieve a high level of quality that exceeds the expectations of our customers, fulfilling the objective of satisfying them with complete and reliable solutions, guaranteeing the preservation of the products they pack and contributing to the positioning of their brand.'),
+('vistaCalidad','en','Calidad','Quality Area'),
+
+/*vista de productos*/
+
+('vistaProductos','es','Productos',' Productos'),
+('vistaProductos','es','tituloP',' Nuestros Productos'),
+('vistaProductos','es','textP',' En SASICASA te brindamos soluciones de empaque para el envasado de productos utilizando tecnología de punta para la fabricación de cada saco.Nos adaptamos a las necesidades y requerimientos de nuestros clientes en cuanto a material,medidas, colores,construcción,logotipo e impresión. Te brindamos calidad y resistencia en cada saco.'),
+
+
+
+('vistaProductos','es','tarjeta1','Sacos laminados'),
+('vistaProductos','es','tarjeta2','Sacos laminados con Bopp'),
+('vistaProductos','es','tarjeta3','Sacos tejidos'),
+('vistaProductos','es','tarjeta4','Tela de polipropileno'),
+('vistaProductos','es','tarjeta5','Lienzos y toldos'),
+('vistaProductos','es','tarjeta6','Lazo de polipropileno'),
+('vistaProductos','es','tarjeta7','Hielos de polipropileno'),
+('vistaProductos','es','tarjeta8','Bolsas jumbo sack'),
+('vistaProductos','es','tarjeta9','Bolsas jumbo liner'),
+('vistaProductos','es','tarjeta10','Bolsas Promocionales'),
+('vistaProductos','es','tarjeta11','Saco fondo plano (Sacos AD STAR)'),
+
+
+
+
+
+('vistaProductos','en','Productos',' Products'),
+('vistaProductos','en','tituloP',' Our Products'),
+('vistaProductos','en','textP','In SASICASA we provide packaging solutions for product packaging using state-of-the-art technology for the manufacture of each bag, we adapt to the needs and requirements of our customers in terms of material, sizes, colors, construction, logo and printing. We offer quality and resistance in each bag.'),
+
+('vistaProductos','en','tarjeta1','Laminated sacks'),
+('vistaProductos','en','tarjeta2','Laminated sacks with Bopp'),
+('vistaProductos','en','tarjeta3','Woven sacks'),
+('vistaProductos','en','tarjeta4','Polypropylene fabric'),
+('vistaProductos','en','tarjeta5','Canvas and tarpaulins'),
+('vistaProductos','en','tarjeta6','Polypropylene loop'),
+('vistaProductos','en','tarjeta7','Polypropylene ice packs'),
+('vistaProductos','en','tarjeta8','Jumbo sack bags'),
+('vistaProductos','en','tarjeta9','Jumbo liner bags'),
+('vistaProductos','en','tarjeta10','Promotional bags'),
+('vistaProductos','en','tarjeta11','Flat bottom sack (AD STAR Sacks)'),
 
 ('formGestionUsuario','es','placeholderId','Ingrese su ID'), 
 

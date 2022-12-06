@@ -19,8 +19,8 @@
             Sobre
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item lang" href="#"  key="Calidad" data-section="global" data-value="Calidad">Calidad</a>
-            <a class="dropdown-item lang" href="#"  key="Productos" data-section="global" data-value="Productos">Productos</a>
+            <a class="dropdown-item lang" href="<?=$raiz?>vista/Calidad.php"  key="Calidad" data-section="global" data-value="Calidad">Calidad</a>
+            <a class="dropdown-item lang" href="<?=$raiz?>vista/Productos.php"  key="Productos" data-section="global" data-value="Productos">Productos</a>
         </div>
         </li>
         <li class="nav-item">
