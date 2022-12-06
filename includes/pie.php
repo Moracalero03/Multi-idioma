@@ -48,6 +48,7 @@
                 'maxYear': 2050
             }); 
 
+            //Añade el paquete de validetta en español
             addScript("../publico/js/validettaLang-es-ES.js");
 
         }else if (jsvar=='en') {
@@ -68,11 +69,11 @@
             });  
 
             
-            // const validetta = document.getElementById('validetta');
-            // if(validetta!=null){
-            //     // validetta.remove();
-            //     validetta.setAttribute('disable', '');
-            // } 
+            const validetta = document.getElementById('validetta');
+            if(validetta!=null){
+                validetta.remove();
+                // validetta.setAttribute('disable', '');
+            } 
 
         }
 
@@ -94,7 +95,18 @@
                 });
 
             $("footer").append(script);
-        }  
+        }   
+
+        $('#1').change(function () {
+                if (this.checked) {
+                    // Se debe cargar una página hosteada en un servidor no en un archivo y se puede especificar una clase o id.
+                    $("#contenido").load("https://montesariel.com/es/contactos .heading");
+                }
+                if (!this.checked) {
+                    // Elimina el contenido si se desmarca la selección.
+                    $("#contenido").html("");
+                }
+            });
 
     </script>
 

@@ -163,7 +163,7 @@ include('../includes/cabecera.php');
                             <div class="row">
                             <div class="<?=$col6?>">
                                 <p class="lang" key="NumTarjeta" data-section="formSolicitudPedidos" data-value="NumTarjeta">Número de tarjeta</p>
-                                <input class="form-control" type="text" name="txtNumTarjetaSP" data-seccion="formSolicitudPedidos"  data-valor="PLNumTarjetaSP" data-validetta="required">
+                                <input class="form-control" type="text" name="txtNumTarjetaSP" data-seccion="formSolicitudPedidos"  data-valor="PLNumTarjetaSP" data-validetta="es required">
 
                             <span class="warnings lang" key="spanNumeroTarjeta" id="warningsNumeroTarjeta"  data-section="formSolicitudPedidos"  data-value="spanNumeroTarjeta"></span>
 
