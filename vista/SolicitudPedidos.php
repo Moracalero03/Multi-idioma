@@ -21,9 +21,9 @@ include('../includes/cabecera.php');
                     <div class="row">
                     <div class="<?=$col4?>">
                     <p class="lang" key="NomCompleto" data-section="formSolicitudPedidos" data-value="NomCompleto">Nombre completo</p>
-                    <input class="form-control" type="text" name="txtNombreSP" data-seccion="formSolicitudPedidos"  data-valor="PLNomCompletoSP" data-validetta="required">
+                    <input class="form-control" type="text" name="txtNombreSP" id="txtNombreSP" data-seccion="formSolicitudPedidos"  data-valor="PLNomCompletoSP" data-validetta="required";>
 
-                    <span class="warnings lang" key="spanNombreCompletoSP" id="warningsNombreCompletoSP"  data-section="formSolicitudPedidos"  data-value="spanNombreCompletoSP"></span>
+                    <span class="warnings lang" key="spanNombreCompletoSP" style="display: none;" id="warningsNombreCompletoSP"  data-section="formSolicitudPedidos"  data-value="spanNombreCompletoSP"></span>
                     </div>
 
                     <div class="<?=$col4?>">
@@ -107,7 +107,7 @@ include('../includes/cabecera.php');
 
                     <div class="row">
                     <div class="<?=$col8?> d-flex p-4">
-                    <button type="submit" class="btn btn-warning ml-auto px-5 lang" id="btnEnviar" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar">Enviar</button>
+                    <button type="submit" class="btn btn-warning ml-auto px-5 lang" id="btnEnviar" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar"  onclick="stopDefAction(event)">Enviar</button>
                     </div> 
                     </div>
                     </form> 
@@ -219,7 +219,19 @@ height:38px;
 
 }
 </style>
-               
+<script>
+            spanNombreCompletoSP = document.getElementById('warningsNombreCompletoSP');
+
+            function stopDefAction(evt) {
+                if ($('#txtNombreSP').val() == "") {
+                    spanNombreCompletoSP.setAttribute('style', 'display: inline;')
+                }else if ($('#txtNombreSP').val() != "") {
+                    spanNombreCompletoSP.setAttribute('style', 'display: none;')
+                }
+                evt.preventDefault();
+            }
+            
+</script>        
 <?php
     include('../includes/pie.php');
 ?>
