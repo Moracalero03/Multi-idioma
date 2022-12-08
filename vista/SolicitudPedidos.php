@@ -94,7 +94,7 @@ include('../includes/cabecera.php');
                                 </select>
                             </td>
                             <td>
-                                <input class="form-control" type="number" name="txtCantidadSP[]" data-validetta="required">
+                                <input class="form-control" type="number" name="txtCantidadSP[]" min="0" data-validetta="required">
                             </td>
                             <td>
                                 <button type="button" class="btn" id="btnEliminar"><img src="<?=$raiz?>publico/img/eliminar.png" width="20rem" height="20rem" alt=""></button>
@@ -219,19 +219,7 @@ height:38px;
 
 }
 </style>
-<script>
-            spanNombreCompletoSP = document.getElementById('warningsNombreCompletoSP');
-
-            function stopDefAction(evt) {
-                if ($('#txtNombreSP').val() == "") {
-                    spanNombreCompletoSP.setAttribute('style', 'display: inline;')
-                }else if ($('#txtNombreSP').val() != "") {
-                    spanNombreCompletoSP.setAttribute('style', 'display: none;')
-                }
-                evt.preventDefault();
-            }
-            
-</script>        
+   
 <?php
     include('../includes/pie.php');
 ?>
