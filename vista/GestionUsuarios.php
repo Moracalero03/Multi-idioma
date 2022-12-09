@@ -107,7 +107,7 @@ include('../includes/cabecera.php');
             <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <form   action="../publico/php/procesarGestionUsuario.php"  method="POST" id="formGestionUsuario">
+        <form action="../publico/php/<?php echo key($langs) ?>-procesarGestionUsuario.php"  method="POST" id="formGestionUsuario">
     <div class="modal-body">
         
     <div class="row">

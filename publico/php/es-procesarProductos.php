@@ -36,17 +36,14 @@
         for ($i=0; $i < $count; $i++) { 
             $nombre = $_POST["sNombreProducto"][$i];
             $cantidad = $_POST["txtCantidadSP"][$i]; 
-            $totaliva = $_POST['txtCantidadSP'][$i]*$preciouni;
+            $totaliva = $cantidad*$preciouni;
 
-            echo $nombre;
-    echo $cantidad;
-    echo $totaliva;
-        $tableProducto .= '<tr>
-            <td>'.$nombre.'</td>
-            <td>'.$cantidad.'</td>
-            <td>'.$preciouni.'</td>
-            <td>'.$totaliva.'</td>
-        </tr>';
+            $tableProducto .= '<tr>
+                <td>'.$nombre.'</td>
+                <td>'.$cantidad.'</td>
+                <td>'.$preciouni.'</td>
+                <td>'.$totaliva.'</td>
+            </tr>';
         }
         
         $tableProducto.= '</table>';

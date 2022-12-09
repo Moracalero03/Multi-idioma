@@ -41,7 +41,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
                 <input class="form-control" type="number" name="txtCantidadSP[]" min="0" data-validetta="required">
             </td>
             <td>
-                <button type="button" class="btn" id="btnEliminar"><img src="<?= $raiz ?>publico/img/eliminar.png" width="20rem" height="20rem" alt=""></button>
+                <button type="button" class="btn" id="btnEliminar"><img src="../publico/img/eliminar.png" width="20rem" height="20rem" alt=""></button>
             </td>
         </tr>`
             $('#tblFilas').append(fila)

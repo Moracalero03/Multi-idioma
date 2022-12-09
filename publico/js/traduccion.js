@@ -47,8 +47,6 @@ function idioma() {
                 'maxYear': 2050
             });
 
-
-
             //Idioma del select monthPicker
             if (monthPicker != null && yearPicker != null) {
                 monthPicker.remove();
@@ -60,31 +58,10 @@ function idioma() {
                 });
             }
 
-            // if (id === true) {
-            // addScript("../publico/js/validettaLang-es-ES.js");
-            // document.write('<script src="../publico/js/validettaLang-es-ES.js"></script>')
-
-            function importarScript(nombre) {
-                var s = document.createElement("script");
-
-                s.src = nombre;
-                document.querySelector("head").appendChild(s);
-            }
-
-            importarScript("../publico/js/validettaLang-es-ES.js");
-
-
-
-            // }
-
-
-            // loadScript("../publico/js/validettaLang-es-ES.js", MiArchivoCargado);
-
-            //Añade el paquete de validetta en español
-            // addScript("../publico/js/validettaLang-es-ES.js");
-
-            const lenguaje = document.querySelector('#frmDinamico');
-            lenguaje.setAttribute('action', '../publico/php/es-procesarProductos.php')
+            //SELECTOR DE IDIOMA DINAMICO PARA PROCESAR UN FORMULARIO EN ESPAÑOL
+            const formulario = document.querySelectorAll('form');
+            const idioma = 'es';
+            procesarDinamico(idioma, formulario);
 
         });
 
@@ -126,31 +103,10 @@ function idioma() {
                 });
             }
 
-
-            //   addScript("../publico/js/validetta.min.js");
-
-
-            const validetta = document.getElementById('validetta');
-            if (validetta != null) {
-                validetta.remove();
-                // validetta.setAttribute('disable', '');
-            }
-
-            // const validar = document.getElementById('validar');
-            // if (validar != null) {
-            //     validar.remove();
-            //     // validetta.setAttribute('disable', '');
-            // }
-
-            // const validetta = document.getElementById('validetta');
-            // if (validetta != null) {
-            //     validetta.remove();
-            //     // validetta.setAttribute('disable', '');
-            // }
-
-            const lenguaje = document.querySelector('#frmDinamico');
-            lenguaje.setAttribute('action', '../publico/php/en-procesarProductos.php')
-
+            //SELECTOR DE IDIOMA DINAMICO PARA PROCESAR UN FORMULARIO EN INGLES
+            const formulario = document.querySelectorAll('form');
+            const idioma = 'en';
+            procesarDinamico(idioma, formulario);
 
         });
         //TRADUCCIONES DE LOS DATA-SECTION
@@ -171,29 +127,22 @@ function idioma() {
         });
     }
 
-    function addScript(url) {
-        var script = $("<script>", {
-            src: url,
-            type: "text/javascript",
-            id: "validetta"
-        });
+    //FUNCION PARA CAMBIAR DINAMICAMENTE EL ATRIBUTO ACTION DE UNA FORMULARIO
+    function procesarDinamico(idioma, form) {
+        for (const formulario of form) {
 
-        $("footer").append(script);
+            //Variable que toma el valor del action por cada etiqueta de formulario
+            const action = formulario.getAttribute('action');
+
+            //Variable con la extraccion del contenido despues de 18 caracteres(nombre del archivo para procesar)
+            const namePhp = action.substr(18);
+
+            //Variable que contiene el enlace con los parametros dinamicos de idioma 
+            const attr = '../publico/php/' + idioma + '-' + namePhp;
+
+            //Setea el atributo action con los nuevos valores
+            formulario.setAttribute('action', attr);
+        }
+
     }
-
-    // function loadScript(url, callback) {
-
-    //     var head = document.getElementsByTagName('head')[0];
-    //     var script = document.createElement('script');
-    //     script.type = 'text/javascript';
-    //     script.src = url;
-    //     script.id = 'validar';
-    //     script.onreadystatechange = callback;
-    //     script.onload = callback;
-    //     head.appendChild(script);
-    // }
-
-    // function MiArchivoCargado() {
-    //     alert('../publico/js/validettaLang-es-ES.js ya ha sido cargado');
-    // }
 };

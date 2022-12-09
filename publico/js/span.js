@@ -1,8 +1,4 @@
 function stopDefAction(evt, form) {
-    // // const span = document.querySelectorAll("form#frmDinamico span.warnings")
-    // // const input = document.querySelectorAll("form#frmDinamico input[name], textarea[name]");
-
-    console.log(form)
     const span = document.querySelectorAll(form + " span.warnings")
     const input = document.querySelectorAll(form + " input[name], textarea[name]");
 

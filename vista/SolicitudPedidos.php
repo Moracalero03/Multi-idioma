@@ -142,7 +142,7 @@ include('../includes/cabecera.php');
                 </button>
             </div>
             <div class="modal-body">
-                <form action="../publico/php/procesarFactura.php" method="post" id="formFacturar">
+                <form action="../publico/php/<?php echo key($langs) ?>-procesarFactura.php" method="post" id="formFacturar">
                     <div class="row">
                         <div class="<?= $col6 ?>">
                             <p class="lang" key="MetodoPago" data-section="formSolicitudPedidos" data-value="MetodoPago">Método de pago</p>

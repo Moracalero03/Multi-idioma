@@ -203,7 +203,7 @@ include('../includes/cabecera.php');
             <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <form   action="../publico/php/procesarConsultaExistencia.php"  method="POST" id="formConsultaExistencia">
+        <form action="../publico/php/<?php echo key($langs) ?>-procesarConsultaExistencia.php"  method="POST" id="formConsultaExistencia">
     <div class="modal-body">
         
     <div class="row">
