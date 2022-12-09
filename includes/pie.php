@@ -97,17 +97,6 @@
             $("footer").append(script);
         }   
 
-        // $('span').change(function () {
-        //         if (this == null) {
-        //             // Se debe cargar una página hosteada en un servidor no en un archivo y se puede especificar una clase o id.
-        //             $("#contenido").load("https://montesariel.com/es/contactos .heading");
-        //         }
-        //         if (!this.checked) {
-        //             // Elimina el contenido si se desmarca la selección.
-        //             $("#contenido").html("");
-        //         }
-        //     });
-
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -115,7 +104,7 @@
 	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script> 
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.min.js"></script>
-    <!-- <script src="../publico/js/validaciones.js"></script>  -->
+    <!-- <script src="..\publico\js\validar.js"></script> -->
     <script src="../publico/js/validetta.min.js"></script>
     <script src="../publico/js/placeholder.js"></script>
     <script src="../publico/js/traduccion.js"></script>    

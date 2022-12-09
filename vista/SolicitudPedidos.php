@@ -107,7 +107,7 @@ include('../includes/cabecera.php');
 
             <div class="row">
                 <div class="<?= $col8 ?> d-flex p-4">
-                    <button type="submit" class="btn btn-warning ml-auto px-5 lang" id="btnEnviar" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar" onclick="stopDefAction(event)">Enviar</button>
+                    <button type="submit" class="btn btn-warning ml-auto px-5 lang" id="btnEnviar" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar" onclick="stopDefAction(event, 'form#frmDinamico')">Enviar</button>
                 </div>
             </div>
     </form>
@@ -153,9 +153,9 @@ include('../includes/cabecera.php');
                         </div>
                         <div class="<?= $col6 ?>">
                             <p class="lang" key="NomTarjeta" data-section="formSolicitudPedidos" data-value="NomTarjeta">Nombre de la tarjeta</p>
-                            <input class="form-control" type="text" name="txtNomTarjetaSP" data-seccion="formSolicitudPedidos" data-valor="PLNomTarjetaSP" data-validetta="required">
+                            <input class="form-control" type="text" name="txtNomTarjetaSP" id="txtNomTarjetaSP" data-seccion="formSolicitudPedidos" data-valor="PLNomTarjetaSP" data-validetta="required">
 
-                            <span class="warnings lang" key="spanNombreTarjeta" style="display: none;" id="warningsNombreTarjeta" data-section="formSolicitudPedidos" data-value="spanNombreTarjeta"></span>
+                            <span class="warnings lang" key="spanNombreTarjeta" data-target="#txtNomTarjetaSP" style="display: none;" id="warningsNombreTarjeta" data-section="formSolicitudPedidos" data-value="spanNombreTarjeta"></span>
 
                         </div>
                     </div>
@@ -163,15 +163,15 @@ include('../includes/cabecera.php');
                     <div class="row">
                         <div class="<?= $col6 ?>">
                             <p class="lang" key="NumTarjeta" data-section="formSolicitudPedidos" data-value="NumTarjeta">Número de tarjeta</p>
-                            <input class="form-control" type="text" name="txtNumTarjetaSP" data-seccion="formSolicitudPedidos" data-valor="PLNumTarjetaSP" data-validetta="required">
+                            <input class="form-control" type="text" name="txtNumTarjetaSP" id="txtNumTarjetaSP" data-seccion="formSolicitudPedidos" data-valor="PLNumTarjetaSP" data-validetta="required">
 
-                            <span class="warnings lang" key="spanNumeroTarjeta" style="display: none;" id="warningsNumeroTarjeta" data-section="formSolicitudPedidos" data-value="spanNumeroTarjeta"></span>
+                            <span class="warnings lang" key="spanNumeroTarjeta" data-target="#txtNumTarjetaSP" style="display: none;" id="warningsNumeroTarjeta" data-section="formSolicitudPedidos" data-value="spanNumeroTarjeta"></span>
 
                         </div>
                         <div class="<?= $col6 ?>">
                             <p class="lang" key="FechaVence" data-section="formSolicitudPedidos" data-value="FechaVence">Fecha de vencimiento</p>
                             <input type="text" name="txtFechaVenceSP" id="yearpicker">
-                            <span class="warnings lang" key="spanFechaVence" style="display: none;" id="warningsFechaVence" data-section="formSolicitudPedidos" data-value="spanFechaVence"></span>
+                            <span class="warnings lang" key="spanFechaVence" data-target="#yearpicker" style="display: none;" id="warningsFechaVence" data-section="formSolicitudPedidos" data-value="spanFechaVence"></span>
                         </div>
                     </div>
                     <div class="row">
@@ -183,7 +183,7 @@ include('../includes/cabecera.php');
 
                     <div class="row">
                         <div class="<?= $col6 ?> d-flex justify-content-center p-4">
-                            <button class="btn btn-info px-5 lang" type="submit" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar">Enviar</button>
+                            <button class="btn btn-info px-5 lang" type="submit" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar" onclick="stopDefAction(event, 'form#formFacturar')">Enviar</button>
                         </div>
                         <div class="<?= $col6 ?> d-flex d-flex justify-content-center p-4">
                             <button class="btn btn-secondary px-5 lang" type="button" data-dismiss="modal" key="Cancelar" data-section="formSolicitudPedidos" data-value="Cancelar">Cancelar</button>
@@ -219,50 +219,7 @@ include('../includes/cabecera.php');
 
     }
 </style>
-<script>
-    // function stopDefAction(evt, form) {
-    //     const span = document.querySelectorAll("form#frmDinamico span.warnings")
-    //     const input = document.querySelectorAll("form#frmDinamico input[name], textarea[name]"); 
 
-    //     // console.log(form) 
-    //     // const span = document.querySelectorAll(form + " span.warnings")
-    //     // const input = document.querySelectorAll(form + " input[name], textarea[name]");
-
-    //     //BUCLE PARA ETIQUETAS SPAN
-    //     for (const id of span) {
-    //         const spanId = id;
-    //         //Variable que obtiene solo valor del atributo data-target
-    //         const spanData = id.getAttribute('data-target').slice(1);
-    //         //Variable que tiene el valor del data-target sin el # que referencia al id
-            
-    //         //BUCLE PARA INPUT Y TEXTAREA
-    //         for (const name of input) {
-    //             //Variable que obtiene solo el valor del name de los input y textarea
-    //             const inputName = name.getAttribute('name');
-    //             //Variable que obtiene solo el valor del id de los input y textarea
-    //             const inputId = name.getAttribute('id');
-
-    //             //Condicion que evalua si muestra o esconde el elemento span 
-    //             if ($('input[name="' + inputName + '"]').val() == "" || $('textarea[name="' + inputName + '"]').val() == "") {
-    //                 if (spanData==inputId) {
-    //                     //Realiza un cambio en el atributo style para que muestre el elemento span
-    //                     spanId.setAttribute('style', 'display: inline;');
-    //                 }
-                    
-    //             } else if ($('input[name="' + inputName + '"]').val() != "" || $('textarea[name="' + inputName + '"]').val() == "") {
-    //                     if (spanData==inputId) {
-    //                     //Realiza el cambio en el atributo style para que oculte el elemento span
-    //                     spanId.setAttribute('style', 'display: none;');
-    //                 }
-                    
-    //             }
-
-    //         }
-    //     }
-
-    //     evt.preventDefault();
-    // } 
-</script>
 <?php
 include('../includes/pie.php');
 ?>

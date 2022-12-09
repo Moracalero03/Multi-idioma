@@ -32,18 +32,18 @@ $.getJSON("../publico/js/lang.json", function(json) {
         $('#btnAdd').on('click', function() {
             // var i = $('.filas').length //nos manda la cantidad de filas
             var fila = `<tr class="filas">
-        <td>
-            <select class="form-control" name="sNombreProducto[]">
-                <option value="Sacos" class="lang" key="Sacos" data-section="formSolicitudPedidos" data-value="Sacos">Sacos</option>
-            </select>
-        </td>
-        <td>
-            <input class="form-control" type="number" name="txtCantidad[]" data-validetta="required">
-        </td>
-        <td>
-            <button type="button" class="btn" id="btnEliminar"><img src="../publico/img/eliminar.png" width="20rem" height="20rem" alt=""></button>
-        </td>
-    </tr>`
+            <td>
+                <select class="form-control" name="sNombreProducto[]">
+                    <option value="Sacos" class="lang" key="Sacos" data-section="formSolicitudPedidos" data-value="Sacos">Sacos</option>
+                </select>
+            </td>
+            <td>
+                <input class="form-control" type="number" name="txtCantidadSP[]" min="0" data-validetta="required">
+            </td>
+            <td>
+                <button type="button" class="btn" id="btnEliminar"><img src="<?= $raiz ?>publico/img/eliminar.png" width="20rem" height="20rem" alt=""></button>
+            </td>
+        </tr>`
             $('#tblFilas').append(fila)
         })
 
@@ -69,7 +69,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
                             data: $('#frmDinamico').serialize(),
                             success: function(response) {
                                 $('#datos').html(response)
-                                $('#tblFilas > tr').remove()
+                                    // $('#tblFilas > tr').remove()
                             },
                             error: function() {
                                 Swal.fire({
