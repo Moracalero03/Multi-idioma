@@ -30,6 +30,8 @@ function idioma() {
     if (id == true) {
 
         $(document).ready(function() {
+            // $("#box").load("/file.php");
+
             //Idioma del datatable
             $('#example').DataTable({
                 "language": {
@@ -49,6 +51,11 @@ function idioma() {
                     'maxYear': 2050
                 });
             }
+
+            // loadScript("../publico/js/validettaLang-es-ES.js", MiArchivoCargado);
+
+            //Añade el paquete de validetta en español
+            // addScript("../publico/js/validettaLang-es-ES.js");
 
             const lenguaje = document.querySelector('#frmDinamico');
             lenguaje.setAttribute('action', '../publico/php/es-procesarProductos.php')
@@ -93,6 +100,18 @@ function idioma() {
                 });
             }
 
+            // const validar = document.getElementById('validar');
+            // if (validar != null) {
+            //     validar.remove();
+            //     // validetta.setAttribute('disable', '');
+            // }
+
+            // const validetta = document.getElementById('validetta');
+            // if (validetta != null) {
+            //     validetta.remove();
+            //     // validetta.setAttribute('disable', '');
+            // }
+
             const lenguaje = document.querySelector('#frmDinamico');
             lenguaje.setAttribute('action', '../publico/php/en-procesarProductos.php')
 
@@ -115,4 +134,30 @@ function idioma() {
             changeLanguage(e.target.parentElement.dataset.language);
         });
     }
+
+    function addScript(url) {
+        var script = $("<script>", {
+            src: url,
+            type: "text/javascript",
+            id: "validetta"
+        });
+
+        $("footer").append(script);
+    }
+
+    // function loadScript(url, callback) {
+
+    //     var head = document.getElementsByTagName('head')[0];
+    //     var script = document.createElement('script');
+    //     script.type = 'text/javascript';
+    //     script.src = url;
+    //     script.id = 'validar';
+    //     script.onreadystatechange = callback;
+    //     script.onload = callback;
+    //     head.appendChild(script);
+    // }
+
+    // function MiArchivoCargado() {
+    //     alert('../publico/js/validettaLang-es-ES.js ya ha sido cargado');
+    // }
 };
