@@ -116,52 +116,52 @@ include('../includes/cabecera.php');
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="id" data-section="formGestionUsuario"  data-value="id">ID</label><br>
-        <input type="text" class="form-control" name="txtid" data-seccion="formGestionUsuario"  data-valor="placeholderId" data-validetta="required">
-        <span class="warnings lang" key="spanId" id="warningsId"  data-section="formGestionUsuario"  data-value="spanId"></span>
+        <input type="text" class="form-control" name="txtid" id="txtid" data-seccion="formGestionUsuario"  data-valor="placeholderId" data-validetta="required">
+        <span class="warnings lang" key="spanId" data-target="#txtid" style="display: none;" id="warningsId"  data-section="formGestionUsuario"  data-value="spanId"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="nombre" data-section="formGestionUsuario"  data-value="nombre">Nombre</label>
-        <input type="text" class="form-control" name="txtNombreU" data-seccion="formGestionUsuario"  data-valor="PLNomCompletoU" data-validetta="required">
-        <span class="warnings lang" key="spanNombre" id="warningsNombre"  data-section="formGestionUsuario"  data-value="spanNombre"></span>
+        <input type="text" class="form-control" name="txtNombreU" id="txtNombreU" data-seccion="formGestionUsuario"  data-valor="PLNomCompletoU" data-validetta="required">
+        <span class="warnings lang" key="spanNombre" data-target="#txtNombreU" style="display: none;" id="warningsNombre"  data-section="formGestionUsuario"  data-value="spanNombre"></span>
     </div>
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="apellido" data-section="formGestionUsuario"  data-value="apellido">Apellido</label>
-        <input type="text" class="form-control" name="txtApellidoU" data-seccion="formGestionUsuario"  data-valor="PLApellidoU" data-validetta="required">
-        <span class="warnings lang" key="spanApellido" id="warningsApellido"  data-section="formGestionUsuario"  data-value="spanApellido"></span>
+        <input type="text" class="form-control" name="txtApellidoU" id="txtApellidoU" data-seccion="formGestionUsuario"  data-valor="PLApellidoU" data-validetta="required">
+        <span class="warnings lang" key="spanApellido" data-target ="#txtApellidoU" style="display: none;" id="warningsApellido"  data-section="formGestionUsuario"  data-value="spanApellido"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="numeroIdentificacion" data-section="formGestionUsuario"  data-value="numeroIdentificacion">Numero de Identidad</label>
-        <input type="text" class="form-control" name="txtNumeroIdentificacionU" data-seccion="formGestionUsuario"  data-valor="PLNumIndentificacionU" data-validetta="required">
-        <span class="warnings lang" key="spanNumeroIdentificacion" id="warningsNumeroIdentificacion"  data-section="formGestionUsuario"  data-value="spanNumeroIdentificacion"></span>
+        <input type="text" class="form-control" name="txtNumeroIdentificacionU" id="txtNumeroIdentificacionU" data-seccion="formGestionUsuario"  data-valor="PLNumIndentificacionU" data-validetta="required">
+        <span class="warnings lang" key="spanNumeroIdentificacion" data-target="#txtNumeroIdentificacionU" style="display: none;" id="warningsNumeroIdentificacion"  data-section="formGestionUsuario"  data-value="spanNumeroIdentificacion"></span>
     </div>                        
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="correo" data-section="formGestionUsuario"  data-value="correo">Correo</label>
-        <input type="email" class="form-control" name="txtCorreoU" data-seccion="formGestionUsuario"  data-valor="PLcorreoU" data-validetta="required">
-        <span class="warnings lang" key="spanCorreo" id="warningstCorreo"  data-section="formGestionUsuario"  data-value="spanCorreo"></span>
+        <input type="email" class="form-control" name="txtCorreoU" id="txtCorreoU" data-seccion="formGestionUsuario"  data-valor="PLcorreoU" data-validetta="required">
+        <span class="warnings lang" key="spanCorreo" data-target="#txtCorreoU" style="display: none;" id="warningstCorreo"  data-section="formGestionUsuario"  data-value="spanCorreo"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="nacionalidad" data-section="formGestionUsuario"  data-value="nacionalidad">Nacionalidad</label>
-        <input type="text" class="form-control" name="txtNacionalidadU" data-seccion="formGestionUsuario"  data-valor="PLNacionalidadU" data-validetta="required">
-        <span class="warnings lang" key="spanNacionalidad" id="warningsNacionalidad"  data-section="formGestionUsuario"  data-value="spanNacionalidad"></span>
+        <input type="text" class="form-control" name="txtNacionalidadU" id="txtNacionalidadU" data-seccion="formGestionUsuario"  data-valor="PLNacionalidadU" data-validetta="required">
+        <span class="warnings lang" key="spanNacionalidad" data-target="#txtNacionalidadU" style="display: none;" id="warningsNacionalidad"  data-section="formGestionUsuario"  data-value="spanNacionalidad"></span>
     </div>
 
     
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="direccion" data-section="formGestionUsuario"  data-value="direccion">Direccion</label>
-        <input type="text" class="form-control" name="txtDireccionU" data-seccion="formGestionUsuario"  data-valor="PLDireccionU" data-validetta="required">
-        <span class="warnings lang" key="spanDireccion" id="warningsDireccion"  data-section="formGestionUsuario"  data-value="spanDireccion"></span>
+        <input type="text" class="form-control" name="txtDireccionU" id="txtDireccionU" data-seccion="formGestionUsuario"  data-valor="PLDireccionU" data-validetta="required">
+        <span class="warnings lang" key="spanDireccion" data-target="#txtDireccionU" style="display: none;" id="warningsDireccion"  data-section="formGestionUsuario"  data-value="spanDireccion"></span>
     </div>
 
     <div  class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="telefono" data-section="formGestionUsuario"  data-value="telefono">Telefono</label>
-        <input type="text" class="form-control" name="txtTelefonoU" data-seccion="formGestionUsuario"  data-valor="PLNumTelefonoU" data-validetta="required">
-        <span class="warnings lang" key="spanTelefono" id="warningsTelefono"  data-section="formGestionUsuario"  data-value="spanTelefono"></span>
+        <input type="text" class="form-control" name="txtTelefonoU" id="txtTelefonoU" data-seccion="formGestionUsuario"  data-valor="PLNumTelefonoU" data-validetta="required">
+        <span class="warnings lang" key="spanTelefono" data-target="#txtTelefonoU"  style="display: none;" id="warningsTelefono"  data-section="formGestionUsuario"  data-value="spanTelefono"></span>
     </div>
 
     
@@ -170,7 +170,7 @@ include('../includes/cabecera.php');
 
 </div>
     <div class="modal-footer">
-    <button type="submit" class="btn btn-primary lang"  key="enviar" data-section="formGestionUsuario"  data-value="enviar">Enviar</button>
+    <button type="submit" class="btn btn-primary lang"  key="enviar" data-section="formGestionUsuario"onclick="stopDefAction(event,'form#formGestionUsuario')"  data-value="enviar">Enviar</button>
     <button type="button" class="btn btn-secondary lang" data-dismiss="modal"  key="cerrar" data-section="formGestionUsuario"  data-value="cerrar">Cerrar</button>
         
     </div>

@@ -23,7 +23,7 @@ include('../includes/cabecera.php');
                     <p class="lang" key="NomCompleto" data-section="formSolicitudPedidos" data-value="NomCompleto">Nombre completo</p>
                     <input class="form-control" type="text" name="txtNombreSP" id="txtNombreSP" data-seccion="formSolicitudPedidos" data-valor="PLNomCompletoSP" data-validetta="required" ;>
 
-                    <span class="warnings lang" key="spanNombreCompletoSP" data-target="#txtNombreSP" style="display: none;" id="warningsNombreCompletoSP" data-section="formSolicitudPedidos" data-value="spanNombreCompletoSP"></span>
+                    <span class="warnings lang"  key="spanNombreCompletoSP" data-target="#txtNombreSP" style="display: none;" id="warningsNombreCompletoSP" data-section="formSolicitudPedidos" data-value="spanNombreCompletoSP"></span>
                 </div>
 
                 <div class="<?= $col4 ?>">

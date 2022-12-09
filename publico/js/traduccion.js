@@ -40,6 +40,14 @@ function idioma() {
             })
 
             //Idioma del select monthPicker
+            $('#yearpicker').monthpicker({
+                'minYear': 2022,
+                'maxYear': 2050
+            });
+
+             
+
+            //Idioma del select monthPicker
             if (monthPicker != null && yearPicker != null) {
                 monthPicker.remove();
                 yearPicker.remove();
@@ -50,6 +58,24 @@ function idioma() {
                 });
             }
 
+           // if (id === true) {
+              // addScript("../publico/js/validettaLang-es-ES.js");
+               // document.write('<script src="../publico/js/validettaLang-es-ES.js"></script>')
+            
+              function importarScript(nombre) {
+                var s = document.createElement("script");
+                
+                s.src = nombre;
+                document.querySelector("head").appendChild(s);
+                }
+
+                importarScript("../publico/js/validettaLang-es-ES.js");
+
+                
+
+           // }
+
+                
             const lenguaje = document.querySelector('#frmDinamico');
             lenguaje.setAttribute('action', '../publico/php/es-procesarProductos.php')
 
@@ -93,6 +119,17 @@ function idioma() {
                 });
             }
 
+        
+            //   addScript("../publico/js/validetta.min.js");
+
+
+            const validetta = document.getElementById('validetta');
+            if(validetta!=null){
+                validetta.remove();
+                // validetta.setAttribute('disable', '');
+            } 
+
+
             const lenguaje = document.querySelector('#frmDinamico');
             lenguaje.setAttribute('action', '../publico/php/en-procesarProductos.php')
 
@@ -115,4 +152,14 @@ function idioma() {
             changeLanguage(e.target.parentElement.dataset.language);
         });
     }
+
+    function addScript(url) {
+            var script = $("<script>", {
+                    src: url,
+                    type: "text/javascript", 
+                    id: "validetta"
+                });
+
+            $("footer").append(script);
+        }    
 };

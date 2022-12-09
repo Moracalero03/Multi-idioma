@@ -1,10 +1,10 @@
-function stopDefAction(evt) {
-    const span = document.querySelectorAll("form#frmDinamico span.warnings")
-    const input = document.querySelectorAll("form#frmDinamico input[name], textarea[name]");
+function stopDefAction(evt,form) {
+   // const span = document.querySelectorAll("form#frmDinamico span.warnings")
+   // const input = document.querySelectorAll("form#frmDinamico input[name], textarea[name]");
 
-    // console.log(form) 
-    // const span = document.querySelectorAll(form + " span.warnings")
-    // const input = document.querySelectorAll(form + " input[name], textarea[name]");
+    console.log(form) 
+    const span = document.querySelectorAll(form + " span.warnings")
+    const input = document.querySelectorAll(form + " input[name], textarea[name]");
 
     //BUCLE PARA ETIQUETAS SPAN
     for (const id of span) {
