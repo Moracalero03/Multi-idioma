@@ -42,12 +42,6 @@ function idioma() {
             })
 
             //Idioma del select monthPicker
-            $('#yearpicker').monthpicker({
-                'minYear': 2022,
-                'maxYear': 2050
-            });
-
-            //Idioma del select monthPicker
             if (monthPicker != null && yearPicker != null) {
                 monthPicker.remove();
                 yearPicker.remove();

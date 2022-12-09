@@ -2,13 +2,13 @@
     if (!empty($_POST)) {
         $tableUsuario = '<table class="table table-info table-responsive-sm">
         <tr>
-            <th class="lang" key="nombre" data-section="formGestionUsuario" data-value="nombre">Nombre</th>
-            <th class="lang" key="apellido" data-section="formGestionUsuario" data-value="apellido">Apellido</th>
-            <th class="lang" key="numeroIdentificacion" data-section="formGestionUsuario" data-value="numeroIdentificacion">Numero de identificacion</th>
-            <th class="lang" key="correo" data-section="formGestionUsuario" data-value="correo">Correo</th>
-            <th class="lang" key="nacionalidad" data-section="formGestionUsuario" data-value="nacionalidad">Nacionalidad</th>
-            <th class="lang" key="direccion" data-section="formGestionUsuario" data-value="direccion">Dirección</th>
-            <th class="lang" key="telefono" data-section="formGestionUsuario" data-value="telefono">Telefono</th>
+            <th class="lang" key="nombre" data-section="formGestionUsuario" data-value="nombre">Name</th>
+            <th class="lang" key="apellido" data-section="formGestionUsuario" data-value="apellido">Last name</th>
+            <th class="lang" key="numeroIdentificacion" data-section="formGestionUsuario" data-value="numeroIdentificacion">Identity Number</th>
+            <th class="lang" key="correo" data-section="formGestionUsuario" data-value="correo">Email</th>
+            <th class="lang" key="nacionalidad" data-section="formGestionUsuario" data-value="nacionalidad">Nationality</th>
+            <th class="lang" key="direccion" data-section="formGestionUsuario" data-value="direccion">Address</th>
+            <th class="lang" key="telefono" data-section="formGestionUsuario" data-value="telefono">Phone</th>
         </tr>';
 
         $tableUsuario .= '<tr>
