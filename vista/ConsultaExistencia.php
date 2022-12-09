@@ -203,7 +203,7 @@ include('../includes/cabecera.php');
             <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <form action="../publico/php/<?php echo key($langs) ?>-procesarConsultaExistencia.php"  method="POST" id="formConsultaExistencia">
+        <form action="../publico/php/procesarConsultaExistencia.php"  method="POST" id="formConsultaExistencia">
     <div class="modal-body">
         
     <div class="row">
@@ -287,7 +287,7 @@ include('../includes/cabecera.php');
 
     <div class="col-lg-6 col-md-12 mt-1 mb-1">
         <label class="lang" key="estado" data-section="formConsultaExistencia"  data-value="estado">Estado</label><br>
-        <select  name="estado" class="form-control" data-seccion="formConsultaExistencia"  data-valor="">
+        <select name="estado" class="form-control" data-seccion="formConsultaExistencia"  data-valor="">
         <option class="lang" key="activo" data-section="formConsultaExistencia"  data-value="activo" value="Activo">Activo</option>
         <option class="lang" key="noActivo" data-section="formConsultaExistencia"  data-value="noActivo" value="No activo">No activo</option>
         </select>
