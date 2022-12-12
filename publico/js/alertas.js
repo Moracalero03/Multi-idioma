@@ -119,6 +119,26 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                     html: response
                                 })
                                 $('#ventanaModular').modal('hide');
+
+                                window.jsPDF = window.jspdf.jsPDF;
+
+                                var pdf = new jsPDF();
+
+                                pdf.autoTable({
+                                    theme: 'striped',
+                                    html: '#factura'
+                                });
+
+                                pdf.autoTable({
+                                    theme: 'striped',
+                                    html: '#tblCliente'
+                                })
+                                pdf.autoTable({
+                                    theme: 'grid',
+                                    html: '#tblPedido'
+                                })
+
+                                pdf.save('mipdf.pdf');
                             },
                             error: function() {
                                 Swal.fire({

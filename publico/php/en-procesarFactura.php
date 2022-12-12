@@ -1,6 +1,6 @@
 <?php
     if (!empty($_POST)) {
-        $tableFactura = '<table class="table table-info table-responsive">
+        $tableFactura = '<table class="table table-info table-responsive" id="factura">
         <tr>
         <th class="lang" key="MetodoPago" data-section="formSolicitudPedidos" data-value="MetodoPago">Payment method</th>
         <th class="lang" key="NomTarjeta" data-section="formSolicitudPedidos" data-value="NomTarjeta">Card name</th>
