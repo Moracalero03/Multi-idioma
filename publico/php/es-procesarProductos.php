@@ -1,6 +1,6 @@
 <?php
     if (!empty($_POST)) {
-        $tableCliente = '<table class="table table-info table-responsive-sm">
+        $tableCliente = '<table class="table table-info table-responsive-sm" id="tblCliente">
         <tr>
             <th class="lang" key="NomCompleto" data-section="formSolicitudPedidos" data-value="NomCompleto">Nombre Completo</th>
             <th class="lang" key="correo" data-section="formSolicitudPedidos" data-value="correo">Correo electrónico</th>
@@ -21,7 +21,7 @@
         
         $tableCliente.= '</table>';
 
-        $tableProducto = '<table class="table table-info table-responsive-sm ">
+        $tableProducto = '<table class="table table-info table-responsive-sm" id="tblPedido">
         <tr>
             <th class="lang" key="productoT" data-section="formSolicitudPedidos" data-value="productoT">Producto</th>
             <th class="lang" key="CantidadT" data-section="formSolicitudPedidos" data-value="CantidadT">Cantidad</th>
