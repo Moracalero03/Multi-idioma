@@ -117,48 +117,48 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                     title: translate('TitleFacturarDinamicoSuccess'),
                                     icon: 'success',
                                     html: response + ' <button type="button" id="btnpdf" class="btn btn-warning" value="Export To PDF">Descarga de PDF</button> 	'
-                                    
+
                                 })
-                               
+
                                 $('#ventanaModular').modal('hide');
-                                $('#btnpdf').click(function(){
+                                $('#btnpdf').click(function() {
 
-                                    
-                                        window.jsPDF = window.jspdf.jsPDF;
-                                       
-                                        var pdf = new jsPDF();
 
-                    
-                                        pdf.text(70, 20, "COMPROBANTE DE PEDIDO");
+                                    window.jsPDF = window.jspdf.jsPDF;
 
-                                        pdf.text(10, 30, "Comprobante de Facturacion");
-                                        pdf.autoTable({
-                                            theme: 'striped',
-                                            html: '#factura',
-                                            startY: 40
-                                        });
+                                    var pdf = new jsPDF();
 
-                                        pdf.text(10, 70, "Datos del cliente");
-                                        pdf.autoTable({
-                                            theme: 'striped',
-                                            html: '#tblCliente',
-                                            startY: 80
-                                        })
 
-                                        pdf.text(10, 110, "Lista de productos");
-                                        pdf.autoTable({
-                                            theme: 'grid',
-                                            html: '#tblPedido',
-                                            startY: 120
-                                        })
-                                
-                                        pdf.save('mipdf.pdf');
-                                        
-                                    
-                                    
+                                    pdf.text(70, 20, "COMPROBANTE DE PEDIDO");
+
+                                    pdf.text(10, 30, "Comprobante de Facturacion");
+                                    pdf.autoTable({
+                                        theme: 'striped',
+                                        html: '#factura',
+                                        startY: 40
+                                    });
+
+                                    pdf.text(10, 70, "Datos del cliente");
+                                    pdf.autoTable({
+                                        theme: 'striped',
+                                        html: '#tblCliente',
+                                        startY: 80
+                                    })
+
+                                    pdf.text(10, 110, "Lista de productos");
+                                    pdf.autoTable({
+                                        theme: 'grid',
+                                        html: '#tblPedido',
+                                        startY: 120
+                                    })
+
+                                    pdf.save('mipdf.pdf');
+
+
+
                                 });
-                             
-                        },
+
+                            },
                             error: function() {
                                 Swal.fire({
                                     title: translate('TitleDinamicoError'),

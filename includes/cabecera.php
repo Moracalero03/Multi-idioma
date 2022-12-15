@@ -12,7 +12,7 @@ require_once('../publico/php/db.php'); //creacion de archivos json
     <title class="lang" key="<?=$value?>" data-section="global" data-value="<?=$value?>"></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="<?=$raiz?>publico/css/estilos.css">
-    <link rel="stylesheet" href="<?=$raiz?>publico/css/validetta.min.css">
+    <link rel="stylesheet" href="<?=$raiz?>publico/css/validetta.css">
     <link rel="stylesheet" href="<?=$raiz?>publico/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
@@ -21,7 +21,7 @@ require_once('../publico/php/db.php'); //creacion de archivos json
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://unpkg.com/jspdf-autotable"></script>
-    <script src="<?=$raiz?>publico/js/monthpicker-master/jquery.monthpicker.min.js" type="text/javascript"></script>
+    <script src="<?=$raiz?>publico/js/monthpicker-master/jquery.monthpicker.min.js" type="text/javascript"></script> 
 </head>
 <body>
     <?php

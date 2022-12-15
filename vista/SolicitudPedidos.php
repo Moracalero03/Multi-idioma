@@ -107,7 +107,7 @@ include('../includes/cabecera.php');
 
             <div class="row">
                 <div class="<?= $col8 ?> d-flex p-4">
-                    <button type="submit" class="btn btn-warning ml-auto px-5 lang" id="btnEnviar" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar" onclick="stopDefAction(event, 'form#frmDinamico')">Enviar</button>
+                <button type="submit" class="btn btn-warning ml-auto px-5 lang" id="btnEnviar" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar" onclick="stopDefAction(event, 'form#frmDinamico')">Enviar</button>   
                 </div>
             </div>
     </form>
