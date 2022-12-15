@@ -123,10 +123,14 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                 window.jsPDF = window.jspdf.jsPDF;
 
                                 var pdf = new jsPDF();
+                                var y = 20;
+                                var x = 70;
 
+                                pdf.text(x, y, "COMPROBANTE DE PEDIDO");
                                 pdf.autoTable({
                                     theme: 'striped',
-                                    html: '#factura'
+                                    html: '#factura',
+                                    startY: 30
                                 });
 
                                 pdf.autoTable({

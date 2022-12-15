@@ -48,8 +48,8 @@
                 'maxYear': 2050
             }); 
 
-            //Añade el paquete de validetta en español
-            addScript("../publico/js/validettaLang-es-ES.js");
+            // //Añade el paquete de validetta en español
+            // addScript("../publico/js/validettaLang-es-ES.js");
 
         }else if (jsvar=='en') {
             window.onload= uncheck();
@@ -69,11 +69,11 @@
             });  
 
             
-            const validetta = document.getElementById('validetta');
-            if(validetta!=null){
-                validetta.remove();
-                // validetta.setAttribute('disable', '');
-            } 
+            // const validetta = document.getElementById('validetta');
+            // if(validetta!=null){
+            //     validetta.remove();
+            //     // validetta.setAttribute('disable', '');
+            // } 
 
         }
 
@@ -87,15 +87,15 @@
 
         });
         
-        function addScript(url) {
-            var script = $("<script>", {
-                    src: url,
-                    type: "text/javascript", 
-                    id: "validetta"
-                });
+        // function addScript(url) {
+        //     var script = $("<script>", {
+        //             src: url,
+        //             type: "text/javascript", 
+        //             id: "validetta"
+        //         });
 
-            $("footer").append(script);
-        }   
+        //     $("footer").append(script);
+        // }   
 
     </script>
 
@@ -104,11 +104,11 @@
 	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script> 
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.min.js"></script>
-    <!-- <script src="..\publico\js\validar.js"></script> -->
-    <script src="../publico/js/validetta.min.js"></script>
+    <script src="../publico/js/validetta.js"></script>
     <script src="../publico/js/placeholder.js"></script>
     <script src="../publico/js/traduccion.js"></script>    
     <script src="../publico/js/alertas.js"></script> 
+    <script src="../publico/js/fcAlerta.js"></script>
     <script src="../publico/js/span.js"></script> 
 </body>
 </html>
