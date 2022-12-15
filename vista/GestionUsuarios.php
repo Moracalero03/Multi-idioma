@@ -107,7 +107,10 @@ include('../includes/cabecera.php');
             <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <form action="../publico/php/<?php echo key($langs) ?>-procesarGestionUsuario.php"  method="POST" id="formGestionUsuario">
+       <!--<form action="../publico/php/<//?php echo key($langs) ?>-procesarGestionUsuario.php"  method="POST" id="formGestionUsuario">-->
+
+        <form action="../publico/php/<?php echo key($langs) ?>-procesarValitron.php"  method="POST" id="formGestionUsuario">
+
     <div class="modal-body">
         
     <div class="row">
@@ -140,7 +143,7 @@ include('../includes/cabecera.php');
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="correo" data-section="formGestionUsuario"  data-value="correo">Correo</label>
-        <input type="email" class="form-control" name="txtCorreoU" id="txtCorreoU" data-seccion="formGestionUsuario"  data-valor="PLcorreoU" data-validetta="required">
+        <input type="text" class="form-control" name="txtCorreoU" id="txtCorreoU" data-seccion="formGestionUsuario"  data-valor="PLcorreoU" >
         <span class="warnings lang" key="spanCorreo" data-target="#txtCorreoU" style="display: none;" id="warningstCorreo"  data-section="formGestionUsuario"  data-value="spanCorreo"></span>
     </div>
 
@@ -190,6 +193,8 @@ include('../includes/cabecera.php');
     </div>
 </div>
 </div>
+
+
 
 <?php
     include('../includes/pie.php');
