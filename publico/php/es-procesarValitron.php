@@ -8,11 +8,6 @@ V::lang('es');
 $v = new \Valitron\Validator($_POST);
 $v->rule("required", ["txtid", "txtNombreU", "txtApellidoU", "txtNumeroIdentificacionU", "txtCorreoU","txtNacionalidadU","txtDireccionU","txtTelefonoU"]);
 
-# el campo sea solo caracteres alfabéticos
-#$v->rule('alpha',['txtNombreU','txtApellidoU','txtNacionalidadU','txtDireccionU']);
-
-#$v->rule('regex', 'txtDireccionU', '/^([a-zA-Z ñ.àèìòùäëïöü\'-]*)+(\s*[a-zA-Z]*)*[a-zA-Z]+$/');
-
 #permite solo  poner en entero 
 $v->rule('integer', 'txtid');
 
@@ -29,10 +24,6 @@ $v->rule('regex', 'txtTelefonoU', '/^[0-9]{4}-[0-9]{4}$/');
 
 # El correo debe ser un correo
 $v->rule("email", "txtCorreoU");
-
-#$v = new Valitron\Validator(array());
-#$v->rule('required', 'name')->message('{field} is required')->label('Name');
-#$v->validate();
 
 $v->labels(array(
     'txtid' => 'ID',
