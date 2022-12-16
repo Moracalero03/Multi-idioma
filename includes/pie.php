@@ -107,8 +107,8 @@
     <script src="../publico/js/validetta.js"></script>
     <script src="../publico/js/placeholder.js"></script>
     <script src="../publico/js/traduccion.js"></script>    
-    <script src="../publico/js/alertas.js"></script> 
+    <!-- <script src="../publico/js/alertas.js"></script>  -->
     <script src="../publico/js/fcAlerta.js"></script>
-    <script src="../publico/js/span.js"></script> 
+    <!-- <script src="../publico/js/span.js"></script>  -->
 </body>
 </html>
