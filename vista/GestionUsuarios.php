@@ -188,7 +188,7 @@ include('../includes/cabecera.php');
 <div class="col-auto ">
     <div class="row">
         <div class="col-md-12">
-        <div class="<?=$col12?>" id="prueba2">
+        <div class="<?=$col12?> mb-3" id="prueba2">
         </div>                
     </div>
 </div>
