@@ -12,16 +12,30 @@ require_once('../publico/php/db.php'); //creacion de archivos json
     <title class="lang" key="<?=$value?>" data-section="global" data-value="<?=$value?>"></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="<?=$raiz?>publico/css/estilos.css">
-    <link rel="stylesheet" href="<?=$raiz?>publico/css/validetta.css">
+    <!--<link rel="stylesheet" href="<?=$raiz?>publico/css/validetta.css">-->
     <link rel="stylesheet" href="<?=$raiz?>publico/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="<?=$raiz?>publico/js/jQuery-Validation-Engine-master/css/validationEngine.jquery.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://unpkg.com/jspdf-autotable"></script>
     <script src="<?=$raiz?>publico/js/monthpicker-master/jquery.monthpicker.min.js" type="text/javascript"></script> 
+
+<!--prueba-->
+
+
+
+    <!-- El idioma de validationEngine -->
+    <script src="<?=$raiz?>publico/js/jQuery-Validation-Engine-master/jquery.validationEngine.js"></script>
+    <script src="<?=$raiz?>publico/js/jQuery-Validation-Engine-master/js/languages/jquery.validationEngine-en.js"></script>
+
+    <script type="text/javascript" src="../publico/js/global.js"></script>
+
 </head>
 <body>
     <?php
@@ -32,7 +46,7 @@ require_once('../publico/php/db.php'); //creacion de archivos json
             </div>
         
             <div class="container-fluid ">
-            <div class="row">
+
             <div class="container">
             <br>
                 <div class="row" id="idioma">

@@ -104,7 +104,7 @@
 	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script> 
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.min.js"></script>
-    <script src="../publico/js/validetta.js"></script>
+    <!--<script src="../publico/js/validetta.js"></script>-->
     <script src="../publico/js/placeholder.js"></script>
     <script src="../publico/js/traduccion.js"></script>    
     <script src="../publico/js/alertas.js"></script> 
