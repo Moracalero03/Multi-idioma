@@ -8,7 +8,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../publico/js/jQuery-Validation-Engine-master/js/jquery.validationEngine.js"></script>
-    <script type="text/javascript" src="../publico/js/jQuery-Validation-Engine-master/js/languages/jquery.validationEngine-en.js"></script>
+    <script type="text/javascript" src="../publico/js/jQuery-Validation-Engine-master/js/languages/jquery.validationEngine-es.js"></script>
 
     <script type="text/javascript" src="../publico/js/global.js"></script>
 </head>

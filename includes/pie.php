@@ -46,11 +46,10 @@
                 'lang': 'es',
                 'minYear': 2022,
                 'maxYear': 2050
-            }); 
+            });  
 
-            // //Añade el paquete de validetta en español
-            // addScript("../publico/js/validettaLang-es-ES.js");
-
+            addScript("https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-es.min.js")
+            
         }else if (jsvar=='en') {
             window.onload= uncheck();
             $(document).ready(function () {
@@ -66,14 +65,13 @@
                 'maxYear': 2050
             });
 
-            });  
+            const url = $('#validation').val();
+            if (url != null) {
+                url.remove()
+                addScript("https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-en.min.js")
+            }
 
-            
-            // const validetta = document.getElementById('validetta');
-            // if(validetta!=null){
-            //     validetta.remove();
-            //     // validetta.setAttribute('disable', '');
-            // } 
+            });  
 
         }
 
@@ -87,15 +85,15 @@
 
         });
         
-        // function addScript(url) {
-        //     var script = $("<script>", {
-        //             src: url,
-        //             type: "text/javascript", 
-        //             id: "validetta"
-        //         });
+        function addScript(url) {
+            var script = $("<script>", {
+                    src: url,
+                    type: "text/javascript", 
+                    id: "validation"
+                });
 
-        //     $("footer").append(script);
-        // }   
+            $("footer").append(script);
+        }   
 
     </script>
 
@@ -104,11 +102,12 @@
 	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script> 
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.min.js"></script>
-    <!--<script src="../publico/js/validetta.js"></script>-->
-    <script src="../publico/js/placeholder.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery.validationEngine.min.js" integrity="sha512-MKqdT8JgKftxlK6oK4S+Hh44ivKyaPncl6qN9JZEGKJGQZJMiSoPzehLcbvd/1XMieEP1Q4A3wzzhTrvBUUcUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../publico/js/placeholder.js"></script>
     <script src="../publico/js/traduccion.js"></script>    
     <script src="../publico/js/alertas.js"></script> 
     <script src="../publico/js/fcAlerta.js"></script>
     <script src="../publico/js/span.js"></script> 
+    <script type="text/javascript" src="../publico/js/global.js"></script>
 </body>
 </html>
