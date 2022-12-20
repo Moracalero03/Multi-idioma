@@ -5,7 +5,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
     let strings = json;
 
     //CAMBIO DE IDIOMA A LAS ALERTAS CON BOTON
-    var check = document.querySelector(".check");
+
 
     function translate(str) {
         if (!strings.hasOwnProperty(lang) || !strings[lang].hasOwnProperty(str)) {
@@ -14,16 +14,18 @@ $.getJSON("../publico/js/lang.json", function(json) {
         }
 
         //Evalua el estado del checkbox y cambia el idioma de la alerta
-        let id = check.checked;
+        // var id = check.checked;
+        var check = document.querySelector(".check");
+        console.log(check);
 
-        if (id == true) {
+        if (check.checked == true) {
             return strings["es"][str];
-        } else if (id == false) {
+        } else if (check.checked == false) {
             return strings["en"][str];
         }
 
         // Devolver traducción
-        return strings[lang][str];
+        // return strings[lang][str];
     }
 
     //FORMULARIO DINAMICO EN SOLICITUD DE PEDIDOS
@@ -124,7 +126,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
                         text: translate('TextErrorAlEnviar'),
                         icon: 'error'
                     })
-                } else if (status == true) {
+                } else if (status == true)
                     Swal.fire({
                         title: translate('TitleFacturarDinamico'),
                         text: translate('TextFacturarDinamico'),
@@ -201,10 +203,10 @@ $.getJSON("../publico/js/lang.json", function(json) {
                             $('#modal1').modal('hide')
                         }
                     })
-                }
             }
-        });
-    })
+        })
+    });
+    // })
 
 
     //Formulario de gestion de usuario 
@@ -286,7 +288,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
                 alert("The form status is: " + status + ", it will never submit");
                 if (status == false) {
                     Swal.fire({
-                        text: translate('TextErrorALEnviar'),
+                        text: translate('TextErrorAlEnviar'),
                         icon: 'error'
                     })
                 } else if (status == true) {

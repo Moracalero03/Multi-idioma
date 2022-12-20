@@ -30,7 +30,6 @@ function idioma() {
     if (id == true) {
 
         $(document).ready(function() {
-            // $("#box").load("/file.php");
 
             //Idioma del datatable
             $('#example').DataTable({

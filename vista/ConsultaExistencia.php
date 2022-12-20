@@ -297,7 +297,8 @@ include('../includes/cabecera.php');
 
 </div>
     <div class="modal-footer">
-    <button type="submit" class="btn btn-primary lang"  key="enviar" data-section="formConsultaExistencia" onclick="stopDefAction(event, 'form#formConsultaExistencia')" data-value="enviar">Enviar</button>
+    <button type="submit" class="btn btn-primary lang"  key="enviar" data-section="formConsultaExistencia" data-value="enviar">Enviar</button>
+    <!-- <button type="submit" class="btn btn-primary lang"  key="enviar" data-section="formConsultaExistencia" onclick="stopDefAction(event, 'form#formConsultaExistencia')" data-value="enviar">Enviar</button> -->
     <button type="button" class="btn btn-secondary lang" data-dismiss="modal"  key="cerrar" data-section="formConsultaExistencia"  data-value="cerrar">Cerrar</button>
         
     </div>

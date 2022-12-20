@@ -111,11 +111,8 @@ include('../includes/cabecera.php');
 
         <!--<form action="../publico/php/<//?php echo key($langs) ?>-procesarValitron.php"  method="POST" id="formGestionUsuario">-->
 
-    <div class="modal-body">
-        
+    <div class="modal-body">    
     <div class="row">
-
-    
 
     <div class="col-md-12 col-lg-6 form-group mt-1 mb-1">
         <label class="lang" key="id" data-section="formGestionUsuario"  data-value="id">ID</label><br>
@@ -173,7 +170,8 @@ include('../includes/cabecera.php');
 
 </div>
     <div class="modal-footer">
-    <button type="submit" class="btn btn-primary lang"  key="enviar" data-section="formGestionUsuario"onclick="stopDefAction(event,'form#formGestionUsuario')"  data-value="enviar">Enviar</button>
+    <button type="submit" class="btn btn-primary lang"  key="enviar" data-section="formGestionUsuario" data-value="enviar">Enviar</button>
+    <!-- <button type="submit" class="btn btn-primary lang"  key="enviar" data-section="formGestionUsuario"onclick="stopDefAction(event,'form#formGestionUsuario')"  data-value="enviar">Enviar</button> -->
     <button type="button" class="btn btn-secondary lang" data-dismiss="modal"  key="cerrar" data-section="formGestionUsuario"  data-value="cerrar">Cerrar</button>
         
     </div>
@@ -190,8 +188,8 @@ include('../includes/cabecera.php');
         <div class="col-md-12">
         <div class="<?=$col12?> mb-3" id="prueba2">
         </div>                
+        </div>
     </div>
-</div>
 </div>
 
 

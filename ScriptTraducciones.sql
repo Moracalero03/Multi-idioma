@@ -468,5 +468,5 @@ insert into traduccion(id, idioma, llave, valor) values
 ('formGestionUsuario','en','TextErrorAlEnviar','Unable to submit information'),
 ('formConsultaExistencia','en','TextErrorAlEnviar','Unable to submit information'),
 ('formSolicitudPedidos','es','TextErrorAlEnviar','No se puede enviar la información'),
-('formGestionUsuario','es','TextErrorAlEnviar','Unable to submit information'),
-('formConsultaExistencia','es','TextErrorAlEnviar','Unable to submit information');
+('formGestionUsuario','es','TextErrorAlEnviar','No se puede enviar la información'),
+('formConsultaExistencia','es','TextErrorAlEnviar','No se puede enviar la información');

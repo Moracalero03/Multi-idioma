@@ -48,8 +48,6 @@
                 'maxYear': 2050
             });  
 
-            addScript("https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-es.min.js")
-            
         }else if (jsvar=='en') {
             window.onload= uncheck();
             $(document).ready(function () {
@@ -65,12 +63,6 @@
                 'maxYear': 2050
             });
 
-            const url = document.querySelector('#validation');
-            if (url != null) {
-                url.remove()
-                addScript("https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-en.min.js")
-            }
-
             });  
 
         }
@@ -84,16 +76,6 @@
         } 
 
         });
-        
-        function addScript(url) {
-            var script = $("<script>", {
-                    src: url,
-                    type: "text/javascript", 
-                    id: "validation"
-                });
-
-            $("head").append(script);
-        }   
 
     </script>
 
