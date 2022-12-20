@@ -30,6 +30,11 @@ require_once('../publico/php/db.php'); //creacion de archivos json
     <script src="https://unpkg.com/jspdf-autotable"></script>
     <script src="<?=$raiz?>publico/js/monthpicker-master/jquery.monthpicker.min.js" type="text/javascript"></script>  
 
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery.validationEngine.min.js" integrity="sha512-MKqdT8JgKftxlK6oK4S+Hh44ivKyaPncl6qN9JZEGKJGQZJMiSoPzehLcbvd/1XMieEP1Q4A3wzzhTrvBUUcUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script type="text/javascript" src="../publico/js/jQuery-Validation-Engine-master/js/languages/jquery.validationEngine-es.js"></script>
+   
+
 </head>
 <body>
     <?php

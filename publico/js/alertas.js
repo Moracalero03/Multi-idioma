@@ -180,9 +180,6 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                         })
 
                                         pdf.save('mipdf.pdf');
-
-
-
                                     });
 
                                 },
@@ -191,13 +188,142 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                         title: translate('TitleDinamicoError'),
                                         icon: 'error',
                                     })
+                                    $('#modal1').modal('hide')
+                                },
+                                error: function() {
+                                    console.log(translate('TitleDinamicoError'))
                                 }
                             })
                         } else if (result.isDenied) {
                             Swal.fire({
-                                title: translate('TitleDinamicoCancelado'),
+                                title: translate('TitleDinamicoCancelado')
                             })
-                            $('#ventanaModular').modal('hide');
+                            $('#modal1').modal('hide')
+                        }
+                    })
+                }
+            }
+        });
+    })
+
+
+    //Formulario de gestion de usuario 
+    $(document).ready(function() {
+            $('#formGestionUsuario #txtid').addClass('validate[required,custom[number]]');
+            $('#formGestionUsuario #txtNombreU').addClass('validate[required,custom[onlyLetterSp]],');
+            $('#formGestionUsuario #txtApellidoU').addClass('validate[required,custom[onlyLetterSp]]');
+            $('#formGestionUsuario #txtNumeroIdentificacionU').addClass('validate[required,custom[onlyNumberSp]]');
+            $('#formGestionUsuario #txtCorreoU').addClass('validate[required,custom[email]],');
+            $('#formGestionUsuario #txtNacionalidadU').addClass('validate[required,custom[onlyLetterSp]]');
+            $('#formGestionUsuario #txtDireccionU').addClass('validate[required,custom[onlyLetterSp]]');
+            $('#formGestionUsuario #txtTelefonoU').addClass('validate[required,custom[phone]],');
+
+
+            jQuery("#formGestionUsuario").validationEngine('attach', {
+                onValidationComplete: function(form, status) {
+                    alert("El estado del formulario es: " + status + ", se enviara");
+                    if (status == false) {
+                        Swal.fire({
+                            text: translate('TextErrorAlEnviar'),
+                            icon: 'error'
+                        })
+                    } else if (status == true) {
+                        Swal.fire({
+                            title: translate('Title'),
+                            text: translate('Text'),
+                            icon: 'question',
+                            confirmButtonText: translate('confirmButtonText'),
+                            confirmButtonColor: 'orange',
+                            showDenyButton: true, //No 
+                            denyButtonText: translate('denyButtonText'),
+                            denyButtonColor: ' blue ',
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                $.ajax({
+                                    type: $('#formGestionUsuario').attr('method'),
+                                    url: $('#formGestionUsuario').attr('action'),
+                                    data: $('#formGestionUsuario').serialize(),
+                                    success: function(response) {
+                                        $('#prueba2').html(response)
+                                        Swal.fire({
+                                                title: translate('successTitle'),
+                                                icon: 'success',
+                                            })
+                                            //Cierra la modal
+                                        $('#modal2').modal('hide');
+                                    },
+                                    error: function() {
+                                        console.log(translate('TitleDinamicoError'))
+                                    }
+                                })
+                            } else if (result.isDenied) {
+                                Swal.fire({
+                                    title: translate('TitleDinamicoCancelado')
+                                })
+                                $('#modal2').modal('hide');
+                            }
+                        })
+                    }
+                }
+            });
+        })
+        // })
+
+    $(document).ready(function() {
+        $('#formConsultaExistencia #txtNombreCE').addClass('validate[required,custom[onlyLetterSp]]');
+        $('#formConsultaExistencia #txtCorreoCE').addClass('validate[required,custom[email]]');
+        $('#formConsultaExistencia #txtNacionalidadCE').addClass('validate[required,custom[onlyLetterSp]]');
+        $('#formConsultaExistencia #txtNIdentidadCE').addClass('validate[required,custom[onlyNumberSp]]');
+        $('#formConsultaExistencia #txtTelefonoCE').addClass('validate[required,custom[phone]]');
+        $('#formConsultaExistencia #txtDireccionCE').addClass('validate[required,custom[onlyLetterSp]]');
+        $('#formConsultaExistencia #txtProductoCE').addClass('validate[required,custom[onlyLetterSp]]');
+        $('#formConsultaExistencia #txtCantidadCE').addClass('validate[required,custom[integer]]');
+        $('#formConsultaExistencia #txtPrecioUnitarioCE').addClass('validate[required,custom[number]]');
+        $('#formConsultaExistencia #txtTotalIvaCE').addClass('validate[required,custom[number]]');
+
+        jQuery("#formConsultaExistencia").validationEngine('attach', {
+            onValidationComplete: function(form, status) {
+                alert("The form status is: " + status + ", it will never submit");
+                if (status == false) {
+                    Swal.fire({
+                        text: translate('TextErrorALEnviar'),
+                        icon: 'error'
+                    })
+                } else if (status == true) {
+                    Swal.fire({
+                        title: translate('TitleDinamico'),
+                        text: translate('TextDinamico'),
+                        icon: 'question',
+                        confirmButtonText: translate('ConfirmDinamico'),
+                        confirmButtonColor: 'orange',
+                        showDenyButton: true, //No 
+                        denyButtonText: translate('DenyDinamico'),
+                        denyButtonColor: ' blue ',
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            $.ajax({
+                                type: $('#formConsultaExistencia').attr('method'),
+                                url: $('#formConsultaExistencia').attr('action'),
+                                data: $('#formConsultaExistencia').serialize(),
+                                success: function(response) {
+                                    //Imprime la respuesta de php
+                                    $('#prueba').html(response)
+                                    Swal.fire({
+                                            title: translate('TitleSuccessDinamico'),
+                                            icon: 'success',
+                                        })
+                                        //Cierra la modal
+                                    $('#modal1').modal('hide')
+                                },
+                                error: function() {
+                                    console.log(translate('TitleDinamicoError'))
+                                }
+                            })
+                        } else if (result.isDenied) {
+                            Swal.fire({
+                                title: translate('TitleDinamicoCancelado')
+                            })
+                            $('#modal1').modal('hide')
                         }
                     })
                 }
@@ -205,132 +331,3 @@ $.getJSON("../publico/js/lang.json", function(json) {
         });
     })
 })
-
-// //Formulario de consulta de existencia 
-// jQuery(function() {
-//     $('#formConsultaExistencia').validetta({
-//         realTime: true,
-//         onValid: function(e) {
-//             e.preventDefault()
-//             Swal.fire({
-//                 title: translate('TitleDinamico'),
-//                 text: translate('TextDinamico'),
-//                 icon: 'question',
-//                 confirmButtonText: translate('ConfirmDinamico'),
-//                 confirmButtonColor: 'orange',
-//                 showDenyButton: true, //No 
-//                 denyButtonText: translate('DenyDinamico'),
-//                 denyButtonColor: ' blue ',
-//             }).then((result) => {
-//                 if (result.isConfirmed) {
-//                     $.ajax({
-//                         type: $('#formConsultaExistencia').attr('method'),
-//                         url: $('#formConsultaExistencia').attr('action'),
-//                         data: $('#formConsultaExistencia').serialize(),
-//                         success: function(response) {
-//                             //Imprime la respuesta de php
-//                             $('#prueba').html(response)
-//                             Swal.fire({
-//                                     title: translate('TitleSuccessDinamico'),
-//                                     icon: 'success',
-
-//                                 })
-//                                 //Cierra la modal
-//                             $('#modal1').modal('hide')
-//                         },
-//                         error: function() {
-//                             console.log(translate('TitleDinamicoError'))
-//                         }
-//                     })
-//                 } else if (result.isDenied) {
-//                     Swal.fire({
-//                         title: translate('TitleDinamicoCancelado')
-//                     })
-//                     $('#modal1').modal('hide')
-//                 }
-//             })
-//         }
-//     })
-// })
-
-// //Formulario de gestion de usuario 
-// $('#formGestionUsuario').validetta({
-//     realTime: true,
-//     onValid: function(e) {
-//         e.preventDefault()
-//         Swal.fire({
-//             title: translate('Title'),
-//             text: translate('Text'),
-//             icon: 'question',
-//             confirmButtonText: translate('confirmButtonText'),
-//             confirmButtonColor: 'orange',
-//             showDenyButton: true, //No 
-//             denyButtonText: translate('denyButtonText'),
-//             denyButtonColor: ' blue ',
-//         }).then((result) => {
-//             if (result.isConfirmed) {
-//                 $.ajax({
-//                     type: $('#formGestionUsuario').attr('method'),
-//                     url: $('#formGestionUsuario').attr('action'),
-//                     data: $('#formGestionUsuario').serialize(),
-//                     success: function(response) {
-//                         $('#prueba2').html(response)
-//                         Swal.fire({
-//                                 title: translate('successTitle'),
-//                                 icon: 'success',
-
-//                             })
-//                             //Cierra la modal
-//                         $('#modal2').modal('hide');
-//                     },
-//                     error: function() {
-//                         console.log(translate('TitleDinamicoError'))
-//                     }
-//                 })
-//             } else if (result.isDenied) {
-//                 Swal.fire({
-//                     title: translate('TitleDinamicoCancelado')
-//                 })
-//                 $('#modal2').modal('hide');
-//             }
-//         })
-//     }
-// })
-
-// //Al momento de enviar el formulario
-// $('#formularioIngreso').validetta({
-//     realTime: true,
-//     onValid: function(e) {
-//         e.preventDefault()
-//         Swal.fire({
-//             title: translate('Title'),
-//             text: translate('Text'),
-//             icon: 'question',
-//             confirmButtonText: translate('confirmButtonText'),
-//             confirmButtonColor: 'lila',
-//             showDenyButton: false,
-//         }).then((result) => {
-//             if (result.isConfirmed) {
-//                 $.ajax({
-//                     type: $('#formularioIngreso').attr('method'),
-//                     url: $('#formularioIngreso').attr('action'),
-//                     data: $('#formularioIngreso').serialize(),
-//                     success: function() {
-//                         Swal.fire({
-//                                 title: translate('successTitle'),
-//                                 text: translate('successText'),
-//                                 icon: 'success'
-//                             })
-//                             // window.location = '../php/procesar.php'
-//                     },
-//                     error: function() {
-//                         Swal.fire({
-//                             title: translate('errorTitle'),
-//                             icon: 'error'
-//                         })
-//                     }
-//                 })
-//             }
-//         })
-//     }
-// });
