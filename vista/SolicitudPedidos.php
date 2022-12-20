@@ -21,14 +21,14 @@ include('../includes/cabecera.php');
             <div class="row">
                 <div class="<?= $col4 ?>">
                     <p class="lang" key="NomCompleto" data-section="formSolicitudPedidos" data-value="NomCompleto">Nombre completo</p>
-                    <input class="form-control" type="text" name="txtNombreSP" id="txtNombreSP" data-seccion="formSolicitudPedidos" data-valor="PLNomCompletoSP" data-validetta="required" ;>
+                    <input class="form-control" type="text" name="txtNombreSP" id="txtNombreSP" data-seccion="formSolicitudPedidos" data-valor="PLNomCompletoSP">
 
                     <span class="warnings lang"  key="spanNombreCompletoSP" data-target="#txtNombreSP" style="display: none;" id="warningsNombreCompletoSP" data-section="formSolicitudPedidos" data-value="spanNombreCompletoSP"></span>
                 </div>
 
                 <div class="<?= $col4 ?>">
                     <p class="lang" key="correo" data-section="formSolicitudPedidos" data-value="correo">Correo electrónico</p>
-                    <input class="form-control" type="email" name="txtCorreoSP" id="txtCorreoSP" data-seccion="formSolicitudPedidos" data-valor="PLcorreoSP" data-validetta="required">
+                    <input class="form-control" type="email" name="txtCorreoSP" id="txtCorreoSP" data-seccion="formSolicitudPedidos" data-valor="PLcorreoSP">
 
                     <span class="warnings lang" key="spanCorreoElectronicoSP" data-target="#txtCorreoSP" style="display: none;" id="warningsCorreoElectronicoSP" data-section="formSolicitudPedidos" data-value="spanCorreoElectronicoSP"></span>
                 </div>
@@ -43,7 +43,7 @@ include('../includes/cabecera.php');
                 </div>
                 <div class="<?= $col4 ?>">
                     <p class="lang" key="NumIndentificacion" data-section="formSolicitudPedidos" data-value="NumIndentificacion">Número de identificación</p>
-                    <input class="form-control" type="text" name="txtIdentificacionSP" id="txtIdentificacionSP" data-seccion="formSolicitudPedidos" data-valor="PLNumIndentificacionSP" data-validetta="required">
+                    <input class="form-control" type="text" name="txtIdentificacionSP" id="txtIdentificacionSP" data-seccion="formSolicitudPedidos" data-valor="PLNumIndentificacionSP">
 
                     <span class="warnings lang" key="spanNumIndentificacionSP" data-target="#txtIdentificacionSP" style="display: none;" id="warningsNumIndentificacionSP" data-section="formSolicitudPedidos" data-value="spanNumIndentificacionSP"></span>
                 </div>
@@ -52,13 +52,13 @@ include('../includes/cabecera.php');
             <div class="row">
                 <div class="<?= $col4 ?>">
                     <p class="lang" key="NumTelefono" data-section="formSolicitudPedidos" data-value="NumTelefono">Número de teléfono</p>
-                    <input class="form-control" type="text" name="txtTelefonoSP" id="txtTelefonoSP" data-seccion="formSolicitudPedidos" data-valor="PLNumTelefonoSP" data-validetta="required">
+                    <input class="form-control" type="text" name="txtTelefonoSP" id="txtTelefonoSP" data-seccion="formSolicitudPedidos" data-valor="PLNumTelefonoSP">
 
                     <span class="warnings lang" key="spanTelefonoSP" data-target="#txtTelefonoSP" style="display: none;" id="warningsTelefonoSP" data-section="formSolicitudPedidos" data-value="spanTelefonoSP"></span>
                 </div>
                 <div class="<?= $col4 ?>">
                     <p class="lang" key="Direccion" data-section="formSolicitudPedidos" data-value="Direccion">Dirección</p>
-                    <textarea class="form-control" name="txtDireccionSP" id="txtDireccionSP" cols="15" rows="1" data-seccion="formSolicitudPedidos" data-valor="PLDireccionSP" data-validetta="required"></textarea>
+                    <textarea class="form-control" name="txtDireccionSP" id="txtDireccionSP" cols="15" rows="1" data-seccion="formSolicitudPedidos" data-valor="PLDireccionSP"></textarea>
 
                     <span class="warnings lang" key="spanDireccionSP" data-target="#txtDireccionSP" style="display: none;" id="warningsDireccionSP" data-section="formSolicitudPedidos" data-value="spanDireccionSP"></span>
                 </div>
@@ -94,7 +94,7 @@ include('../includes/cabecera.php');
                                     </select>
                                 </td>
                                 <td>
-                                    <input class="form-control" type="number" name="txtCantidadSP[]" min="0" data-validetta="required">
+                                    <input class="form-control" type="number" id="txtCantidadSP" name="txtCantidadSP[]" min="0">
                                 </td>
                                 <td>
                                     <button type="button" class="btn" id="btnEliminar"><img src="<?= $raiz ?>publico/img/eliminar.png" width="20rem" height="20rem" alt=""></button>
@@ -107,7 +107,8 @@ include('../includes/cabecera.php');
 
             <div class="row">
                 <div class="<?= $col8 ?> d-flex p-4">
-                <button type="submit" class="btn btn-warning ml-auto px-5 lang" id="btnEnviar" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar" onclick="stopDefAction(event, 'form#frmDinamico')">Enviar</button>   
+                <!-- <button type="submit" class="btn btn-warning ml-auto px-5 lang" id="btnEnviar" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar" onclick="stopDefAction(event, 'form#frmDinamico')">Enviar</button>    -->
+                <button type="submit" class="btn btn-warning ml-auto px-5 lang" id="btnEnviar" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar">Enviar</button>   
                 </div>
             </div>
     </form>
@@ -153,7 +154,7 @@ include('../includes/cabecera.php');
                         </div>
                         <div class="<?= $col6 ?>">
                             <p class="lang" key="NomTarjeta" data-section="formSolicitudPedidos" data-value="NomTarjeta">Nombre de la tarjeta</p>
-                            <input class="form-control" type="text" name="txtNomTarjetaSP" id="txtNomTarjetaSP" data-seccion="formSolicitudPedidos" data-valor="PLNomTarjetaSP" data-validetta="required">
+                            <input class="form-control" type="text" name="txtNomTarjetaSP" id="txtNomTarjetaSP" data-seccion="formSolicitudPedidos" data-valor="PLNomTarjetaSP">
 
                             <span class="warnings lang" key="spanNombreTarjeta" data-target="#txtNomTarjetaSP" style="display: none;" id="warningsNombreTarjeta" data-section="formSolicitudPedidos" data-value="spanNombreTarjeta"></span>
 
@@ -163,7 +164,7 @@ include('../includes/cabecera.php');
                     <div class="row">
                         <div class="<?= $col6 ?>">
                             <p class="lang" key="NumTarjeta" data-section="formSolicitudPedidos" data-value="NumTarjeta">Número de tarjeta</p>
-                            <input class="form-control" type="text" name="txtNumTarjetaSP" id="txtNumTarjetaSP" data-seccion="formSolicitudPedidos" data-valor="PLNumTarjetaSP" data-validetta="required">
+                            <input class="form-control" type="text" name="txtNumTarjetaSP" id="txtNumTarjetaSP" data-seccion="formSolicitudPedidos" data-valor="PLNumTarjetaSP">
 
                             <span class="warnings lang" key="spanNumeroTarjeta" data-target="#txtNumTarjetaSP" style="display: none;" id="warningsNumeroTarjeta" data-section="formSolicitudPedidos" data-value="spanNumeroTarjeta"></span>
 
@@ -183,7 +184,8 @@ include('../includes/cabecera.php');
 
                     <div class="row">
                         <div class="<?= $col6 ?> d-flex justify-content-center p-4">
-                            <button class="btn btn-info px-5 lang" type="submit" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar" onclick="stopDefAction(event, 'form#formFacturar')">Enviar</button>
+                        <button class="btn btn-info px-5 lang" type="submit" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar">Enviar</button>
+                            <!-- <button class="btn btn-info px-5 lang" type="submit" key="Enviar" data-section="formSolicitudPedidos" data-value="Enviar" onclick="stopDefAction(event, 'form#formFacturar')">Enviar</button> -->
                         </div>
                         <div class="<?= $col6 ?> d-flex d-flex justify-content-center p-4">
                             <button class="btn btn-secondary px-5 lang" type="button" data-dismiss="modal" key="Cancelar" data-section="formSolicitudPedidos" data-value="Cancelar">Cancelar</button>

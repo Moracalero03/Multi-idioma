@@ -52,8 +52,6 @@ function idioma() {
                 });
             }
 
-            addScript("https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-es.min.js")
-
             //SELECTOR DE IDIOMA DINAMICO PARA PROCESAR UN FORMULARIO EN ESPAÑOL
             const formulario = document.querySelectorAll('form');
             const idioma = 'es';
@@ -99,12 +97,6 @@ function idioma() {
                 });
             }
 
-            const url = $('#validation').val();
-            if (url != null) {
-                url.remove()
-                addScript("https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-en.min.js")
-            }
-
             //SELECTOR DE IDIOMA DINAMICO PARA PROCESAR UN FORMULARIO EN INGLES
             const formulario = document.querySelectorAll('form');
             const idioma = 'en';
@@ -146,15 +138,5 @@ function idioma() {
             formulario.setAttribute('action', attr);
         }
 
-    }
-
-    function addScript(url) {
-        var script = $("<script>", {
-            src: url,
-            type: "text/javascript",
-            id: "validation"
-        });
-
-        $("footer").append(script);
     }
 };

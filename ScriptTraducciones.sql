@@ -461,4 +461,12 @@ insert into traduccion(id, idioma, llave, valor) values
 
 ('formGestionUsuario','es','placeholderId','Ingrese su ID'), 
 
-('formGestionUsuario','en','placeholderId','Enter your ID');
+('formGestionUsuario','en','placeholderId','Enter your ID'),
+
+-- Alerta al no poder enviar
+('formSolicitudPedidos','en','TextErrorAlEnviar','Unable to submit information'),
+('formGestionUsuario','en','TextErrorAlEnviar','Unable to submit information'),
+('formConsultaExistencia','en','TextErrorAlEnviar','Unable to submit information'),
+('formSolicitudPedidos','es','TextErrorAlEnviar','No se puede enviar la información'),
+('formGestionUsuario','es','TextErrorAlEnviar','Unable to submit information'),
+('formConsultaExistencia','es','TextErrorAlEnviar','Unable to submit information');
