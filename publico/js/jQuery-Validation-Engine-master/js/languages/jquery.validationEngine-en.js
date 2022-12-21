@@ -137,7 +137,7 @@
                     "alertText": "* Numbers only"
                 },
                 "onlyLetterSp": {
-                    "regex": /^[a-zA-Z\ \']+$/,
+                    "regex": /^[a-zA-ZñÑáéíóúäëïöü]+(\s*[a-zA-ZñÑáéíóúäëïöü]*)*[a-zA-ZñÑáéíóúäëïöü]+$/,
                     "alertText": "* Letters only"
                 },
                 "onlyLetterAccentSp": {
@@ -201,7 +201,11 @@
                 },
                 "DUI": {
                     "regex": /^[0-9]{8}-[0-9]{1}$/,
-                    "alertText": "* Número de DUI no válido"
+                    "alertText": "*Invalid DUI number"
+                },
+                "DIRECCION": {
+                    "regex": /^([a-zA-ZñÑáéíóúäëïöü#0-9\s]*)+/,
+                    "alertText": "*Invalid address"
                 }
             };
 

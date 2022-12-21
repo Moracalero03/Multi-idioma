@@ -214,10 +214,10 @@ $.getJSON("../publico/js/lang.json", function(json) {
             $('#formGestionUsuario #txtid').addClass('validate[required,custom[number]]');
             $('#formGestionUsuario #txtNombreU').addClass('validate[required,custom[onlyLetterSp]],');
             $('#formGestionUsuario #txtApellidoU').addClass('validate[required,custom[onlyLetterSp]]');
-            $('#formGestionUsuario #txtNumeroIdentificacionU').addClass('validate[required,custom[onlyNumberSp]]');
+            $('#formGestionUsuario #txtNumeroIdentificacionU').addClass('validate[required,custom[DUI]]');
             $('#formGestionUsuario #txtCorreoU').addClass('validate[required,custom[email]],');
             $('#formGestionUsuario #txtNacionalidadU').addClass('validate[required,custom[onlyLetterSp]]');
-            $('#formGestionUsuario #txtDireccionU').addClass('validate[required,custom[onlyLetterSp]]');
+            $('#formGestionUsuario #txtDireccionU').addClass('validate[required,custom[DIRECCION]]');
             $('#formGestionUsuario #txtTelefonoU').addClass('validate[required,custom[phone]],');
 
 
@@ -247,10 +247,10 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                     data: $('#formGestionUsuario').serialize(),
                                     success: function(response) {
                                         $('#prueba2').html(response)
-                                            // Swal.fire({
-                                            //         title: translate('successTitle'),
-                                            //         icon: 'success',
-                                            //     })
+                                            //     // Swal.fire({
+                                            ////         title: translate('successTitle'),
+                                            // //        icon: 'success',
+                                            //    //     })
                                             //Cierra la modal
                                         $('#modal2').modal('hide');
                                     },
@@ -275,9 +275,9 @@ $.getJSON("../publico/js/lang.json", function(json) {
         $('#formConsultaExistencia #txtNombreCE').addClass('validate[required,custom[onlyLetterSp]]');
         $('#formConsultaExistencia #txtCorreoCE').addClass('validate[required,custom[email]]');
         $('#formConsultaExistencia #txtNacionalidadCE').addClass('validate[required,custom[onlyLetterSp]]');
-        $('#formConsultaExistencia #txtNIdentidadCE').addClass('validate[required,custom[onlyNumberSp]]');
+        $('#formConsultaExistencia #txtNIdentidadCE').addClass('validate[required,custom[DUI]]');
         $('#formConsultaExistencia #txtTelefonoCE').addClass('validate[required,custom[phone]]');
-        $('#formConsultaExistencia #txtDireccionCE').addClass('validate[required,custom[onlyLetterSp]]');
+        $('#formConsultaExistencia #txtDireccionCE').addClass('validate[required,custom[DIRECCION]]');
         $('#formConsultaExistencia #txtProductoCE').addClass('validate[required,custom[onlyLetterSp]]');
         $('#formConsultaExistencia #txtCantidadCE').addClass('validate[required,custom[integer]]');
         $('#formConsultaExistencia #txtPrecioUnitarioCE').addClass('validate[required,custom[number]]');
@@ -310,10 +310,10 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                 success: function(response) {
                                     //Imprime la respuesta de php
                                     $('#prueba').html(response)
-                                        // Swal.fire({
-                                        //         title: translate('TitleSuccessDinamico'),
-                                        //         icon: 'success',
-                                        //     })
+                                        //     // Swal.fire({
+                                        //      //   title: translate('TitleSuccessDinamico'),
+                                        //       //  icon: 'success',
+                                        // //     })
                                         //Cierra la modal
                                     $('#modal1').modal('hide')
                                 },
