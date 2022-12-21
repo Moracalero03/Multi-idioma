@@ -53,7 +53,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
     $(document).ready(function() {
         $('#frmDinamico #txtNombreSP').addClass('validate[required,custom[onlyLetterSp]]');
         $('#frmDinamico #txtCorreoSP').addClass('validate[required,custom[email]]');
-        $('#frmDinamico #txtIdentificacionSP').addClass('validate[required,custom[onlyNumberSp]]');
+        $('#frmDinamico #txtIdentificacionSP').addClass('validate[required,custom[DUI]]');
         $('#frmDinamico #txtTelefonoSP').addClass('validate[required,custom[phone]]');
         $('#frmDinamico #txtDireccionSP').addClass('validate[required,custom[onlyLetterSp]]');
         $('#frmDinamico #txtCantidadSP').addClass('validate[required]');
@@ -247,10 +247,10 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                     data: $('#formGestionUsuario').serialize(),
                                     success: function(response) {
                                         $('#prueba2').html(response)
-                                        Swal.fire({
-                                                title: translate('successTitle'),
-                                                icon: 'success',
-                                            })
+                                            // Swal.fire({
+                                            //         title: translate('successTitle'),
+                                            //         icon: 'success',
+                                            //     })
                                             //Cierra la modal
                                         $('#modal2').modal('hide');
                                     },
@@ -310,10 +310,10 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                 success: function(response) {
                                     //Imprime la respuesta de php
                                     $('#prueba').html(response)
-                                    Swal.fire({
-                                            title: translate('TitleSuccessDinamico'),
-                                            icon: 'success',
-                                        })
+                                        // Swal.fire({
+                                        //         title: translate('TitleSuccessDinamico'),
+                                        //         icon: 'success',
+                                        //     })
                                         //Cierra la modal
                                     $('#modal1').modal('hide')
                                 },

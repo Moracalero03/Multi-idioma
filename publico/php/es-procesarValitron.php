@@ -38,11 +38,33 @@ $v->labels(array(
 
 
 if ($v->validate()) {
-    echo '<div class="alert alert-success" role="alert">
-              OK, datos correctos!
-            </div>';
+            echo "<script>
+            var Toast = Swal.mixin({ toast: true, position: 'top-end', 
+              showConfirmButton: false, 
+              timer: 3000, 
+              timerProgressBar: 
+              true, 
+              didOpen: (toast) => { 
+                toast.addEventListener('mouseenter', Swal.stopTimer) 
+                toast.addEventListener('mouseleave', Swal.resumeTimer) } 
+              }) 
+                Toast.fire({ icon: 'success', title: 'Datos enviados correctamente' })
+                </script>";
 } else {
-     $errores = $v->errors();
+  echo "<script>
+  var Toast = Swal.mixin({ toast: true, position: 'top-end', 
+    showConfirmButton: false, 
+    timer: 3000, 
+    timerProgressBar: 
+    true, 
+    didOpen: (toast) => { 
+      toast.addEventListener('mouseenter', Swal.stopTimer) 
+      toast.addEventListener('mouseleave', Swal.resumeTimer) } 
+    }) 
+      Toast.fire({ icon: 'error', title: 'Tiene errores en el formulario' })
+      </script>";
+
+  $errores = $v->errors();
   $lista = '<p>
     <button class="btn btn-danger" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="colapsar">Correcciones(Dar click)</button>
 </p>

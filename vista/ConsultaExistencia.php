@@ -10,7 +10,7 @@ include('../includes/cabecera.php');
 ?>
             
             <div class="<?=$col11?> p-4 mx-auto" >    
-            <table id="example" class="table table-light table-striped table-bordered dt-responsive wrap" style="width:100%">
+            <table id="example" class="table table-light table-striped table-bordered dt-responsive wrap" cellspacing="0" style="width:100%">
         <thead>
             <tr>
                 <th class="lang" key="numeroFactura" data-section="formConsultaExistencia" data-value="numeroFactura">Número de factura</th>
@@ -310,10 +310,10 @@ include('../includes/cabecera.php');
 </div>
 </div>
 
-<div class="col-auto">
+<div class="col-auto" style="background-color: red;">
     <div class="row">
         <div class="col-md-12">
-        <div class="<?=$col12?>" id="prueba">
+        <div class="<?=$col11?>" id="prueba">
         </div>                
     </div>
 </div>

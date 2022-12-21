@@ -22,14 +22,14 @@ require_once('../publico/php/db.php'); //creacion de archivos json
     <link rel="stylesheet" href="<?=$raiz?>publico/js/jQuery-Validation-Engine-master/css/validationEngine.jquery.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="../publico/js/jQuery-Validation-Engine-master/js/jquery.validationEngine.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-<?php echo key($langs) ?>.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="../publico/js/jQuery-Validation-Engine-master/js/jquery.validationEngine.min.js"></script> 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-</?php echo key($langs) ?>.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" id="validationIdioma"></script> -->
+    <script src="<?=$raiz?>publico/js/jQuery-Validation-Engine-master/js/languages/jquery.validationEngine-<?php echo key($langs) ?>.js" referrerpolicy="no-referrer"></script>
     <script src="../publico/js/alertas.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://unpkg.com/jspdf-autotable"></script>
     <script src="<?=$raiz?>publico/js/monthpicker-master/jquery.monthpicker.min.js" type="text/javascript"></script>  
-
+    <!-- <meta http-equiv="refresh" content="20"> -->
 </head>
 <body>
     <?php

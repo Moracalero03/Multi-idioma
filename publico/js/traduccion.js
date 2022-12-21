@@ -56,6 +56,9 @@ function idioma() {
             const idioma = 'es';
             procesarDinamico(idioma, formulario);
 
+            const cdn = document.getElementById('validationIdioma');
+            validationIdioma(idioma, cdn);
+
         });
 
         //TRADUCCIONES DE LOS DATA-SECTION
@@ -101,6 +104,9 @@ function idioma() {
             const idioma = 'en';
             procesarDinamico(idioma, formulario);
 
+            const cdn = document.getElementById('validationIdioma');
+            validationIdioma(idioma, cdn);
+
         });
         //TRADUCCIONES DE LOS DATA-SECTION
         const changeLanguage = async language => {
@@ -136,6 +142,13 @@ function idioma() {
             //Setea el atributo action con los nuevos valores
             formulario.setAttribute('action', attr);
         }
+
+    }
+
+    function validationIdioma(idioma, cdn) {
+        console.log(cdn);
+        const src = 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-' + idioma + '.min.js'
+        cdn.setAttribute('src', src);
 
     }
 };
