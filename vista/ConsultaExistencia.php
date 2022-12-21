@@ -175,8 +175,7 @@ include('../includes/cabecera.php');
 
             </td>
             </tr>
-        </tbody>
-        <tfoot>
+
             <tr>
                 <th></th>
                 <th></th>
@@ -186,8 +185,12 @@ include('../includes/cabecera.php');
                 <th></th>
                 <th></th>
             </tr>
+
+        </tbody>
+        
         </tfoot>
     </table>
+</div>
 </div>
 
 
@@ -310,15 +313,16 @@ include('../includes/cabecera.php');
 </div>
 </div>
 
-<div class="col-auto">
+
+<div class="col-auto" style="background-color: #004D71;">
     <div class="row">
         <div class="col-md-12">
-        <div class="<?=$col12?>" id="prueba">
+        <div class="<?=$col11?>" id="prueba">
         </div>                
     </div>
 </div>
 </div>
-<br>
+
 
 
 <?php

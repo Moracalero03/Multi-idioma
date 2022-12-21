@@ -23,8 +23,8 @@ require_once('../publico/php/db.php'); //creacion de archivos json
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../publico/js/jQuery-Validation-Engine-master/js/jquery.validationEngine.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-<?php echo key($langs) ?>.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-<?php echo key($langs) ?>.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <script src="<?=$raiz?>publico/js/jQuery-Validation-Engine-master/js/languages/jquery.validationEngine-<?php echo key($langs) ?>.js" referrerpolicy="no-referrer"></script>
     <script src="../publico/js/alertas.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://unpkg.com/jspdf-autotable"></script>

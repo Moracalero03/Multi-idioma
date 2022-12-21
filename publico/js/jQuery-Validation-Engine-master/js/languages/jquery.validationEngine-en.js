@@ -138,7 +138,7 @@
                     "alertText": "* Numbers only"
                 },
                 "onlyLetterSp": {
-                    "regex": /^[a-zA-Z\ \']+$/,
+                    "regex": /^[a-zA-ZñÑáéíóúäëïöü]+(\s*[a-zA-ZñÑáéíóúäëïöü]*)*[a-zA-ZñÑáéíóúäëïöü]+$/,
                     "alertText": "* Letters only"
                 },
 				"onlyLetterAccentSp":{
@@ -199,7 +199,15 @@
                     "alertText2": "Expected Format: ",
                     "alertText3": "mm/dd/yyyy hh:mm:ss AM|PM or ", 
                     "alertText4": "yyyy-mm-dd hh:mm:ss AM|PM"
-	            }
+	            },
+                "DUI": {
+                    "regex": /^[0-9]{8}-[0-9]{1}$/,
+                    "alertText": "*Invalid DUI number"
+                },
+                "DIRECCION": {
+                    "regex": /^([a-zA-ZñÑáéíóúäëïöü#0-9\s]*)+/,
+                    "alertText": "*Invalid DIRECCION number"
+                }
             };
             
         }
