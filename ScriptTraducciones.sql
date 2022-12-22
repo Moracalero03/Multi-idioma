@@ -469,4 +469,15 @@ insert into traduccion(id, idioma, llave, valor) values
 ('formConsultaExistencia','en','TextErrorAlEnviar','Unable to submit information'),
 ('formSolicitudPedidos','es','TextErrorAlEnviar','No se puede enviar la información'),
 ('formGestionUsuario','es','TextErrorAlEnviar','No se puede enviar la información'),
-('formConsultaExistencia','es','TextErrorAlEnviar','No se puede enviar la información');
+('formConsultaExistencia','es','TextErrorAlEnviar','No se puede enviar la información'),
+
+-- pdf 
+('formSolicitudPedidos','en','pdfTitle','ORDER VOUCHER'),
+('formSolicitudPedidos','en','pdfTitleFactura','Receipt of Billing'),
+('formSolicitudPedidos','en','pdfTitleCliente','Customer data'),
+('formSolicitudPedidos','en','pdfTitleProducto','List of products'),
+
+('formSolicitudPedidos','es','pdfTitle','COMPROBANTE DE PEDIDO'),
+('formSolicitudPedidos','es','pdfTitleFactura','Comprobante de Facturacion'),
+('formSolicitudPedidos','es','pdfTitleCliente','Datos del cliente'),
+('formSolicitudPedidos','es','pdfTitleProducto','Lista de productos');
