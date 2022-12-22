@@ -120,23 +120,23 @@ input[type=file].file-loading {
     margin: auto;
 }
 
-.file-zoom-content > .file-object.type-video,
-.file-zoom-content > .file-object.type-flash,
-.file-zoom-content > .file-object.type-image {
+.file-zoom-content>.file-object.type-video,
+.file-zoom-content>.file-object.type-flash,
+.file-zoom-content>.file-object.type-image {
     max-width: 100%;
     max-height: 100%;
     width: auto;
 }
 
-.file-zoom-content > .file-object.type-video,
-.file-zoom-content > .file-object.type-flash {
+.file-zoom-content>.file-object.type-video,
+.file-zoom-content>.file-object.type-flash {
     height: 100%;
 }
 
-.file-zoom-content > .file-object.type-pdf,
-.file-zoom-content > .file-object.type-html,
-.file-zoom-content > .file-object.type-text,
-.file-zoom-content > .file-object.type-default {
+.file-zoom-content>.file-object.type-pdf,
+.file-zoom-content>.file-object.type-html,
+.file-zoom-content>.file-object.type-text,
+.file-zoom-content>.file-object.type-default {
     width: 100%;
 }
 
@@ -186,21 +186,21 @@ input[type=file].file-loading {
     padding-left: 25px;
 }
 
-.file-caption.icon-visible > .input-group-lg .file-caption-name {
+.file-caption.icon-visible>.input-group-lg .file-caption-name {
     padding-left: 30px;
 }
 
-.file-caption.icon-visible > .input-group-sm .file-caption-name {
+.file-caption.icon-visible>.input-group-sm .file-caption-name {
     padding-left: 22px;
 }
 
 .file-caption-name:not(.file-caption-disabled) {
-    background-color: transparent;
+    background-color: #fff;
 }
 
 .file-caption-name.file-processing {
     font-style: italic;
-    border-color: #bbb;
+    border-color: #000;
     opacity: 0.5;
 }
 
@@ -239,10 +239,11 @@ input[type=file].file-loading {
 
 .file-preview {
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(0, 0, 0);
     padding: 8px;
     width: 100%;
     margin-bottom: 5px;
+    background-color: white;
 }
 
 .file-preview .btn-xs {
@@ -278,7 +279,6 @@ input[type=file].file-loading {
     padding: 6px;
     float: left;
     text-align: center;
-
 }
 
 .krajee-default.file-preview-frame .kv-file-content {
@@ -572,12 +572,12 @@ input[type=file].file-loading {
     max-height: 100%;
 }
 
-.file-zoom-content > .file-object.type-image {
+.file-zoom-content>.file-object.type-image {
     height: auto;
     min-height: inherit;
 }
 
-.file-zoom-content > .file-object.type-audio {
+.file-zoom-content>.file-object.type-audio {
     width: auto;
     height: 30px;
 }
@@ -601,7 +601,6 @@ input[type=file].file-loading {
         align-items: center;
         flex-direction: column;
     }
-
     .file-zoom-dialog .modal-header {
         flex-direction: column;
     }
@@ -657,7 +656,10 @@ input[type=file].file-loading {
     display: none;
 }
 
-.file-preview-other-frame, .file-preview-object, .kv-file-content, .kv-zoom-body {
+.file-preview-other-frame,
+.file-preview-object,
+.kv-file-content,
+.kv-zoom-body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -675,7 +677,7 @@ input[type=file].file-loading {
 
 .rotatable .file-zoom-detail,
 .rotatable .kv-file-content,
-.rotatable .kv-file-content > :first-child {
+.rotatable .kv-file-content> :first-child {
     transform-origin: center center;
 }
 

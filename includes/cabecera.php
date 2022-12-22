@@ -31,21 +31,12 @@ require_once('../publico/php/db.php'); //creacion de archivos json
     <script src="<?=$raiz?>publico/js/monthpicker-master/jquery.monthpicker.min.js" type="text/javascript"></script>  
     <!-- <meta http-equiv="refresh" content="20"> -->
 
-    <!---->
+    <!--Input file-->
     <link href="../publico/js/bootstrap-fileinput-master/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
-    <link href="../publico/js/bootstrap-fileinput-master/themes/explorer-fa5/theme.css" media="all" rel="stylesheet" type="text/css"/>
-    <script src="../publico/js/bootstrap-fileinput-master/js/plugins/buffer.min.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/js/plugins/filetype.min.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/js/plugins/piexif.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/js/plugins/sortable.js" type="text/javascript"></script>
     <script src="../publico/js/bootstrap-fileinput-master/js/fileinput.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/js/locales/LANG.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/js/locales/es.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/themes/gly/theme.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/themes/fa5/theme.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/themes/explorer-fa5/theme.js" type="text/javascript"></script>
-    <script>$.fn.fileinput.defaults.theme = 'gly';</script>
+    <script src="../publico/js/bootstrap-fileinput-master/js/locales/idioma.js" type="text/javascript"></script>
+    <!-- <script src="../publico/js/bootstrap-fileinput-master/js/locales/en.js" type="text/javascript"></script>
+    <script src="../publico/js/bootstrap-fileinput-master/js/locales/es.js" type="text/javascript"></script> -->
 </head>
 <body>
     <?php

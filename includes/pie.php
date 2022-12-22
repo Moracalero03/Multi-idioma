@@ -49,11 +49,11 @@
             }); 
 
             $('#file').fileinput({
-            theme: 'fa5',
             language: 'es',
             uploadUrl: '#',
-            allowedFileExtensions: ['jpg', 'png', 'gif']
-            }); 
+            allowedFileExtensions: ['CSV']
+            });  
+
 
         }else if (jsvar=='en') {
             window.onload= uncheck();
@@ -71,12 +71,10 @@
             });
 
             $('#file').fileinput({
-            theme: 'fa5',
-            language: 'LANG',
+            language: 'en',
             uploadUrl: '#',
-            allowedFileExtensions: ['jpg', 'png', 'gif']
+            allowedFileExtensions: ['CSV']
             });
-
             });  
 
         }
@@ -98,12 +96,10 @@
 	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script> 
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 	<script src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.min.js"></script>
-    
     <script src="../publico/js/placeholder.js"></script>
     <script src="../publico/js/traduccion.js"></script>    
     
     <!--<script src="../publico/js/fcAlerta.js"></script>-->
     <!-- <script src="../publico/js/span.js"></script>  -->
-    <!-- <script type="text/javascript" src="../publico/js/global.js"></script> -->
 </body>
 </html>
