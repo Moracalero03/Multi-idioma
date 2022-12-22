@@ -16,7 +16,6 @@ $.getJSON("../publico/js/lang.json", function(json) {
         //Evalua el estado del checkbox y cambia el idioma de la alerta
         // var id = check.checked;
         var check = document.querySelector(".check");
-        console.log(check);
 
         if (check.checked == true) {
             return strings["es"][str];
@@ -40,7 +39,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
                 </select>
             </td>
             <td>
-                <input class="form-control" type="number" name="txtCantidadSP[]" min="0" data-validetta="required">
+                <input class="form-control" type="number" id="txtCantidadSP" name="txtCantidadSP[]" min="0" data-validetta="required">
             </td>
             <td>
                 <button type="button" class="btn" id="btnEliminar"><img src="../publico/img/eliminar.png" width="20rem" height="20rem" alt=""></button>
@@ -55,13 +54,12 @@ $.getJSON("../publico/js/lang.json", function(json) {
         $('#frmDinamico #txtCorreoSP').addClass('validate[required,custom[email]]');
         $('#frmDinamico #txtIdentificacionSP').addClass('validate[required,custom[DUI]]');
         $('#frmDinamico #txtTelefonoSP').addClass('validate[required,custom[phone]]');
-        $('#frmDinamico #txtDireccionSP').addClass('validate[required,custom[onlyLetterSp]]');
-        $('#frmDinamico #txtCantidadSP').addClass('validate[required]');
+        $('#frmDinamico #txtDireccionSP').addClass('validate[required,custom[DIRECCION]]');
+        $('#frmDinamico #txtCantidadSP').addClass('validate[required,custom[integer]]');
 
         //Formulario de solicitud de productos
         jQuery("#frmDinamico").validationEngine('attach', {
             onValidationComplete: function(form, status) {
-                alert("The form status is: " + status + ", it will never submit");
                 if (status == false) {
                     Swal.fire({
                         text: translate('TextErrorAlEnviar'),
@@ -116,11 +114,10 @@ $.getJSON("../publico/js/lang.json", function(json) {
 
     $(document).ready(function() {
         $('#formFacturar #txtNomTarjetaSP').addClass('validate[required,custom[onlyLetterSp]]');
-        $('#formFacturar #txtNumTarjetaSP').addClass('validate[required,custom[onlyNumberSp]]');
+        $('#formFacturar #txtNumTarjetaSP').addClass('validate[required,custom[creditCard]]');
 
         jQuery("#formFacturar").validationEngine('attach', {
             onValidationComplete: function(form, status) {
-                alert("The form status is: " + status + ", it will never submit");
                 if (status == false) {
                     Swal.fire({
                         text: translate('TextErrorAlEnviar'),
@@ -145,7 +142,7 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                     Swal.fire({
                                         title: translate('TitleFacturarDinamicoSuccess'),
                                         icon: 'success',
-                                        html: response + ' <button type="button" id="btnpdf" class="btn btn-warning" value="Export To PDF">Descarga de PDF</button> 	'
+                                        html: response + ' <button type="button" id="btnpdf" class="btn btn-warning" value="Export To PDF">Descarga de PDF</button>'
 
                                     })
 
@@ -158,23 +155,23 @@ $.getJSON("../publico/js/lang.json", function(json) {
                                         var pdf = new jsPDF();
 
 
-                                        pdf.text(70, 20, "COMPROBANTE DE PEDIDO");
+                                        pdf.text(70, 20, translate('pdfTitle'));
 
-                                        pdf.text(10, 30, "Comprobante de Facturacion");
+                                        pdf.text(10, 30, translate('pdfTitleFactura'));
                                         pdf.autoTable({
                                             theme: 'striped',
                                             html: '#factura',
                                             startY: 40
                                         });
 
-                                        pdf.text(10, 70, "Datos del cliente");
+                                        pdf.text(10, 70, translate('pdfTitleCliente'));
                                         pdf.autoTable({
                                             theme: 'striped',
                                             html: '#tblCliente',
                                             startY: 80
                                         })
 
-                                        pdf.text(10, 110, "Lista de productos");
+                                        pdf.text(10, 110, translate('pdfTitleProducto'));
                                         pdf.autoTable({
                                             theme: 'grid',
                                             html: '#tblPedido',
@@ -223,7 +220,6 @@ $.getJSON("../publico/js/lang.json", function(json) {
 
             jQuery("#formGestionUsuario").validationEngine('attach', {
                 onValidationComplete: function(form, status) {
-                    alert("El estado del formulario es: " + status + ", se enviara");
                     if (status == false) {
                         Swal.fire({
                             text: translate('TextErrorAlEnviar'),
@@ -287,7 +283,6 @@ $.getJSON("../publico/js/lang.json", function(json) {
 
         jQuery("#formConsultaExistencia").validationEngine('attach', {
             onValidationComplete: function(form, status) {
-                alert("The form status is: " + status + ", it will never submit");
                 if (status == false) {
                     Swal.fire({
                         text: translate('TextErrorAlEnviar'),

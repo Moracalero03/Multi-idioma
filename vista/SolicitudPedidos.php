@@ -121,7 +121,7 @@ include('../includes/cabecera.php');
         <div class="<?= $col8 ?>" id="datos">
 
         </div>
-    </div>
+    </div> 
 
     <!-- Button trigger modal -->
     <div class="row">
