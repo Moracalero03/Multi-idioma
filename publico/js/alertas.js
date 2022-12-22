@@ -271,6 +271,8 @@ $.getJSON("../publico/js/lang.json", function(json) {
         })
         // })
 
+        //Formulario de gestion de Consulta de existencia
+
     $(document).ready(function() {
         $('#formConsultaExistencia #txtNombreCE').addClass('validate[required,custom[onlyLetterSp]]');
         $('#formConsultaExistencia #txtCorreoCE').addClass('validate[required,custom[email]]');

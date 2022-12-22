@@ -51,13 +51,29 @@ function idioma() {
                 });
             }
 
+            let fileDrop = document.querySelector('.file-drop-zone-title');
+            let fileCaption = document.querySelector('.file-caption-name ');
+            let hidden = document.querySelector('.hidden-xs');
+
+            console.log(fileDrop);
+            console.log(fileCaption);
+            console.log(hidden);
+
+
+             $('#file').fileinput({
+            theme: 'fa5',
+            language: 'es',
+            uploadUrl: '#',
+            allowedFileExtensions: ['jpg', 'png', 'gif']
+             });
+
             //SELECTOR DE IDIOMA DINAMICO PARA PROCESAR UN FORMULARIO EN ESPAÑOL
             const formulario = document.querySelectorAll('form');
             const idioma = 'es';
-            procesarDinamico(idioma, formulario);
+            //procesarDinamico(idioma, formulario);
 
             const cdn = document.getElementById('validationIdioma');
-            validationIdioma(idioma, cdn);
+            //validationIdioma(idioma, cdn);
 
         });
 
@@ -98,14 +114,38 @@ function idioma() {
                     'maxYear': 2050
                 });
             }
+            
+
+            let fileDrop = document.querySelector('.file-drop-zone-title');
+            let fileCaption = document.querySelector('.file-caption-name');
+            let hidden = document.querySelector('.hidden-xs');
+
+            console.log(fileDrop);
+            console.log(fileCaption);
+            console.log(hidden);
+
+            if(fileDrop != null && fileCaption != null && hidden != null){
+                fileDrop.remove();
+                fileCaption.remove();
+                hidden.remove();
+
+                $('#file').fileinput({
+                    theme: 'fa5',
+                   
+                    uploadUrl: '#',
+                    allowedFileExtensions: ['jpg', 'png', 'gif']
+                });
+
+            }
+             
 
             //SELECTOR DE IDIOMA DINAMICO PARA PROCESAR UN FORMULARIO EN INGLES
             const formulario = document.querySelectorAll('form');
             const idioma = 'en';
-            procesarDinamico(idioma, formulario);
+           // procesarDinamico(idioma, formulario);
 
             const cdn = document.getElementById('validationIdioma');
-            validationIdioma(idioma, cdn);
+           // validationIdioma(idioma, cdn);
 
         });
         //TRADUCCIONES DE LOS DATA-SECTION
@@ -145,10 +185,11 @@ function idioma() {
 
     }
 
-    function validationIdioma(idioma, cdn) {
+    /*function validationIdioma(idioma, cdn) {
         console.log(cdn);
         const src = 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-' + idioma + '.min.js'
         cdn.setAttribute('src', src);
 
     }
+    */
 };

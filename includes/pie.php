@@ -46,7 +46,14 @@
                 'lang': 'es',
                 'minYear': 2022,
                 'maxYear': 2050
-            });  
+            }); 
+
+            $('#file').fileinput({
+            theme: 'fa5',
+            language: 'es',
+            uploadUrl: '#',
+            allowedFileExtensions: ['jpg', 'png', 'gif']
+            }); 
 
         }else if (jsvar=='en') {
             window.onload= uncheck();
@@ -61,6 +68,13 @@
             $('#yearpicker').monthpicker({
                 'minYear': 2022,
                 'maxYear': 2050
+            });
+
+            $('#file').fileinput({
+            theme: 'fa5',
+            language: 'LANG',
+            uploadUrl: '#',
+            allowedFileExtensions: ['jpg', 'png', 'gif']
             });
 
             });  
