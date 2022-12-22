@@ -55,6 +55,11 @@
             allowedFileExtensions: ['jpg', 'png', 'gif']
             }); 
 
+            $('.datepicker').datepicker({
+            language: 'es'
+
+            });
+
         }else if (jsvar=='en') {
             window.onload= uncheck();
             $(document).ready(function () {
@@ -76,6 +81,13 @@
             uploadUrl: '#',
             allowedFileExtensions: ['jpg', 'png', 'gif']
             });
+
+
+            $('.datepicker').datepicker({
+                        language: 'en-CA'
+
+            });
+
 
             });  
 

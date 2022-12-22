@@ -51,21 +51,31 @@ function idioma() {
                 });
             }
 
-            let fileDrop = document.querySelector('.file-drop-zone-title');
-            let fileCaption = document.querySelector('.file-caption-name ');
-            let hidden = document.querySelector('.hidden-xs');
+            //let fileDrop = document.querySelector('.file-drop-zone-title');
+            //let fileCaption = document.querySelector('.file-caption-name ');
+            //let hidden = document.querySelector('.hidden-xs');
 
-            console.log(fileDrop);
-            console.log(fileCaption);
-            console.log(hidden);
+            //console.log(fileDrop);
+           // console.log(fileCaption);
+           // console.log(hidden);
 
 
-             $('#file').fileinput({
+           /*  $('#file').fileinput({
             theme: 'fa5',
             language: 'es',
             uploadUrl: '#',
             allowedFileExtensions: ['jpg', 'png', 'gif']
              });
+*/
+
+
+           
+
+             $('.datepicker').datepicker('destroy','');
+             $('.datepicker').datepicker({
+            language: 'es'
+
+});
 
             //SELECTOR DE IDIOMA DINAMICO PARA PROCESAR UN FORMULARIO EN ESPAÑOL
             const formulario = document.querySelectorAll('form');
@@ -116,16 +126,16 @@ function idioma() {
             }
             
 
-            let fileDrop = document.querySelector('.file-drop-zone-title');
-            let fileCaption = document.querySelector('.file-caption-name');
-            let hidden = document.querySelector('.hidden-xs');
+            //let fileDrop = document.querySelector('.file-drop-zone-title');
+           // let fileCaption = document.querySelector('.file-caption-name');
+           // let hidden = document.querySelector('.hidden-xs');
 
-            console.log(fileDrop);
-            console.log(fileCaption);
-            console.log(hidden);
+           // console.log(fileDrop);
+           // console.log(fileCaption);
+           // console.log(hidden);
 
-            if(fileDrop != null && fileCaption != null && hidden != null){
-                fileDrop.remove();
+           // if(fileDrop != null && fileCaption != null && hidden != null){
+            /*    fileDrop.remove();
                 fileCaption.remove();
                 hidden.remove();
 
@@ -133,10 +143,18 @@ function idioma() {
                     theme: 'fa5',
                    
                     uploadUrl: '#',
-                    allowedFileExtensions: ['jpg', 'png', 'gif']
-                });
+                    allowedFileExtensions: ['jpg', 'png', 'gif']*/
+            //    });
 
-            }
+          //  }
+
+          
+
+            $('.datepicker').datepicker('destroy','');
+            $('.datepicker').datepicker({
+            language: 'en-CA'
+
+});
              
 
             //SELECTOR DE IDIOMA DINAMICO PARA PROCESAR UN FORMULARIO EN INGLES
