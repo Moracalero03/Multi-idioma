@@ -31,28 +31,16 @@ require_once('../publico/php/db.php'); //creacion de archivos json
     <script src="<?=$raiz?>publico/js/monthpicker-master/jquery.monthpicker.min.js" type="text/javascript"></script>  
     <!-- <meta http-equiv="refresh" content="20"> -->
 
-    <!---->
+    <!--Input file-->
     <link href="../publico/js/bootstrap-fileinput-master/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
-    <link href="../publico/js/bootstrap-fileinput-master/themes/explorer-fa5/theme.css" media="all" rel="stylesheet" type="text/css"/>
-    <script src="../publico/js/bootstrap-fileinput-master/js/plugins/buffer.min.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/js/plugins/filetype.min.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/js/plugins/piexif.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/js/plugins/sortable.js" type="text/javascript"></script>
     <script src="../publico/js/bootstrap-fileinput-master/js/fileinput.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/js/locales/LANG.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/js/locales/es.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/themes/gly/theme.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/themes/fa5/theme.js" type="text/javascript"></script>
-    <script src="../publico/js/bootstrap-fileinput-master/themes/explorer-fa5/theme.js" type="text/javascript"></script>
-    <script>$.fn.fileinput.defaults.theme = 'gly';</script>
+    <script src="../publico/js/bootstrap-fileinput-master/js/locales/idioma.js" type="text/javascript"></script>
 
     <!---->
    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-     <script src="../publico/js/bootstrap-datepicker-master/js/locales/bootstrap-datepicker.es.js" charset="UTF-8"></script>
+    <script src="../publico/js/bootstrap-datepicker-master/js/locales/bootstrap-datepicker.es.js" charset="UTF-8"></script>
     <script src="../publico/js/bootstrap-datepicker-master/js/locales/bootstrap-datepicker.en-IE.js" charset="UTF-8"></script>
 
 </head>

@@ -22,7 +22,7 @@ include('../includes/cabecera.php');
 </head>
 <body> 
 
-<div class="container-fluid">
+<div class="container-fluid mt-5">
     <div class="row">
     <div class="col-lg-4">
         <label>Seleccione una fecha</label>
