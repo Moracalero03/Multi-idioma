@@ -6,44 +6,27 @@ $datasection="vistaCalidad";
 $col8="col-8 col-sm-12 col-md-12 col-lg-12";
 include('../includes/cabecera.php');
 ?>
-             
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DatePicker</title> 
-
-
-     
-
-</head>
-<body> 
-
 <div class="container-fluid mt-5">
     <div class="row">
-    <div class="col-lg-4">
-        <label>Seleccione una fecha</label>
-        <div class="input-group date">
-            <input type="text" class="form-control datepicker">
-                <div class="input-group-addon">
-                    <span class="glyphicon glyphicon-th"></span>
+        <div class="col-lg-2s  mt-5">
+            <h5>Seleccione una fecha</h5>
+            <form action="../publico/php/DatePickerProcesar.php" method="post">
+                <div class="form-group">
+                    <div class="input-group  date mb-3 datepicker">
+                        <input type='text' class="form-control" name="inputDate">
+                        <div class="input-group-append">
+                            <span class="input-group-text bi bi-calendar2"></span>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <button type="submit" class="btn btn-danger mt-2" >Enviar</button>
+            </form> 
         </div>
     </div>
-    </div>
-</div>
-    
+</div> 
+
 </body>
 </html>
-
-
-
-
-
 <?php
     include('../includes/pie.php');
 ?>

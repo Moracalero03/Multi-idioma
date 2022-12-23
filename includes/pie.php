@@ -27,89 +27,91 @@
         //     $('#codigoPais').val(data.countryCode);
         // })
 
-        $(document).ready(function (e) {
-        var jsvar='<?=$lang?>';
+$(document).ready(function (e) {
+var jsvar='<?=$lang?>';
 
-        if ( jsvar=='es') {
-            window.onload= check();
-            $(document).ready(function () {
-            //Idioma del datatable
-			$('#example').DataTable({
-                "language": {
-        		"url":"//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"},
-                stateSave: true,
-                "bDestroy": true})
-            }); 
+if ( jsvar=='es') {
+    window.onload= check();
+    $(document).ready(function () {
+    //Idioma del datatable
+    $('#example').DataTable({
+        "language": {
+        "url":"//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"},
+        stateSave: true,
+        "bDestroy": true})
+    }); 
 
-           //Idioma del select monthPicker
-            $('#yearpicker').monthpicker({
-                'lang': 'es',
-                'minYear': 2022,
-                'maxYear': 2050
-            }); 
+    //Idioma del select monthPicker
+    $('#yearpicker').monthpicker({
+        'lang': 'es',
+        'minYear': 2022,
+        'maxYear': 2050
+    }); 
 
-            $('#file').fileinput({
-            language: 'es',
-            uploadUrl: '#',
-            allowedFileExtensions: ['CSV']
-            });  
+    // fileinput
+    $('#file').fileinput({
+    language: 'es',
+    uploadUrl: '#',
+    allowedFileExtensions: ['CSV']
+    });  
 
-            $('.datepicker').datepicker({
-            language: 'es'
+    // DatePicker
+    $('.datepicker').datepicker({
+    language: 'es'
+    }); 
 
-            });
-        }else if (jsvar=='en') {
-            window.onload= uncheck();
-            $(document).ready(function () {
-            //Idioma del datatable
-			$('#example').DataTable({
-                stateSave: true,
-                "bDestroy": true
-            }) 
+}else if (jsvar=='en') {
+    window.onload= uncheck();
+    $(document).ready(function () {
+    //Idioma del datatable
+    $('#example').DataTable({
+        stateSave: true,
+        "bDestroy": true
+    }) 
 
-            //Idioma del select monthPicker
-            $('#yearpicker').monthpicker({
-                'minYear': 2022,
-                'maxYear': 2050
-            });
+    //Idioma del select monthPicker
+    $('#yearpicker').monthpicker({
+        'minYear': 2022,
+        'maxYear': 2050
+    });
 
-            $('#file').fileinput({
-            language: 'en',
-            uploadUrl: '#',
-            allowedFileExtensions: ['CSV']
-            });
+    // fileinput
+    $('#file').fileinput({
+    language: 'en',
+    uploadUrl: '#',
+    allowedFileExtensions: ['CSV']
+    });
 
+        // DatePicker
+    $('.datepicker').datepicker({
+    language: 'en-CA'
+    });
 
-            $('.datepicker').datepicker({
-                        language: 'en-CA'
+    });  
 
-            });
+}
 
-            });  
+function uncheck() {
+    document.querySelector(".check").checked = false;
+}
 
-        }
+function check() {
+    document.querySelector(".check").checked = true;
+} 
 
-        function uncheck() {
-            document.querySelector(".check").checked = false;
-        }
-
-        function check() {
-            document.querySelector(".check").checked = true;
-        } 
-
-        });
+});
 
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script> 
-	<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
-	<script src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.min.js"></script>
-    <script src="../publico/js/placeholder.js"></script>
-    <script src="../publico/js/traduccion.js"></script>    
-    
-    <!--<script src="../publico/js/fcAlerta.js"></script>-->
-    <!-- <script src="../publico/js/span.js"></script>  -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script> 
+<script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.min.js"></script>
+<script src="../publico/js/placeholder.js"></script>
+<script src="../publico/js/traduccion.js"></script>    
+
+<!--<script src="../publico/js/fcAlerta.js"></script>-->
+<!-- <script src="../publico/js/span.js"></script>  -->
 </body>
 </html>

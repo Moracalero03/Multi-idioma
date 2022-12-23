@@ -51,12 +51,15 @@ function idioma() {
                 });
             }
 
+            // fileinput
+            $('#file').fileinput('destroy');
             $('#file').fileinput({
                 language: 'es',
                 uploadUrl: '#',
                 allowedFileExtensions: ['CSV']
             });
 
+            // DatePicker
             $('.datepicker').datepicker('destroy', '');
             $('.datepicker').datepicker({
                 language: 'es'
@@ -115,25 +118,15 @@ function idioma() {
                 });
             }
 
+            // fileinput
+            $('#file').fileinput('destroy');
+            $('#file').fileinput({
+                language: 'en',
+                uploadUrl: '#',
+                allowedFileExtensions: ['csv']
+            })
 
-            let fileLoading = document.querySelector('.file-loading');
-            let file = document.querySelector('#file');
-            // let hidden = document.querySelector('.hidden-xs');
-
-            console.log(fileLoading);
-            console.log(file);
-            // console.log(hidden);
-
-            if (fileLoading != null && file) {
-                fileLoading.remove();
-                file.remove();
-                $('#file').fileinput({
-                    language: 'en',
-                    uploadUrl: '#',
-                    allowedFileExtensions: ['csv']
-                })
-            }
-
+            // DatePicker
             $('.datepicker').datepicker('destroy', '');
             $('.datepicker').datepicker({
                 language: 'en-CA'

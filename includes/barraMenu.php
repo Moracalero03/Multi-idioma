@@ -18,7 +18,7 @@
         <a class="nav-link dropdown-toggle lang" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  key="Sobre" data-section="global" data-value="Sobre">
             Sobre
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item lang" href="<?=$raiz?>vista/Calidad.php"  key="Calidad" data-section="global" data-value="Calidad">Calidad</a>
             <a class="dropdown-item lang" href="<?=$raiz?>vista/Productos.php"  key="Productos" data-section="global" data-value="Productos">Productos</a>
         </div>
