@@ -51,7 +51,6 @@ if ( jsvar=='es') {
     // fileinput
     $('#file').fileinput({
     language: 'es',
-    uploadUrl: '#',
     allowedFileExtensions: ['CSV']
     });  
 
@@ -77,9 +76,7 @@ if ( jsvar=='es') {
 
     // fileinput
     $('#file').fileinput({
-    language: 'en',
-    uploadUrl: '#',
-    allowedFileExtensions: ['CSV']
+    language: 'en'
     });
 
         // DatePicker

@@ -54,9 +54,7 @@ function idioma() {
             // fileinput
             $('#file').fileinput('destroy');
             $('#file').fileinput({
-                language: 'es',
-                uploadUrl: '#',
-                allowedFileExtensions: ['CSV']
+                language: 'es'
             });
 
             // DatePicker
@@ -121,9 +119,7 @@ function idioma() {
             // fileinput
             $('#file').fileinput('destroy');
             $('#file').fileinput({
-                language: 'en',
-                uploadUrl: '#',
-                allowedFileExtensions: ['csv']
+                language: 'en'
             })
 
             // DatePicker

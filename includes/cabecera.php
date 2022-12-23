@@ -33,7 +33,10 @@ require_once('../publico/php/db.php'); //creacion de archivos json
     <script src="<?=$raiz?>publico/js/monthpicker-master/jquery.monthpicker.min.js" type="text/javascript"></script>  
 
     <!--Input file-->
-    <link href="../publico/js/bootstrap-fileinput-master/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-fileinput@5.5.2/js/plugins/buffer.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-fileinput@5.5.2/js/plugins/filetype.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>     -->
+<link href="../publico/js/bootstrap-fileinput-master/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
     <script src="../publico/js/bootstrap-fileinput-master/js/fileinput.js" type="text/javascript"></script>
     <script src="../publico/js/bootstrap-fileinput-master/js/locales/idioma.js" type="text/javascript"></script>
 
@@ -41,7 +44,7 @@ require_once('../publico/php/db.php'); //creacion de archivos json
     <link rel="stylesheet" href="../publico/js/bootstrap-datepicker-master/css/bootstrap-datepicker.css">
     <script src="../publico/js/bootstrap-datepicker-master/js/bootstrap-datepicker.js"></script>
     <script src="../publico/js/bootstrap-datepicker-master/js/locales/bootstrap-datepicker.es.js" charset="UTF-8"></script>
-    <script src="../publico/js/bootstrap-datepicker-master/js/locales/bootstrap-datepicker-en-CA.js" charset="UTF-8"></script>
+    <script src="../publico/js/bootstrap-datepicker-master/js/locales/bootstrap-datepicker.en-CA.js" charset="UTF-8"></script>
 
 </head>
 <body>
